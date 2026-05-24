@@ -48,25 +48,13 @@ Competitive Logic    [████████░░] 80%  (Algorithm Design, Co
 ## 🛡️ TECH ARSENAL (REPOSITORIES & SKILLS)
 
 ### 💻 CORE LANGUAGES & PARADIGMS
-<p align="left">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=java,kotlin,php,cpp,py,js,ts" />
-  </a>
-</p>
+<p align="left"><a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=java,kotlin,php,cpp,py,js,ts" /></a></p>
 
 ### 🌐 FULL STACK & WEB ARCHITECTURE
-<p align="left">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=react,nextjs,nodejs,express,html,css,tailwind" />
-  </a>
-</p>
+<p align="left"><a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=react,nextjs,nodejs,express,html,css,tailwind" /></a></p>
 
 ### 📱 MOBILE, DESKTOP & DATA
-<p align="left">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=android,mysql,postgres,mongodb,firebase,git,vscode,idea" />
-  </a>
-</p>
+<p align="left"><a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=androidstudio,mysql,postgres,mongodb,firebase,git,vscode,idea" /></a></p>
 
 ---
 
