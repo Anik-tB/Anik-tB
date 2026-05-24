@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/Anik-tB">
-    <img src="assets/hero-banner.png" width="100%" alt="Md Abu Sayum Anik Hero Banner" style="border-radius: 12px; border: 2px solid #00F7FF; box-shadow: 0 4px 30px rgba(0, 247, 255, 0.2);" />
+    <img src="https://raw.githubusercontent.com/Anik-tB/Anik-tB/main/assets/banner.png" width="100%" alt="Md Abu Sayum Anik Hero Banner" style="border-radius: 12px; border: 2px solid #00F7FF; box-shadow: 0 4px 30px rgba(0, 247, 255, 0.2);" />
   </a>
 
   <br/><br/>
