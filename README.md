@@ -137,7 +137,7 @@ Focus: Full Stack Development + Mobile Apps + System Design
 </a>
 
 <a href="https://codeforces.com/profile/YOUR_HANDLE" target="_blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/codeforces/codeforces-original.svg" height="55"/>
+  <img src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/96/external-codeforces-programming-competitions-and-contests-programming-community-logo-shadow-tal-revivo.png" height="55"/>
 </a>
 
 </p>
