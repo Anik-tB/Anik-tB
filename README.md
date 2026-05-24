@@ -122,14 +122,24 @@ Focus: Full Stack Development + Mobile Apps + System Design
 
 # 🌐 Connect With Me
 
-<p align="left">
-<a href="YOUR_LINKEDIN_LINK" target="blank">
-<img align="center" src="https://skillicons.dev/icons?i=linkedin" height="40" />
+<p align="center">
+
+<a href="https://github.com/Anik-tB" target="_blank">
+  <img src="https://skillicons.dev/icons?i=github" height="55"/>
 </a>
 
-<a href="https://github.com/Anik-tB" target="blank">
-<img align="center" src="https://skillicons.dev/icons?i=github" height="40" />
+<a href="YOUR_LINKEDIN" target="_blank">
+  <img src="https://skillicons.dev/icons?i=linkedin" height="55"/>
 </a>
+
+<a href="mailto:mdabusayumanik123@gmail.com">
+  <img src="https://skillicons.dev/icons?i=gmail" height="55"/>
+</a>
+
+<a href="https://codeforces.com/profile/YOUR_HANDLE" target="_blank">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/codeforces/codeforces-original.svg" height="55"/>
+</a>
+
 </p>
 
 ---
