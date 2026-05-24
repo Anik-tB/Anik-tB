@@ -47,8 +47,6 @@
 
 ## 🎒 SYSTEM INVENTORY (EQUIPPED GEAR & TECH ARSENAL)
 
-<div align="center">
-
 ### ⚔️ EQUIPPED WEAPONS (CORE LANGUAGES)
 | Item | Type | Level | Attribute Bonus |
 | :---: | :--- | :---: | :--- |
@@ -57,6 +55,7 @@
 | **`🧪 PHP Catalyst`** | Backend Elixir | Lvl 8 | +85 System Automation, Rapid Integration |
 | **`🏹 C++ Reflex`** | Low-Level System Bow | Lvl 7 | +80 High-Speed Logic & Memory Access |
 | **`📜 JS/TS Spellbook`** | DOM Scripting Scroll | Lvl 8 | +85 Interactive Animations & Logic |
+| **`🐍 Python Serpent`** | Scripting & ML Summon | Lvl 8 | +85 Automation, AI/ML & Workflow Telemetry |
 
 <br/>
 
@@ -65,8 +64,6 @@
 
 ### ⚡ ENCHANTED STORAGE & TOOLS (MOBILE, DESKTOP & DATA)
 <p align="center"><a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=androidstudio,mysql,postgres,mongodb,firebase,git,vscode,idea" /></a></p>
-
-</div>
 
 ---
 
