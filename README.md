@@ -22,7 +22,6 @@ Software Engineer • Full Stack & Mobile Developer
 Name: Md Abu Sayum Anik
 Location: Dhaka, Bangladesh
 Education: BSc in CSE @ United International University
-CGPA: 3.86 / 4.00
 Focus: Full Stack Development + Mobile Apps + System Design
 ```
 
