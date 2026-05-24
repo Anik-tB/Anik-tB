@@ -108,15 +108,15 @@ Focus: Full Stack Development + Mobile Apps + System Design
 # 📊 GitHub Analytics
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Anik-tB&show_icons=true&theme=tokyonight" />
+  
+<img height="180em" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Anik-tB&theme=tokyonight"/>
+
+<img height="180em" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Anik-tB&theme=tokyonight"/>
+
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Anik-tB&layout=compact&theme=tokyonight" />
-</p>
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=Anik-tB&theme=tokyonight" />
+  <img src="https://streak-stats.demolab.com?user=Anik-tB&theme=tokyonight"/>
 </p>
 
 ---
