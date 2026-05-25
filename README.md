@@ -124,21 +124,21 @@
 
 **⚡ CORE STATS**
 
-<img src="https://github-readme-stats.vercel.app/api?username=Anik-tB&show_icons=true&count_private=true&include_all_commits=true&theme=tokyonight&hide_border=true&bg_color=0D0D0D&title_color=BD00FF&icon_color=BD00FF&text_color=C9D1D9&ring_color=BD00FF&border_radius=12&custom_title=Anik-tB%20Combat%20Stats" height="185"/>
+<img src="https://github-readme-stats.vercel.app/api?username=Anik-tB&show_icons=true&count_private=true&include_all_commits=true&theme=tokyonight&hide_border=true&bg_color=0D0D0D&title_color=BD00FF&icon_color=BD00FF&text_color=C9D1D9&ring_color=BD00FF&border_radius=12&cache_seconds=86400" width="340"/>
 
 </td>
 <td valign="top" align="center">
 
 **🗺️ LANGUAGE RADAR**
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Anik-tB&layout=donut&theme=tokyonight&hide_border=true&bg_color=0D0D0D&title_color=BD00FF&text_color=C9D1D9&border_radius=12&langs_count=8&custom_title=Top%20Languages" height="185"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Anik-tB&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D0D0D&title_color=BD00FF&text_color=C9D1D9&border_radius=12&langs_count=8&cache_seconds=86400" width="300"/>
 
 </td>
 <td valign="top" align="center">
 
 **🏆 TROPHY RACK**
 
-<img src="https://github-profile-trophy.vercel.app/?username=Anik-tB&theme=radical&no-frame=true&no-bg=true&column=2&margin-w=8&margin-h=8&rank=A,B,C,SECRET,SSS,SS,S,AAA,AA" height="185"/>
+<img src="https://github-profile-trophy.vercel.app/?username=Anik-tB&theme=radical&no-frame=true&no-bg=true&column=2&margin-w=8&margin-h=8" width="220"/>
 
 </td>
 </tr>
