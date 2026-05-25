@@ -117,34 +117,10 @@
 
 <div align="center">
 
-<!-- ROW 1: Main Stats + Languages side by side -->
-<table border="0" cellspacing="0" cellpadding="8">
-<tr>
-<td valign="top" align="center">
+<!-- ROW 1: Trophy full width -->
+<img src="https://github-profile-trophy.vercel.app/?username=Anik-tB&theme=radical&no-frame=true&no-bg=true&column=7&margin-w=10&margin-h=10" width="100%"/>
 
-**⚡ CORE STATS**
-
-<img src="https://github-readme-stats.vercel.app/api?username=Anik-tB&show_icons=true&count_private=true&include_all_commits=true&theme=tokyonight&hide_border=true&bg_color=0D0D0D&title_color=BD00FF&icon_color=BD00FF&text_color=C9D1D9&ring_color=BD00FF&border_radius=12&cache_seconds=86400" width="340"/>
-
-</td>
-<td valign="top" align="center">
-
-**🗺️ LANGUAGE RADAR**
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Anik-tB&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D0D0D&title_color=BD00FF&text_color=C9D1D9&border_radius=12&langs_count=8&cache_seconds=86400" width="300"/>
-
-</td>
-<td valign="top" align="center">
-
-**🏆 TROPHY RACK**
-
-<img src="https://github-profile-trophy.vercel.app/?username=Anik-tB&theme=radical&no-frame=true&no-bg=true&column=2&margin-w=8&margin-h=8" width="220"/>
-
-</td>
-</tr>
-</table>
-
-<br/>
+<br/><br/>
 
 <!-- ROW 2: Streak full width -->
 
@@ -154,7 +130,7 @@
 
 <br/><br/>
 
-<!-- ROW 3: Profile Summary Cards -->
+<!-- ROW 3: Profile Summary Cards (always work) -->
 
 **📊 MISSION SUMMARY CARDS**
 
@@ -175,7 +151,7 @@
 
 **🌐 CONTRIBUTION ACTIVITY MAP**
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Anik-tB&theme=tokyo-night&hide_border=true&bg_color=0D0D0D&color=BD00FF&line=7B2FBE&point=FFFFFF&area=true&area_color=2D0A4E&custom_title=Anik-tB%20%E2%80%94%20Daily%20Commit%20Activity" width="100%"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Anik-tB&theme=tokyo-night&hide_border=true&bg_color=0D0D0D&color=BD00FF&line=7B2FBE&point=FFFFFF&area=true&area_color=2D0A4E" width="100%"/>
 
 </div>
 
