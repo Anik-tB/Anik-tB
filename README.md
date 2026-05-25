@@ -114,28 +114,30 @@
 
 <div align="center">
 
-<!-- ROW 1: Streak full width -->
-
-**🔥 COMBAT STREAK**
-
-<img src="https://streak-stats.demolab.com?user=Anik-tB&theme=tokyonight&hide_border=true&background=0D0D0D&ring=BD00FF&fire=FF4500&currStreakLabel=BD00FF&sideLabels=BD00FF&sideNums=FFFFFF&currStreakNum=FFFFFF&border_radius=12&dates=888888" width="72%"/>
-
-<br/><br/>
-
-<!-- ROW 3: Profile Summary Cards (always work) -->
-
-**📊 MISSION SUMMARY CARDS**
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Anik-tB&theme=tokyonight&utcOffset=6" />
-
-<br/><br/>
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Anik-tB&theme=tokyonight" width="100%"/>
+<!-- ROW 1: Streak & Productive Time (Side-by-Side) -->
+<table border="0" cellspacing="0" cellpadding="4" align="center">
+<tr>
+<td width="60%" align="center">
+  <strong>🔥 COMBAT STREAK</strong><br/><br/>
+  <img src="https://streak-stats.demolab.com?user=Anik-tB&theme=tokyonight&hide_border=true&background=0D0D0D&ring=BD00FF&fire=FF4500&currStreakLabel=BD00FF&sideLabels=BD00FF&sideNums=FFFFFF&currStreakNum=FFFFFF&border_radius=12&dates=888888" width="100%"/>
+</td>
+<td width="40%" align="center">
+  <strong>⏳ PRODUCTIVE TIME</strong><br/><br/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Anik-tB&theme=tokyonight&utcOffset=6" width="100%"/>
+</td>
+</tr>
+</table>
 
 <br/>
 
-<!-- ROW 4: Activity Graph full width -->
+<!-- ROW 2: Profile Details (Full Width) -->
+**📊 MISSION SUMMARY & PROFILE DETAILS**
 
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Anik-tB&theme=tokyonight" width="100%"/>
+
+<br/><br/>
+
+<!-- ROW 3: Activity Graph (Full Width) -->
 **🌐 CONTRIBUTION ACTIVITY MAP**
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=Anik-tB&theme=tokyo-night&hide_border=true&bg_color=0D0D0D&color=BD00FF&line=7B2FBE&point=FFFFFF&area=true&area_color=2D0A4E" width="100%"/>
