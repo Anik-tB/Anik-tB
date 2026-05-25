@@ -21,7 +21,10 @@
   <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" />
 </p>
 
-## 🛰️ PLAYER PROFILE & HUD
+<h2 align="center">»─── 🛰️ PLAYER PROFILE & HUD ───«</h2>
+
+<br/>
+
 <div align="center">
 
 | 🌌 ATTRIBUTE VARIABLE | 🛰️ CORE STATUS & CREDENTIALS |
@@ -37,20 +40,26 @@
 
 <br/>
 
-### 📊 ATTRIBUTE SPECS & EXP LIMITS
+<h3 align="center">📊 ATTRIBUTE SPECS & EXP LIMITS</h3>
 
-| Core Stat | Focus Area | Mastery Level | XP Progress Bar |
+<div align="center">
+
+| Core Stat | Focus Area | Mastery Level | XP Progress Bar (Vibrant HUD) |
 | :---: | :--- | :---: | :--- |
-| **🧠 INT** | **System Architecture** | `100%` | `████████████████████` *(MAX)* |
-| **⚡ AGI** | **UI/UX Engineering** | `90%` | `██████████████████░░` |
-| **🛡️ VIT** | **Database & Scale** | `80%` | `████████████████░░░░` |
-| **⚔️ DEX** | **Competitive Logic** | `80%` | `████████████████░░░░` |
+| **🧠 INT** | **System Architecture** | `100%` | 🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪 *(MAX)* |
+| **⚡ AGI** | **UI/UX Engineering** | `90%` | 🟦🟦🟦🟦🟦🟦🟦🟦🟦⬛ |
+| **🛡️ VIT** | **Database & Scale** | `80%` | 🟪🟪🟪🟪🟪🟪🟪🟪⬛⬛ |
+| **⚔️ DEX** | **Competitive Logic** | `80%` | 🟦🟦🟦🟦🟦🟦🟦🟦⬛⬛ |
+
+</div>
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" />
 </p>
 
-## 🎒 SYSTEM INVENTORY (EQUIPPED GEAR & TECH ARSENAL)
+<h2 align="center">»─── 🎒 SYSTEM INVENTORY (EQUIPPED GEAR) ───«</h2>
+
+<br/>
 
 ### ⚔️ EQUIPPED WEAPONS (CORE LANGUAGES)
 | Item | Type | Level | Attribute Bonus |
@@ -74,52 +83,95 @@
   <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" />
 </p>
 
-## 🚀 QUEST LOG (ACTIVE & COMPLETED MISSIONS)
+<h2 align="center">»─── 🚀 QUEST LOG (ACTIVE MISSIONS) ───«</h2>
+
+<br/>
 
 ### 🌌 QUEST I: BEYOND THE GALAXY `[ STATUS: COMPLETED 🏆 ]`
 > **Primary Objective: Design a highly interactive, custom JavaFX Desktop RPG engine.**
-*   **Difficulty**: `✦✦✦✦✦ (EXPERT)`
-*   **Exp Rewards**: `+5,000 XP`
-*   **Boss Drops**: `🥇 1st Place Trophy [LEGENDARY]` among 50+ developer guilds.
-*   **Turn-Based Battle Grid**: Built complex asynchronous battle algorithms and strategy frameworks.
-*   **Player Marketplace**: Developed transactional item exchange ecosystems and inventories.
-*   **Architectural Overlord**: Successfully bound **MVC**, **Strategy**, and **Observer** patterns into a robust desktop framework.
+
+<table width="100%">
+  <tr>
+    <td width="30%" align="center">
+      <img src="https://img.icons8.com/external-flatart-icons-flat-flatarticons/128/external-galaxy-space-flatart-icons-flat-flatarticons.png" width="70px" /><br/>
+      <code>✦✦✦✦✦ (EXPERT)</code><br/>
+      <code>+5,000 XP</code>
+    </td>
+    <td>
+      <strong>🏆 Boss Drops:</strong> 🥇 1st Place Trophy [LEGENDARY] among 50+ developer guilds.<br/>
+      <strong>⚙️ Turn-Based Battle Grid:</strong> Built complex asynchronous battle algorithms and strategy frameworks.<br/>
+      <strong>🏪 Player Marketplace:</strong> Developed transactional item exchange ecosystems and inventories.<br/>
+      <strong>🧠 Architectural Overlord:</strong> Successfully bound <strong>MVC</strong>, <strong>Strategy</strong>, and <strong>Observer</strong> patterns into a robust desktop framework.
+    </td>
+  </tr>
+</table>
 
 <br/>
 
 ### 🛡️ QUEST II: SAFE SPACE `[ STATUS: ACTIVE ⚡ ]`
 > **Primary Objective: Build a robust, scalable community safety SOS network.**
-*   **Difficulty**: `✦✦✦✦✧ (ADVANCED)`
-*   **Active Objective**: Real-time distress alert vectors.
-*   **Instant SOS Beacon**: Created geographical incident distress signaling nodes.
-*   **Guild Clearance**: Built a multi-tier role authorization framework.
-*   **Command Map**: Real-time analytical distress monitoring system dashboard.
+
+<table width="100%">
+  <tr>
+    <td width="30%" align="center">
+      <img src="https://img.icons8.com/external-flatart-icons-flat-flatarticons/128/external-shield-security-flatart-icons-flat-flatarticons-2.png" width="70px" /><br/>
+      <code>✦✦✦✦✧ (ADVANCED)</code><br/>
+      <code>Active Project</code>
+    </td>
+    <td>
+      <strong>🚨 Instant SOS Beacon:</strong> Created geographical incident distress signaling nodes.<br/>
+      <strong>🔑 Guild Clearance:</strong> Built a multi-tier role authorization framework.<br/>
+      <strong>🗺️ Command Map:</strong> Real-time analytical distress monitoring system dashboard.<br/>
+      <strong>🛰️ Current Active Objective:</strong> Real-time distress alert vectors & SMS routing integration.
+    </td>
+  </tr>
+</table>
 
 <br/>
 
 ### 🏭 QUEST III: AI/ML INDUSTRIAL PREDICTION `[ STATUS: ACTIVE ⚡ ]`
 > **Primary Objective: Integrate high-frequency telemetry tracking for worker safety.**
-*   **Difficulty**: `✦✦✦✦✧ (ADVANCED)`
-*   **Active Objective**: AI-driven safety sensor pipelines.
-*   **Sensor Streaming**: High-speed pipelines processing industrial sensor grids.
-*   **Failure Vectors**: Configured predictive ML models warning teams before critical failures occur.
-*   **HUD Dashboards**: High-update-frequency operational safety control rooms.
+
+<table width="100%">
+  <tr>
+    <td width="30%" align="center">
+      <img src="https://img.icons8.com/external-flatart-icons-flat-flatarticons/128/external-factory-industrial-production-flatart-icons-flat-flatarticons.png" width="70px" /><br/>
+      <code>✦✦✦✦✧ (ADVANCED)</code><br/>
+      <code>Active Project</code>
+    </td>
+    <td>
+      <strong>📊 Sensor Streaming:</strong> High-speed pipelines processing industrial sensor grids.<br/>
+      <strong>🧠 Failure Vectors:</strong> Configured predictive ML models warning teams before critical failures occur.<br/>
+      <strong>📈 HUD Dashboards:</strong> High-update-frequency operational safety control rooms.<br/>
+      <strong>🛰️ Current Active Objective:</strong> AI-driven safety sensor pipelines & model parameter tuning.
+    </td>
+  </tr>
+</table>
 
 <br/>
 <p align="center">
   <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" />
 </p>
 
-## 🏆 GUILD TROPHY CABINET
+<h2 align="center">»─── 🏆 GUILD TROPHY CABINET ───«</h2>
+
+<br/>
+
+<div align="center">
+
 *   **🏆 Champion Title** — *Beyond The Galaxy Showcase (AOOP)*
 *   **🥈 1st Runner Up** — *Brainwave Microcontroller Hackathon*
 *   **🎓 Elite Scholar** — *United International University Academic Merit Scholarships*
+
+</div>
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" />
 </p>
 
-## 📈 SYSTEM TELEMETRY (REAL-TIME LIVE ANALYTICS)
+<h2 align="center">»─── 📈 SYSTEM TELEMETRY (LIVE STATS) ───«</h2>
+
+<br/>
 
 <div align="center">
   <table border="0">
@@ -142,7 +194,7 @@
   <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" />
 </p>
 
-## 🌐 MULTIPLAYER LOBBY (CONNECT PROTOCOLS)
+<h2 align="center">»─── 🌐 MULTIPLAYER LOBBY (CONNECT) ───«</h2>
 
 <div align="center">
 
