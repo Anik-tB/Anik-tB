@@ -1,172 +1,137 @@
-<!-- ██████████████████████████████████████████████████████████████████████████████ -->
-<!--                        ANIK-tB :: GITHUB PROFILE README                       -->
-<!-- ██████████████████████████████████████████████████████████████████████████████ -->
+<!-- ══════════════════════════════════════════════════════════════════ -->
+<!--              ANIK-tB ⟡ GITHUB PROFILE README v3.0                -->
+<!-- ══════════════════════════════════════════════════════════════════ -->
+
+<!-- TOP WAVE -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=MD%20ABU%20SAYUM%20ANIK&fontSize=42&fontColor=FFFFFF&fontAlignY=38&desc=Full%20Stack%20%26%20Mobile%20Architect%20%E2%80%A2%20System%20Design%20Specialist&descAlignY=58&descSize=16&animation=fadeIn" width="100%"/>
 
 <div align="center">
 
-<!-- ═══════════════════════ ANIMATED BANNER ═══════════════════════ -->
+<!-- ANIMATED BANNER -->
 <a href="https://github.com/Anik-tB">
-  <img src="assets/banner.gif" width="100%" alt="Md Abu Sayum Anik — RPG Banner" />
+  <img src="assets/banner.gif" width="100%" alt="Anik-tB Banner"/>
 </a>
 
-<br/>
+<br/><br/>
 
-<!-- ═══════════════════════ BOOT SEQUENCE ═══════════════════════ -->
-<img src="https://readme-typing-svg.herokuapp.com?font=Share+Tech+Mono&size=14&duration=1200&pause=9999&color=00FF41&center=true&vCenter=true&width=700&lines=%5BSYSTEM+BOOT%5D+Initializing+profile+kernel...;%5BCORE+LOADED%5D+Identity+module+active...;%5BREADY%5D+Welcome%2C+Adventurer.+Anik-tB+is+online." />
+<!-- BOOT SEQUENCE -->
+<img src="https://readme-typing-svg.herokuapp.com?font=Share+Tech+Mono&size=13&pause=1000&color=00FF41&center=true&vCenter=true&width=650&lines=%5BSYSTEM+BOOT%5D+Loading+identity+module...;%5BCORE+LOADED%5D+All+systems+nominal.;%5BONLINE%5D+Welcome%2C+Adventurer.+Anik-tB+is+ready.+%E2%9A%A1" />
 
 <br/><br/>
 
-<!-- ═══════════════════════ HERO TITLE ═══════════════════════ -->
-```
- █████╗ ███╗   ██╗██╗██╗  ██╗    ████████╗██████╗ 
-██╔══██╗████╗  ██║██║██║ ██╔╝    ╚══██╔══╝██╔══██╗
-███████║██╔██╗ ██║██║█████╔╝        ██║   ██████╔╝
-██╔══██║██║╚██╗██║██║██╔═██╗        ██║   ██╔══██╗
-██║  ██║██║ ╚████║██║██║  ██╗       ██║   ██████╔╝
-╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝╚═╝  ╚═╝      ╚═╝   ╚═════╝ 
-```
-
-<h2>⚔️ MD ABU SAYUM ANIK ⚔️</h2>
-<h4>◈ Full Stack &amp; Mobile Architect &nbsp;•&nbsp; System Design Specialist &nbsp;•&nbsp; Showcase Champion ◈</h4>
-
-<br/>
-
-<!-- ═══════════════════════ ANIMATED ROLES ═══════════════════════ -->
-<img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=20&duration=2200&pause=700&color=BD00FF&center=true&vCenter=true&multiline=false&width=900&lines=⚔️+Beyond+The+Galaxy+Showcase+Champion+%5BLEGENDARY%5D;🧪+System+Design+%26+OOP+Architect;💻+Full+Stack+%26+Android+Engineer;🎮+Crafting+Immersive+High-Fidelity+Software;🛰️+Scalable+Distributed+System+Builder;🧠+Clean+Code+%7C+SOLID+%7C+Design+Patterns+Master" />
+<!-- ANIMATED ROLES -->
+<img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=700&size=22&duration=2000&pause=600&color=BD00FF&center=true&vCenter=true&width=900&lines=%E2%9A%94%EF%B8%8F+Beyond+The+Galaxy+Showcase+Champion+%5BLEGENDARY%5D;%F0%9F%A7%AA+System+Design+%26+OOP+Architect;%F0%9F%92%BB+Full+Stack+%26+Android+Engineer;%F0%9F%8E%AE+Crafting+Immersive+High-Fidelity+Software;%F0%9F%9B%B0%EF%B8%8F+Scalable+Distributed+System+Builder" />
 
 <br/><br/>
 
-<!-- ═══════════════════════ BADGES ROW ═══════════════════════ -->
-<img src="https://komarev.com/ghpvc/?username=Anik-tB&label=⬡+PROFILE+VISITORS&color=BD00FF&style=for-the-badge" />
+<!-- BADGE ROW -->
+<a href="https://github.com/Anik-tB">
+  <img src="https://komarev.com/ghpvc/?username=Anik-tB&label=PROFILE+VIEWS&color=BD00FF&style=for-the-badge" />
+</a>
 &nbsp;
-<img src="https://img.shields.io/github/followers/Anik-tB?label=⬡+GUILD+MEMBERS&style=for-the-badge&color=6A0DAD&labelColor=0D0D0D" />
+<a href="https://github.com/Anik-tB?tab=followers">
+  <img src="https://img.shields.io/github/followers/Anik-tB?label=FOLLOWERS&style=for-the-badge&color=6A0DAD&labelColor=0D0D0D" />
+</a>
 &nbsp;
-<img src="https://img.shields.io/badge/STATUS-ONLINE%20%E2%9A%A1-00FF41?style=for-the-badge&labelColor=0D0D0D" />
+<img src="https://img.shields.io/badge/STATUS-⚡_ONLINE-00FF41?style=for-the-badge&labelColor=0D0D0D" />
 &nbsp;
-<img src="https://img.shields.io/badge/CLASS-FULL_STACK_ARCHITECT-BD00FF?style=for-the-badge&labelColor=0D0D0D" />
+<img src="https://img.shields.io/badge/OPEN_TO-COLLABORATE-BD00FF?style=for-the-badge&labelColor=0D0D0D" />
 
 </div>
 
 <br/>
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=12,20,30&height=3&section=header" width="100%"/>
-</p>
-
 ---
 
-<!-- ═══════════════════════════════════════════════════════════════════ -->
-<!--                      [ SECTION I ] PLAYER PROFILE                 -->
-<!-- ═══════════════════════════════════════════════════════════════════ -->
+<!-- ══════════════════════════════════════════════════════════════════ -->
+<!--                    SECTION I · PLAYER PROFILE                    -->
+<!-- ══════════════════════════════════════════════════════════════════ -->
 
-<h2 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=18&duration=9999&pause=9999&color=BD00FF&center=true&vCenter=true&width=600&lines=◈──────『+🛰️+PLAYER+PROFILE+%26+HUD+』──────◈" />
-</h2>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=2" width="100%"/>
+
+<h2 align="center">🛰️ PLAYER PROFILE &amp; IDENTITY MODULE</h2>
 
 <br/>
 
 <div align="center">
-
-<table>
+<table border="0" cellspacing="0" cellpadding="0">
 <tr>
-<td width="50%" valign="top">
+<td width="55%" valign="top">
 
 ```yaml
-# ─── IDENTITY MODULE ───────────────────────────────
-player:
-  name:         "Md Abu Sayum Anik"
-  alias:        "Anik-tB"
-  class:        "Full-Stack & Mobile Architect"
-  level:        23
-  guild:        "United International University"
-  degree:       "BSc in Computer Science"
-  location:     "Dhaka, Bangladesh 🇧🇩"
-  timezone:     "UTC+6 (BDT)"
+# ── IDENTITY CARD ────────────────────────────────────
+  Name      :  Md Abu Sayum Anik
+  Alias     :  Anik-tB
+  Class     :  Full-Stack & Mobile Architect
+  Level     :  23
+  Guild     :  United International University
+  Degree    :  BSc — Computer Science & Engineering
+  Region    :  Dhaka, Bangladesh 🇧🇩
+  Timezone  :  UTC+6 · BDT
 
-# ─── COMBAT STATS ──────────────────────────────────
-stats:
-  system_architecture: "██████████ 100%  [MAX]"
-  ui_ux_engineering:   "█████████░  90%"
-  database_and_scale:  "████████░░  80%"
-  competitive_logic:   "████████░░  80%"
-  mobile_dev:          "█████████░  90%"
+# ── SKILL STATS ──────────────────────────────────────
+  System Architecture  ████████████  100%  ★ MAX
+  Mobile Engineering   ███████████░   90%
+  UI/UX Engineering    ███████████░   90%
+  Database & Scale     █████████░░░   80%
+  Competitive Logic    █████████░░░   80%
 
-# ─── SPECIAL TRAITS ────────────────────────────────
-traits:
-  - "🏆 Showcase Champion [LEGENDARY TIER]"
-  - "🧠 OOP & Design Patterns Overlord"
-  - "🎮 Gamified UI Engineering Specialist"
-  - "⚡ Asynchronous Systems Designer"
+# ── PASSIVE TRAITS ───────────────────────────────────
+  [ LEGENDARY ] Showcase Champion · Beyond The Galaxy
+  [ EPIC      ] OOP & Design Patterns Overlord
+  [ EPIC      ] Gamified UI Engineering Specialist
+  [ RARE      ] Asynchronous Systems Designer
 ```
 
 </td>
-<td width="50%" valign="top" align="center">
+<td width="45%" valign="middle" align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=Anik-tB&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D0D0D&title_color=BD00FF&icon_color=BD00FF&text_color=FFFFFF&ring_color=BD00FF&border_radius=10" width="100%"/>
+<img src="https://github-readme-stats.vercel.app/api?username=Anik-tB&show_icons=true&count_private=true&theme=tokyonight&hide_border=true&bg_color=0D0D0D&title_color=BD00FF&icon_color=BD00FF&text_color=C9D1D9&ring_color=BD00FF&border_radius=12" width="100%"/>
 
-<br/><br/>
+<br/>
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Anik-tB&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D0D0D&title_color=BD00FF&text_color=FFFFFF&border_radius=10" width="100%"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Anik-tB&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D0D0D&title_color=BD00FF&text_color=C9D1D9&border_radius=12&langs_count=6" width="100%"/>
 
 </td>
 </tr>
 </table>
-
 </div>
 
 <br/>
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=12,20,30&height=3" width="100%"/>
-</p>
-
 ---
 
-<!-- ═══════════════════════════════════════════════════════════════════ -->
-<!--                   [ SECTION II ] COMMIT STREAK                    -->
-<!-- ═══════════════════════════════════════════════════════════════════ -->
+<!-- ══════════════════════════════════════════════════════════════════ -->
+<!--                  SECTION II · COMBAT STREAK                      -->
+<!-- ══════════════════════════════════════════════════════════════════ -->
 
-<h2 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=18&duration=9999&pause=9999&color=BD00FF&center=true&vCenter=true&width=600&lines=◈──────『+🔥+COMBAT+STREAK+%26+TELEMETRY+』──────◈" />
-</h2>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=2" width="100%"/>
+
+<h2 align="center">🔥 COMBAT STREAK &amp; TELEMETRY</h2>
 
 <br/>
 
 <div align="center">
 
-<img src="https://streak-stats.demolab.com?user=Anik-tB&theme=tokyonight&hide_border=true&background=0D0D0D&ring=BD00FF&fire=FF6B6B&currStreakLabel=BD00FF&border_radius=10" width="90%" />
+<img src="https://streak-stats.demolab.com?user=Anik-tB&theme=tokyonight&hide_border=true&background=0D0D0D&ring=BD00FF&fire=FF4500&currStreakLabel=BD00FF&sideLabels=BD00FF&border_radius=12" width="80%"/>
 
 <br/><br/>
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Anik-tB&theme=tokyonight" width="90%"/>
-
-<br/>
-
-<table>
-<tr>
-<td><img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Anik-tB&theme=tokyonight" /></td>
-<td><img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Anik-tB&theme=tokyonight" /></td>
-<td><img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Anik-tB&theme=tokyonight" /></td>
-</tr>
-</table>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Anik-tB&theme=tokyo-night&hide_border=true&bg_color=0D0D0D&color=BD00FF&line=7B2FBE&point=BD00FF&area=true&area_color=2D0A4E" width="100%"/>
 
 </div>
 
 <br/>
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=12,20,30&height=3" width="100%"/>
-</p>
-
 ---
 
-<!-- ═══════════════════════════════════════════════════════════════════ -->
-<!--                  [ SECTION III ] SKILL ARSENAL                    -->
-<!-- ═══════════════════════════════════════════════════════════════════ -->
+<!-- ══════════════════════════════════════════════════════════════════ -->
+<!--                  SECTION III · SKILL ARSENAL                     -->
+<!-- ══════════════════════════════════════════════════════════════════ -->
 
-<h2 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=18&duration=9999&pause=9999&color=BD00FF&center=true&vCenter=true&width=600&lines=◈──────『+🎒+SYSTEM+INVENTORY+%26+ARSENAL+』──────◈" />
-</h2>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=2" width="100%"/>
+
+<h2 align="center">🎒 SYSTEM INVENTORY &amp; ARSENAL</h2>
 
 <br/>
 
@@ -174,34 +139,34 @@ traits:
 
 ### ⚔️ CORE LANGUAGE WEAPONS
 
-| RARITY | WEAPON | CLASS | MASTERY | BONUS STAT |
-|:---:|:---|:---:|:---:|:---|
-| 🟡 **LEGENDARY** | `🗡️ Java Greatsword` | Compiled OOP | ██████████ MAX | +100 Type Safety · Polymorphism Overlord |
-| 🟣 **EPIC** | `🛡️ Kotlin Aegis` | Mobile Shield | █████████░ 90% | +90 Null Safety · Coroutine Mastery |
-| 🟣 **EPIC** | `📜 JS / TS Spellbook` | DOM Scripting | █████████░ 85% | +85 Interactive Logic · Async Flows |
-| 🟣 **EPIC** | `🐍 Python Serpent` | AI/ML Summon | █████████░ 85% | +85 Automation · ML Pipeline Telemetry |
-| 🔵 **RARE** | `🧪 PHP Catalyst` | Backend Elixir | ████████░░ 85% | +85 Rapid Integration · System Ops |
-| 🔵 **RARE** | `🏹 C++ Reflex` | Low-Level Bow | ████████░░ 80% | +80 High-Speed Logic · Memory Access |
+| &nbsp; | WEAPON | TYPE | MASTERY |
+|:---:|:---|:---|:---:|
+| 🟡 `LEGENDARY` | **Java** — *The Greatsword* | Compiled OOP · JVM Domination | `MAX ★★★★★` |
+| 🟣 `EPIC` | **Kotlin** — *The Aegis* | Modern Mobile · Null Safety | `Lvl 9 ★★★★☆` |
+| 🟣 `EPIC` | **TypeScript / JS** — *The Spellbook* | Full-Stack Scripting · Async Logic | `Lvl 9 ★★★★☆` |
+| 🟣 `EPIC` | **Python** — *The Serpent* | AI/ML · Automation · Data | `Lvl 9 ★★★★☆` |
+| 🔵 `RARE` | **PHP** — *The Catalyst* | Backend Elixir · Rapid API | `Lvl 8 ★★★★☆` |
+| 🔵 `RARE` | **C++** — *The Reflex* | Low-Level · Memory & Speed | `Lvl 8 ★★★☆☆` |
 
 <br/>
 
-### 🔮 MASTERED RELICS — FULL STACK ARCHITECTURE
+### 🔮 FULL STACK RELICS
 
 <a href="https://skillicons.dev">
   <img src="https://skillicons.dev/icons?i=react,nextjs,nodejs,express,html,css,tailwind&perline=7" />
 </a>
 
-<br/>
+<br/><br/>
 
-### ⚡ MOBILE, DATABASE & DEVOPS ARSENAL
+### ⚡ MOBILE · DATABASE · DEVOPS
 
 <a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=androidstudio,kotlin,java,mysql,postgres,mongodb,firebase,redis&perline=8" />
+  <img src="https://skillicons.dev/icons?i=androidstudio,kotlin,java,firebase,mysql,postgres,mongodb,redis&perline=8" />
 </a>
 
-<br/>
+<br/><br/>
 
-### 🛠️ ENCHANTED TOOLS & FORGE
+### 🛠️ TOOLS & FORGE
 
 <a href="https://skillicons.dev">
   <img src="https://skillicons.dev/icons?i=git,github,docker,linux,vscode,idea,figma,postman&perline=8" />
@@ -211,44 +176,46 @@ traits:
 
 <br/>
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=12,20,30&height=3" width="100%"/>
-</p>
-
 ---
 
-<!-- ═══════════════════════════════════════════════════════════════════ -->
-<!--                   [ SECTION IV ] QUEST LOG                        -->
-<!-- ═══════════════════════════════════════════════════════════════════ -->
+<!-- ══════════════════════════════════════════════════════════════════ -->
+<!--                   SECTION IV · QUEST LOG                         -->
+<!-- ══════════════════════════════════════════════════════════════════ -->
 
-<h2 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=18&duration=9999&pause=9999&color=BD00FF&center=true&vCenter=true&width=600&lines=◈──────『+🚀+QUEST+LOG+%26+MISSION+BOARD+』──────◈" />
-</h2>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=2" width="100%"/>
+
+<h2 align="center">🚀 QUEST LOG &amp; MISSION BOARD</h2>
 
 <br/>
 
-<!-- QUEST I -->
+<!-- ── QUEST I ──────────────────────────────────────────────────── -->
+
 <table width="100%">
 <tr>
-<td width="18%" align="center" valign="middle">
-  <img src="https://img.icons8.com/external-flatart-icons-flat-flatarticons/128/external-galaxy-space-flatart-icons-flat-flatarticons.png" width="80px"/><br/>
-  <code>🟡 LEGENDARY</code><br/>
-  <code>✦✦✦✦✦ EXPERT</code><br/>
-  <br/>
-  <img src="https://img.shields.io/badge/STATUS-COMPLETED%20🏆-00FF41?style=flat-square&labelColor=0D0D0D"/>
+<td width="16%" align="center" valign="middle">
+
+<img src="https://img.icons8.com/external-flatart-icons-flat-flatarticons/128/external-galaxy-space-flatart-icons-flat-flatarticons.png" width="75px"/>
+
+<br/>
+
+![](https://img.shields.io/badge/🟡-LEGENDARY-FFD700?style=flat-square&labelColor=1A1A2E)
+![](https://img.shields.io/badge/STATUS-COMPLETED_🏆-00FF41?style=flat-square&labelColor=1A1A2E)
+
+`✦✦✦✦✦ EXPERT`
+`+5,000 XP`
+
 </td>
 <td valign="top">
 
 ### 🌌 QUEST I — BEYOND THE GALAXY
-> *Primary Objective: Design a highly interactive, custom JavaFX Desktop RPG engine from scratch.*
 
-- 🏆 **Boss Drop:** 🥇 **1st Place Trophy [LEGENDARY]** — Ranked #1 among 50+ developer guilds at Beyond The Galaxy AOOP Showcase.
-- ⚙️ **Turn-Based Battle Engine:** Engineered complex asynchronous multi-player battle algorithms with real-time strategy frameworks.
-- 🏪 **Player Economy System:** Built a fully transactional in-game item marketplace with inventory persistence and trade logic.
-- 🧠 **Architecture Overlord:** Fused **MVC**, **Strategy**, **Observer**, and **Factory** patterns into a single cohesive desktop engine.
-- 🎮 **World Systems:** Implemented dynamic dungeon generation, character leveling, and quest state machines.
+> *"Design a fully interactive custom JavaFX Desktop RPG engine that redefines what a student showcase can be."*
 
-**`+5,000 XP · +LEGENDARY WEAPON DROP · +GUILD RANK S`**
+- 🥇 **LEGENDARY BOSS DROP** — 1st Place among **50+ developer guilds** at Beyond The Galaxy AOOP Showcase
+- ⚙️ **Asynchronous Battle Engine** — Complex multi-player turn-based algorithms with real-time state machines
+- 🏪 **Player Economy System** — Fully transactional in-game marketplace with inventory persistence & trade logic
+- 🧠 **Architecture Overlord** — Fused **MVC + Strategy + Observer + Factory** patterns into one cohesive engine
+- 🎮 **World Systems** — Dynamic dungeon generation, character leveling, quest branches & dialogue trees
 
 </td>
 </tr>
@@ -256,28 +223,34 @@ traits:
 
 <br/>
 
-<!-- QUEST II -->
+<!-- ── QUEST II ─────────────────────────────────────────────────── -->
+
 <table width="100%">
 <tr>
-<td width="18%" align="center" valign="middle">
-  <img src="https://img.icons8.com/external-flatart-icons-flat-flatarticons/128/external-shield-security-flatart-icons-flat-flatarticons-2.png" width="80px"/><br/>
-  <code>🟣 EPIC</code><br/>
-  <code>✦✦✦✦✧ ADVANCED</code><br/>
-  <br/>
-  <img src="https://img.shields.io/badge/STATUS-ACTIVE%20⚡-FF6B00?style=flat-square&labelColor=0D0D0D"/>
+<td width="16%" align="center" valign="middle">
+
+<img src="https://img.icons8.com/external-flatart-icons-flat-flatarticons/128/external-shield-security-flatart-icons-flat-flatarticons-2.png" width="75px"/>
+
+<br/>
+
+![](https://img.shields.io/badge/🟣-EPIC-9B59B6?style=flat-square&labelColor=1A1A2E)
+![](https://img.shields.io/badge/STATUS-ACTIVE_⚡-FF6B00?style=flat-square&labelColor=1A1A2E)
+
+`✦✦✦✦✧ ADVANCED`
+`Active Mission`
+
 </td>
 <td valign="top">
 
 ### 🛡️ QUEST II — SAFE SPACE
-> *Primary Objective: Build a robust, scalable community safety SOS network for real-world crisis response.*
 
-- 🚨 **Instant SOS Beacon:** Designed geographical incident distress signaling nodes with real-time location tracking.
-- 🔑 **Guild Clearance System:** Engineered a multi-tier role-based authorization framework (Admin / Responder / Civilian).
-- 🗺️ **Command Map HUD:** Live analytical distress monitoring dashboard with heatmaps and incident clustering.
-- 📡 **Alert Routing Engine:** Building real-time SMS and push-notification routing with multi-vector alert delivery.
-- 🔐 **Security Layer:** Implemented JWT authentication, encrypted incident reports, and audit trail logging.
+> *"Build a robust, scalable community safety SOS network for real-world crisis response."*
 
-**`+3,500 XP · Mission Ongoing · +EPIC SHIELD DROP`**
+- 🚨 **Instant SOS Beacon** — Geo-tagged incident distress signals with real-time location tracking
+- 🔑 **Multi-Tier Auth System** — Role-based authorization (Admin / Responder / Civilian) with JWT
+- 🗺️ **Live Command Map** — Real-time distress heatmaps, incident clustering & analytical dashboards
+- 📡 **Alert Routing Engine** — SMS + push-notification multi-vector alert delivery pipelines
+- 🔐 **Security Layer** — Encrypted incident reports, audit trails & session hardening
 
 </td>
 </tr>
@@ -285,28 +258,34 @@ traits:
 
 <br/>
 
-<!-- QUEST III -->
+<!-- ── QUEST III ────────────────────────────────────────────────── -->
+
 <table width="100%">
 <tr>
-<td width="18%" align="center" valign="middle">
-  <img src="https://img.icons8.com/external-flatart-icons-flat-flatarticons/128/external-factory-industrial-production-flatart-icons-flat-flatarticons.png" width="80px"/><br/>
-  <code>🟣 EPIC</code><br/>
-  <code>✦✦✦✦✧ ADVANCED</code><br/>
-  <br/>
-  <img src="https://img.shields.io/badge/STATUS-ACTIVE%20⚡-FF6B00?style=flat-square&labelColor=0D0D0D"/>
+<td width="16%" align="center" valign="middle">
+
+<img src="https://img.icons8.com/external-flatart-icons-flat-flatarticons/128/external-factory-industrial-production-flatart-icons-flat-flatarticons.png" width="75px"/>
+
+<br/>
+
+![](https://img.shields.io/badge/🟣-EPIC-9B59B6?style=flat-square&labelColor=1A1A2E)
+![](https://img.shields.io/badge/STATUS-ACTIVE_⚡-FF6B00?style=flat-square&labelColor=1A1A2E)
+
+`✦✦✦✦✧ ADVANCED`
+`Active Mission`
+
 </td>
 <td valign="top">
 
 ### 🏭 QUEST III — AI/ML INDUSTRIAL PREDICTION
-> *Primary Objective: Integrate high-frequency telemetry tracking with AI-driven safety prediction for industrial workers.*
 
-- 📊 **Sensor Streaming Pipeline:** High-throughput pipelines ingesting multi-channel industrial sensor data in real time.
-- 🧠 **Predictive Failure Engine:** Deployed ML classification models that alert safety teams **before** critical failures occur.
-- 📈 **Operational HUD:** High-refresh-rate control-room dashboards built for 24/7 industrial safety monitoring.
-- 🔬 **Model Tuning Lab:** Experimenting with time-series anomaly detection and ensemble ML for precision improvement.
-- 🛰️ **Active Objective:** Integrating AI-driven safety sensor pipelines with automated incident escalation workflows.
+> *"Integrate AI-driven safety prediction with high-frequency telemetry for industrial worker protection."*
 
-**`+3,200 XP · Mission Ongoing · +RARE STAFF DROP`**
+- 📊 **Sensor Streaming Pipeline** — High-throughput ingestion of multi-channel industrial sensor data in real time
+- 🧠 **Predictive Failure Engine** — ML classification models that alert safety teams *before* critical failures occur
+- 📈 **Operational Safety HUD** — High-refresh-rate control-room dashboards built for 24/7 industrial monitoring
+- 🔬 **Model Tuning Lab** — Time-series anomaly detection & ensemble ML for precision improvement
+- 🛰️ **Active Objective** — AI-driven pipelines with automated escalation & incident prevention workflows
 
 </td>
 </tr>
@@ -314,47 +293,58 @@ traits:
 
 <br/>
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=12,20,30&height=3" width="100%"/>
-</p>
-
 ---
 
-<!-- ═══════════════════════════════════════════════════════════════════ -->
-<!--                   [ SECTION V ] TROPHY CABINET                    -->
-<!-- ═══════════════════════════════════════════════════════════════════ -->
+<!-- ══════════════════════════════════════════════════════════════════ -->
+<!--                  SECTION V · TROPHY CABINET                      -->
+<!-- ══════════════════════════════════════════════════════════════════ -->
 
-<h2 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=18&duration=9999&pause=9999&color=BD00FF&center=true&vCenter=true&width=600&lines=◈──────『+🏆+GUILD+TROPHY+CABINET+』──────◈" />
-</h2>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=2" width="100%"/>
+
+<h2 align="center">🏆 GUILD TROPHY CABINET</h2>
 
 <br/>
 
 <div align="center">
 
-<img src="https://github-profile-trophy.vercel.app/?username=Anik-tB&theme=radical&no-frame=true&column=7&margin-w=8&margin-h=8" width="100%" />
+<img src="https://github-profile-trophy.vercel.app/?username=Anik-tB&theme=radical&no-frame=true&no-bg=true&column=4&margin-w=12&margin-h=12&rank=SECRET,SSS,SS,S,AAA,AA,A,B" width="80%"/>
 
 <br/><br/>
 
 <table>
 <tr>
 <td align="center" width="33%">
-  <img src="https://img.icons8.com/emoji/96/trophy-emoji.png" width="60px"/><br/>
-  <strong>🥇 CHAMPION TITLE</strong><br/>
-  <em>Beyond The Galaxy Showcase</em><br/>
-  <code>Advanced OOP · JavaFX · RPG</code>
+
+<img src="https://img.icons8.com/emoji/96/trophy-emoji.png" width="55px"/>
+
+**🥇 CHAMPION TITLE**
+*Beyond The Galaxy AOOP Showcase*
+`JavaFX · RPG Engine · Design Patterns`
+
+![](https://img.shields.io/badge/RANK-LEGENDARY-FFD700?style=flat-square&labelColor=1A1A2E)
+
 </td>
 <td align="center" width="33%">
-  <img src="https://img.icons8.com/emoji/96/2nd-place-medal-emoji.png" width="60px"/><br/>
-  <strong>🥈 1ST RUNNER UP</strong><br/>
-  <em>Brainwave Microcontroller Hackathon</em><br/>
-  <code>Hardware · Embedded Systems</code>
+
+<img src="https://img.icons8.com/emoji/96/2nd-place-medal-emoji.png" width="55px"/>
+
+**🥈 1ST RUNNER UP**
+*Brainwave Microcontroller Hackathon*
+`Embedded Systems · Hardware`
+
+![](https://img.shields.io/badge/RANK-EPIC-9B59B6?style=flat-square&labelColor=1A1A2E)
+
 </td>
 <td align="center" width="33%">
-  <img src="https://img.icons8.com/emoji/96/graduation-cap-emoji.png" width="60px"/><br/>
-  <strong>🎓 ELITE SCHOLAR</strong><br/>
-  <em>UIU Academic Merit Scholarships</em><br/>
-  <code>Consecutive Academic Excellence</code>
+
+<img src="https://img.icons8.com/emoji/96/graduation-cap-emoji.png" width="55px"/>
+
+**🎓 ELITE SCHOLAR**
+*UIU Academic Merit Scholarship*
+`Consecutive Academic Excellence`
+
+![](https://img.shields.io/badge/RANK-EPIC-9B59B6?style=flat-square&labelColor=1A1A2E)
+
 </td>
 </tr>
 </table>
@@ -363,61 +353,51 @@ traits:
 
 <br/>
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=12,20,30&height=3" width="100%"/>
-</p>
-
 ---
 
-<!-- ═══════════════════════════════════════════════════════════════════ -->
-<!--               [ SECTION VI ] CONTRIBUTION SNAKE                   -->
-<!-- ═══════════════════════════════════════════════════════════════════ -->
+<!-- ══════════════════════════════════════════════════════════════════ -->
+<!--                SECTION VI · SNAKE & ACTIVITY                     -->
+<!-- ══════════════════════════════════════════════════════════════════ -->
 
-<h2 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=18&duration=9999&pause=9999&color=BD00FF&center=true&vCenter=true&width=600&lines=◈──────『+🐍+COMMIT+TRAIL+%26+ACTIVITY+MAP+』──────◈" />
-</h2>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=2" width="100%"/>
+
+<h2 align="center">🐍 COMMIT TRAIL &amp; ACTIVITY MAP</h2>
 
 <br/>
 
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Anik-tB/Anik-tB/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Anik-tB/Anik-tB/output/github-snake.svg" />
-  <img alt="github-snake" src="https://raw.githubusercontent.com/Anik-tB/Anik-tB/output/github-snake-dark.svg" width="100%" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Anik-tB/Anik-tB/output/github-snake-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Anik-tB/Anik-tB/output/github-snake.svg"/>
+  <img alt="GitHub Contribution Snake" src="https://raw.githubusercontent.com/Anik-tB/Anik-tB/output/github-snake-dark.svg" width="100%"/>
 </picture>
-
-<br/><br/>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Anik-tB&theme=tokyo-night&hide_border=true&bg_color=0D0D0D&color=BD00FF&line=BD00FF&point=FFFFFF&area=true&area_color=6A0DAD" width="100%" />
 
 </div>
 
 <br/>
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=12,20,30&height=3" width="100%"/>
-</p>
-
 ---
 
-<!-- ═══════════════════════════════════════════════════════════════════ -->
-<!--                 [ SECTION VII ] CONNECT LOBBY                     -->
-<!-- ═══════════════════════════════════════════════════════════════════ -->
+<!-- ══════════════════════════════════════════════════════════════════ -->
+<!--                 SECTION VII · CONNECT LOBBY                      -->
+<!-- ══════════════════════════════════════════════════════════════════ -->
 
-<h2 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=18&duration=9999&pause=9999&color=BD00FF&center=true&vCenter=true&width=600&lines=◈──────『+🌐+MULTIPLAYER+LOBBY+』──────◈" />
-</h2>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=2" width="100%"/>
+
+<h2 align="center">🌐 MULTIPLAYER LOBBY — CONNECT</h2>
 
 <div align="center">
 
 ```bash
-┌──────────────────────────────────────────────────────────────┐
-│  $ ssh Anik-tB@lobby.github.com                              │
-│  [SYSTEM]  Authenticating identity module...                 │
-│  [CORE]    Decrypting secure handshake...                    │
-│  [READY]   Connection established. Welcome, Adventurer. ⚡   │
-└──────────────────────────────────────────────────────────────┘
+╔══════════════════════════════════════════════════════════════╗
+║  $ ssh Anik-tB@lobby.github.com                             ║
+║                                                              ║
+║  [AUTH]    Verifying identity module...          [ OK ]      ║
+║  [CORE]    Decrypting secure handshake...        [ OK ]      ║
+║  [LINK]    Establishing connection vectors...    [ OK ]      ║
+║  [READY]   Welcome, Adventurer. Anik-tB is online. ⚡       ║
+╚══════════════════════════════════════════════════════════════╝
 ```
 
 <br/>
@@ -427,7 +407,7 @@ traits:
 </a>
 &nbsp;
 <a href="https://linkedin.com/in/mdabusayumanik" target="_blank">
-  <img src="https://img.shields.io/badge/LinkedIn-Md_Abu_Sayum_Anik-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0D0D0D"/>
+  <img src="https://img.shields.io/badge/LinkedIn-Abu_Sayum_Anik-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0D0D0D"/>
 </a>
 &nbsp;
 <a href="mailto:mdabusayumanik123@gmail.com">
@@ -442,15 +422,5 @@ traits:
 
 </div>
 
-<!-- ═══════════════════════ FOOTER WAVE ═══════════════════════ -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,30&height=120&section=footer&animation=fadeIn" width="100%"/>
-
-<div align="center">
-
-<img src="https://readme-typing-svg.herokuapp.com?font=Share+Tech+Mono&size=13&duration=3000&pause=1000&color=BD00FF&center=true&vCenter=true&width=700&lines=%5BSYSTEM%5D+Session+active...+All+systems+nominal.;%22Executing+clean+architectures%2C+mastering+logic+scales%2C+and+designing+ultimate+software+worlds.%22" />
-
-<br/>
-
-<img src="https://img.shields.io/badge/MADE%20WITH-⚡%20PASSION%20%26%20OBSESSION-BD00FF?style=for-the-badge&labelColor=0D0D0D" />
-
-</div>
+<!-- FOOTER WAVE -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer&animation=fadeIn&desc=%22Executing%20clean%20architectures%2C%20mastering%20logic%20scales%2C%20and%20designing%20ultimate%20software%20worlds.%22&descAlignY=65&descSize=13&fontColor=BD00FF" width="100%"/>
