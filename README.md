@@ -3,7 +3,7 @@
 <!-- ══════════════════════════════════════════════════════════════════ -->
 
 <!-- TOP WAVE -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=MD%20ABU%20SAYUM%20ANIK&fontSize=42&fontColor=FFFFFF&fontAlignY=38&desc=Full%20Stack%20%26%20Mobile%20Architect%20%E2%80%A2%20System%20Design%20Specialist&descAlignY=58&descSize=16&animation=fadeIn" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=160&section=header&text=ANIK-tB&fontSize=52&fontColor=FFFFFF&fontAlignY=42" width="100%"/>
 
 <div align="center">
 
