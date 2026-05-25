@@ -17,7 +17,9 @@
   </p>
 </div>
 
----
+<p align="center">
+  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/violet.png" width="100%" />
+</p>
 
 ## 🛰️ PLAYER PROFILE & HUD
 <div align="center">
@@ -36,14 +38,25 @@
 <br/>
 
 ### 📊 ATTRIBUTE SPECS & EXP LIMITS
-```text
-[🧠 INT] System Architecture  [██████████] 100% (Clean code, MVC, Strategy Patterns)
-[⚡ AGI] UI/UX Engineering    [█████████░] 90%  (JavaFX, Custom Styles, High-Fidelity UI)
-[🛡️ VIT] Database & Scale     [████████░░] 80%  (MySQL, Postgres, Server Systems)
-[⚔️ DEX] Competitive Logic    [████████░░] 80%  (Algorithms, Codeforces: aDistraction-null)
-```
 
----
+<div align="center">
+  <p>
+    <img src="https://progress-bar.dev/100/?scale=100&title=🧠%20INT%20-%20System%20Architecture&width=600&color=BD00FF" alt="System Architecture INT" />
+  </p>
+  <p>
+    <img src="https://progress-bar.dev/90/?scale=100&title=⚡%20AGI%20-%20UI/UX%20Engineering&width=600&color=00F7FF" alt="UI/UX Engineering AGI" />
+  </p>
+  <p>
+    <img src="https://progress-bar.dev/80/?scale=100&title=🛡️%20VIT%20-%20Database%20%26%20Scale&width=600&color=BD00FF" alt="Database & Scale VIT" />
+  </p>
+  <p>
+    <img src="https://progress-bar.dev/80/?scale=100&title=⚔️%20DEX%20-%20Competitive%20Logic&width=600&color=00F7FF" alt="Competitive Logic DEX" />
+  </p>
+</div>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/violet.png" width="100%" />
+</p>
 
 ## 🎒 SYSTEM INVENTORY (EQUIPPED GEAR & TECH ARSENAL)
 
@@ -65,37 +78,54 @@
 ### ⚡ ENCHANTED STORAGE & TOOLS (MOBILE, DESKTOP & DATA)
 <p align="center"><a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=androidstudio,mysql,postgres,mongodb,firebase,git,vscode,idea" /></a></p>
 
----
+<p align="center">
+  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/violet.png" width="100%" />
+</p>
 
 ## 🚀 QUEST LOG (ACTIVE & COMPLETED MISSIONS)
 
 ### 🌌 QUEST I: BEYOND THE GALAXY `[ STATUS: COMPLETED 🏆 ]`
 > **Primary Objective: Design a highly interactive, custom JavaFX Desktop RPG engine.**
+*   **Difficulty**: `✦✦✦✦✦ (EXPERT)`
+*   **Exp Rewards**: `+5,000 XP`
+*   **Boss Drops**: `🥇 1st Place Trophy [LEGENDARY]` among 50+ developer guilds.
 *   **Turn-Based Battle Grid**: Built complex asynchronous battle algorithms and strategy frameworks.
 *   **Player Marketplace**: Developed transactional item exchange ecosystems and inventories.
 *   **Architectural Overlord**: Successfully bound **MVC**, **Strategy**, and **Observer** patterns into a robust desktop framework.
-*   **Loot Dropped**: **🥇 1st Place Champion Title** among 50+ rival developer teams.
+
+<br/>
 
 ### 🛡️ QUEST II: SAFE SPACE `[ STATUS: ACTIVE ⚡ ]`
 > **Primary Objective: Build a robust, scalable community safety SOS network.**
+*   **Difficulty**: `✦✦✦✦✧ (ADVANCED)`
+*   **Active Objective**: Real-time distress alert vectors.
 *   **Instant SOS Beacon**: Created geographical incident distress signaling nodes.
 *   **Guild Clearance**: Built a multi-tier role authorization framework.
 *   **Command Map**: Real-time analytical distress monitoring system dashboard.
 
+<br/>
+
 ### 🏭 QUEST III: AI/ML INDUSTRIAL PREDICTION `[ STATUS: ACTIVE ⚡ ]`
 > **Primary Objective: Integrate high-frequency telemetry tracking for worker safety.**
+*   **Difficulty**: `✦✦✦✦✧ (ADVANCED)`
+*   **Active Objective**: AI-driven safety sensor pipelines.
 *   **Sensor Streaming**: High-speed pipelines processing industrial sensor grids.
 *   **Failure Vectors**: Configured predictive ML models warning teams before critical failures occur.
 *   **HUD Dashboards**: High-update-frequency operational safety control rooms.
 
----
+<br/>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/violet.png" width="100%" />
+</p>
 
 ## 🏆 GUILD TROPHY CABINET
 *   **🏆 Champion Title** — *Beyond The Galaxy Showcase (AOOP)*
 *   **🥈 1st Runner Up** — *Brainwave Microcontroller Hackathon*
 *   **🎓 Elite Scholar** — *United International University Academic Merit Scholarships*
 
----
+<p align="center">
+  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/violet.png" width="100%" />
+</p>
 
 ## 📈 SYSTEM TELEMETRY (REAL-TIME LIVE ANALYTICS)
 
@@ -116,11 +146,20 @@
   <img src="https://streak-stats.demolab.com?user=Anik-tB&theme=tokyonight" width="100%" />
 </div>
 
----
+<p align="center">
+  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/violet.png" width="100%" />
+</p>
 
 ## 🌐 MULTIPLAYER LOBBY (CONNECT PROTOCOLS)
 
 <div align="center">
+
+```text
+$ ssh Anik-tB@lobby.github.com
+[SYSTEM] Access granted. Establishing connection vectors...
+```
+
+<br/>
 
 <a href="https://github.com/Anik-tB" target="_blank">
   <img src="https://skillicons.dev/icons?i=github" height="55"/>
