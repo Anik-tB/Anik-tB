@@ -2,9 +2,6 @@
 <!--              ANIK-tB ⟡ GITHUB PROFILE README v3.0                -->
 <!-- ══════════════════════════════════════════════════════════════════ -->
 
-<!-- TOP WAVE -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=160&section=header&text=ANIK-tB&fontSize=52&fontColor=FFFFFF&fontAlignY=42" width="100%"/>
-
 <div align="center">
 
 <!-- ANIMATED BANNER -->
