@@ -122,7 +122,22 @@
 
 <br/><br/>
 
+<!-- ROW 3: Profile Summary Cards (always work) -->
 
+**📊 MISSION SUMMARY CARDS**
+
+<table border="0" cellspacing="0" cellpadding="4">
+<tr>
+<td><img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Anik-tB&theme=tokyonight" /></td>
+<td><img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Anik-tB&theme=tokyonight" /></td>
+<td><img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Anik-tB&theme=tokyonight" /></td>
+<td><img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Anik-tB&theme=tokyonight&utcOffset=6" /></td>
+</tr>
+</table>
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Anik-tB&theme=tokyonight" width="100%"/>
+
+<br/>
 
 <!-- ROW 4: Activity Graph full width -->
 
