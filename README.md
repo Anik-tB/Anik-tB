@@ -83,11 +83,11 @@
 </td>
 <td width="45%" valign="middle" align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=Anik-tB&show_icons=true&count_private=true&theme=tokyonight&hide_border=true&bg_color=0D0D0D&title_color=BD00FF&icon_color=BD00FF&text_color=C9D1D9&ring_color=BD00FF&border_radius=12" width="100%"/>
+<img src="https://ghrs.vercel.app/api?username=Anik-tB&show_icons=true&count_private=true&theme=tokyonight&hide_border=true&bg_color=0D0D0D&title_color=BD00FF&icon_color=BD00FF&text_color=C9D1D9&ring_color=BD00FF&border_radius=12" width="100%"/>
 
 <br/>
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Anik-tB&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D0D0D&title_color=BD00FF&text_color=C9D1D9&border_radius=12&langs_count=6" width="100%"/>
+<img src="https://ghrs.vercel.app/api/top-langs/?username=Anik-tB&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D0D0D&title_color=BD00FF&text_color=C9D1D9&border_radius=12&langs_count=6" width="100%"/>
 
 </td>
 </tr>
