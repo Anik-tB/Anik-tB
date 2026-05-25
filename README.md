@@ -117,12 +117,7 @@
 
 <div align="center">
 
-<!-- ROW 1: Trophy full width -->
-<img src="https://github-profile-trophy.vercel.app/?username=Anik-tB&theme=radical&no-frame=true&no-bg=true&column=4&margin-w=12&margin-h=12" width="90%"/>
-
-<br/><br/>
-
-<!-- ROW 2: Streak full width -->
+<!-- ROW 1: Streak full width -->
 
 **🔥 COMBAT STREAK**
 
