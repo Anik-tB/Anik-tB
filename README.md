@@ -18,7 +18,7 @@
 </div>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/violet.png" width="100%" />
+  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" />
 </p>
 
 ## 🛰️ PLAYER PROFILE & HUD
@@ -39,23 +39,15 @@
 
 ### 📊 ATTRIBUTE SPECS & EXP LIMITS
 
-<div align="center">
-  <p>
-    <img src="https://progress-bar.dev/100/?scale=100&title=🧠%20INT%20-%20System%20Architecture&width=600&color=BD00FF" alt="System Architecture INT" />
-  </p>
-  <p>
-    <img src="https://progress-bar.dev/90/?scale=100&title=⚡%20AGI%20-%20UI/UX%20Engineering&width=600&color=00F7FF" alt="UI/UX Engineering AGI" />
-  </p>
-  <p>
-    <img src="https://progress-bar.dev/80/?scale=100&title=🛡️%20VIT%20-%20Database%20%26%20Scale&width=600&color=BD00FF" alt="Database & Scale VIT" />
-  </p>
-  <p>
-    <img src="https://progress-bar.dev/80/?scale=100&title=⚔️%20DEX%20-%20Competitive%20Logic&width=600&color=00F7FF" alt="Competitive Logic DEX" />
-  </p>
-</div>
+| Core Stat | Focus Area | Mastery Level | XP Progress Bar |
+| :---: | :--- | :---: | :--- |
+| **🧠 INT** | **System Architecture** | `100%` | `████████████████████` *(MAX)* |
+| **⚡ AGI** | **UI/UX Engineering** | `90%` | `██████████████████░░` |
+| **🛡️ VIT** | **Database & Scale** | `80%` | `████████████████░░░░` |
+| **⚔️ DEX** | **Competitive Logic** | `80%` | `████████████████░░░░` |
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/violet.png" width="100%" />
+  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" />
 </p>
 
 ## 🎒 SYSTEM INVENTORY (EQUIPPED GEAR & TECH ARSENAL)
@@ -79,7 +71,7 @@
 <p align="center"><a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=androidstudio,mysql,postgres,mongodb,firebase,git,vscode,idea" /></a></p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/violet.png" width="100%" />
+  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" />
 </p>
 
 ## 🚀 QUEST LOG (ACTIVE & COMPLETED MISSIONS)
@@ -115,7 +107,7 @@
 
 <br/>
 <p align="center">
-  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/violet.png" width="100%" />
+  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" />
 </p>
 
 ## 🏆 GUILD TROPHY CABINET
@@ -124,7 +116,7 @@
 *   **🎓 Elite Scholar** — *United International University Academic Merit Scholarships*
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/violet.png" width="100%" />
+  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" />
 </p>
 
 ## 📈 SYSTEM TELEMETRY (REAL-TIME LIVE ANALYTICS)
@@ -147,7 +139,7 @@
 </div>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/violet.png" width="100%" />
+  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" />
 </p>
 
 ## 🌐 MULTIPLAYER LOBBY (CONNECT PROTOCOLS)
