@@ -118,7 +118,7 @@
 <div align="center">
 
 <!-- ROW 1: Trophy full width -->
-<img src="https://github-profile-trophy.vercel.app/?username=Anik-tB&theme=radical&no-frame=true&no-bg=true&column=7&margin-w=10&margin-h=10" width="100%"/>
+<img src="https://github-profile-trophy.vercel.app/?username=Anik-tB&theme=radical&no-frame=true&no-bg=true&column=4&margin-w=12&margin-h=12" width="90%"/>
 
 <br/><br/>
 
@@ -341,7 +341,7 @@
 
 <div align="center">
 
-<img src="https://github-profile-trophy.vercel.app/?username=Anik-tB&theme=radical&no-frame=true&no-bg=true&column=4&margin-w=12&margin-h=12&rank=SECRET,SSS,SS,S,AAA,AA,A,B" width="80%"/>
+<img src="https://github-profile-trophy.vercel.app/?username=Anik-tB&theme=radical&no-frame=true&no-bg=true&column=4&margin-w=12&margin-h=12" width="90%"/>
 
 <br/><br/>
 
