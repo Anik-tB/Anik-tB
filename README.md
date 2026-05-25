@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/Anik-tB">
-    <video src="assets/banner.mp4" width="100%" autoplay loop muted playsinline style="border-radius: 12px; border: 2px solid #BD00FF; box-shadow: 0 0 30px rgba(189, 0, 255, 0.4);"></video>
+    <img src="assets/banner.gif" width="100%" alt="Md Abu Sayum Anik RPG Banner" style="border-radius: 12px; border: 2px solid #BD00FF; box-shadow: 0 0 30px rgba(189, 0, 255, 0.4);" />
   </a>
 
   <br/><br/>
