@@ -330,7 +330,7 @@
 
 <div align="center">
 
-<img src="https://github-profile-trophy.vercel.app/?username=Anik-tB&theme=radical&no-frame=true&no-bg=true&column=4&margin-w=12&margin-h=12" width="90%"/>
+<!-- <img src="https://github-profile-trophy.vercel.app/?username=Anik-tB&theme=radical&no-frame=true&no-bg=true&column=4&margin-w=12&margin-h=12" width="90%"/> -->
 
 <br/><br/>
 
