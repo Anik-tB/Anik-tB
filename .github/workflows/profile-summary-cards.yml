@@ -25,15 +25,18 @@ jobs:
         with:
           USERNAME: ${{ github.repository_owner }}
 
-      - name: Download Activity Graph & Streak Stats
+      - name: Download Activity Graph, Streak Stats & RPG HUD
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           mkdir -p assets
           curl -sH "User-Agent: Mozilla/5.0" "https://github-readme-activity-graph.vercel.app/graph?username=Anik-tB&theme=tokyo-night&hide_border=true&bg_color=0D0D0D&color=BD00FF&line=7B2FBE&point=FFFFFF&area=true&area_color=2D0A4E" -o assets/activity-graph.svg
           curl -sH "User-Agent: Mozilla/5.0" "https://streak-stats.demolab.com/?user=Anik-tB&theme=tokyonight&hide_border=true&background=0D0D0D&ring=BD00FF&fire=FF4500&currStreakLabel=BD00FF&sideLabels=BD00FF&sideNums=FFFFFF&currStreakNum=FFFFFF&border_radius=12&dates=888888" -o assets/streak-stats.svg
+          python scripts/generate_rpg_hud.py
 
       - name: Commit and Push Changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/activity-graph.svg assets/streak-stats.svg profile-summary-card-output/
+          git add assets/activity-graph.svg assets/streak-stats.svg assets/rpg-hud.svg profile-summary-card-output/
           git diff --staged --quiet || (git commit -m "chore: update profile assets [skip ci]" && git push origin main)

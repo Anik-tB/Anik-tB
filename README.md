@@ -379,22 +379,18 @@
 ---
 
 <!-- ══════════════════════════════════════════════════════════════════ -->
-<!--                SECTION VI · SNAKE & ACTIVITY                     -->
+<!--             SECTION VI · PLAYER CHARACTER STATUS HUD             -->
 <!-- ══════════════════════════════════════════════════════════════════ -->
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=2" width="100%"/>
 
-<h2 align="center">🐍 COMMIT TRAIL &amp; ACTIVITY MAP</h2>
+<h2 align="center">🔮 PLAYER CHARACTER STATUS HUD</h2>
 
 <br/>
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Anik-tB/Anik-tB/output/github-snake-dark.svg"/>
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Anik-tB/Anik-tB/output/github-snake.svg"/>
-  <img alt="GitHub Contribution Snake" src="https://raw.githubusercontent.com/Anik-tB/Anik-tB/output/github-snake-dark.svg" width="100%"/>
-</picture>
+<img src="assets/rpg-hud.svg" width="100%" alt="Player Character Status HUD"/>
 
 </div>
 
