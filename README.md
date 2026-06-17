@@ -123,7 +123,7 @@
 </td>
 <td width="40%" align="center">
   <strong>⏳ PRODUCTIVE TIME</strong><br/><br/>
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Anik-tB&theme=tokyonight&utcOffset=6" width="100%"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Anik-tB&theme=tokyonight&utcOffset=6&v=2" width="100%"/>
 </td>
 </tr>
 </table>
@@ -133,14 +133,14 @@
 <!-- ROW 2: Profile Details (Full Width) -->
 **📊 MISSION SUMMARY & PROFILE DETAILS**
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Anik-tB&theme=tokyonight" width="100%"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Anik-tB&theme=tokyonight&v=2" width="100%"/>
 
 <br/><br/>
 
 <!-- ROW 3: Activity Graph (Full Width) -->
 **🌐 CONTRIBUTION ACTIVITY MAP**
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Anik-tB&theme=tokyo-night&hide_border=true&bg_color=0D0D0D&color=BD00FF&line=7B2FBE&point=FFFFFF&area=true&area_color=2D0A4E" width="100%"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Anik-tB&theme=tokyo-night&hide_border=true&bg_color=0D0D0D&color=BD00FF&line=7B2FBE&point=FFFFFF&area=true&area_color=2D0A4E&v=2" width="100%"/>
 
 </div>
 
@@ -217,7 +217,7 @@
 <tr>
 <td width="16%" align="center" valign="middle">
 
-<img src="https://img.icons8.com/color/128/galaxy.png" width="75px"/>
+<img src="assets/galaxy.png" width="75px"/>
 
 <br/>
 
@@ -252,7 +252,7 @@
 <tr>
 <td width="16%" align="center" valign="middle">
 
-<img src="https://img.icons8.com/color/128/shield.png" width="75px"/>
+<img src="assets/shield.png" width="75px"/>
 
 <br/>
 
@@ -287,7 +287,7 @@
 <tr>
 <td width="16%" align="center" valign="middle">
 
-<img src="https://img.icons8.com/color/128/factory.png" width="75px"/>
+<img src="assets/factory.png" width="75px"/>
 
 <br/>
 
