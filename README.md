@@ -217,6 +217,41 @@
 <tr>
 <td width="16%" align="center" valign="middle">
 
+<img src="assets/dna-helix.png" width="75px"/>
+
+<br/>
+
+![](https://img.shields.io/badge/🟡-LEGENDARY-FFD700?style=flat-square&labelColor=1A1A2E)
+![](https://img.shields.io/badge/STATUS-ACTIVE_⚡-FF6B00?style=flat-square&labelColor=1A1A2E)
+
+`✦✦✦✦✦ EXPERT`
+`Active Mission`
+
+</td>
+<td valign="top">
+
+### 🧬 QUEST I — GENONEXUS
+
+> *"Build a comprehensive, enterprise-grade genomics and diagnostics ecosystem bridging clinical research, labs, and patients."*
+
+- 🌐 **Three-Portal Ecosystem** — Role-based interfaces for researchers/clinicians (`/dashboard`), patients (`/user/dashboard`), and visitors.
+- ⚙️ **AI Genomics Pipeline** — Virus-agnostic alignment (Needleman-Wunsch) and Random Forest mutation severity scoring.
+- 💊 **Pharmacogenomics Engine** — CPIC/FDA-guided drug-gene mapping to enzyme profiles (CYP2D6, CYP2C19) for precision prescribing.
+- 📊 **Disease Outbreak Predictor** — Real-time forecasting model utilizing WHO and disease.sh APIs with a Python ML regressor.
+- 🎨 **3D Genome Browser** — Renders high-fidelity WebGL chromosome mutation density mapping directly in the browser.
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+<!-- ── QUEST II ─────────────────────────────────────────────────── -->
+
+<table width="100%">
+<tr>
+<td width="16%" align="center" valign="middle">
+
 <img src="assets/galaxy.png" width="75px"/>
 
 <br/>
@@ -230,7 +265,7 @@
 </td>
 <td valign="top">
 
-### 🌌 QUEST I — BEYOND THE GALAXY
+### 🌌 QUEST II — BEYOND THE GALAXY
 
 > *"Design a fully interactive custom JavaFX Desktop RPG engine that redefines what a student showcase can be."*
 
@@ -246,7 +281,7 @@
 
 <br/>
 
-<!-- ── QUEST II ─────────────────────────────────────────────────── -->
+<!-- ── QUEST III ────────────────────────────────────────────────── -->
 
 <table width="100%">
 <tr>
@@ -265,7 +300,7 @@
 </td>
 <td valign="top">
 
-### 🛡️ QUEST II — SAFE SPACE
+### 🛡️ QUEST III — SAFE SPACE
 
 > *"Build a robust, scalable community safety SOS network for real-world crisis response."*
 
@@ -274,41 +309,6 @@
 - 🗺️ **Live Command Map** — Real-time distress heatmaps, incident clustering & analytical dashboards
 - 📡 **Alert Routing Engine** — SMS + push-notification multi-vector alert delivery pipelines
 - 🔐 **Security Layer** — Encrypted incident reports, audit trails & session hardening
-
-</td>
-</tr>
-</table>
-
-<br/>
-
-<!-- ── QUEST III ────────────────────────────────────────────────── -->
-
-<table width="100%">
-<tr>
-<td width="16%" align="center" valign="middle">
-
-<img src="assets/factory.png" width="75px"/>
-
-<br/>
-
-![](https://img.shields.io/badge/🟣-EPIC-9B59B6?style=flat-square&labelColor=1A1A2E)
-![](https://img.shields.io/badge/STATUS-ACTIVE_⚡-FF6B00?style=flat-square&labelColor=1A1A2E)
-
-`✦✦✦✦✧ ADVANCED`
-`Active Mission`
-
-</td>
-<td valign="top">
-
-### 🏭 QUEST III — AI/ML INDUSTRIAL PREDICTION
-
-> *"Integrate AI-driven safety prediction with high-frequency telemetry for industrial worker protection."*
-
-- 📊 **Sensor Streaming Pipeline** — High-throughput ingestion of multi-channel industrial sensor data in real time
-- 🧠 **Predictive Failure Engine** — ML classification models that alert safety teams *before* critical failures occur
-- 📈 **Operational Safety HUD** — High-refresh-rate control-room dashboards built for 24/7 industrial monitoring
-- 🔬 **Model Tuning Lab** — Time-series anomaly detection & ensemble ML for precision improvement
-- 🛰️ **Active Objective** — AI-driven pipelines with automated escalation & incident prevention workflows
 
 </td>
 </tr>
