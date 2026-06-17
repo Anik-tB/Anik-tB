@@ -408,16 +408,9 @@
 
 <div align="center">
 
-```bash
-╔══════════════════════════════════════════════════════════════╗
-║  $ ssh Anik-tB@lobby.github.com                             ║
-║                                                              ║
-║  [AUTH]    Verifying identity module...          [ OK ]      ║
-║  [CORE]    Decrypting secure handshake...        [ OK ]      ║
-║  [LINK]    Establishing connection vectors...    [ OK ]      ║
-║  [READY]   Welcome, Adventurer. Anik-tB is online. ⚡       ║
-╚══════════════════════════════════════════════════════════════╝
-```
+<img src="assets/terminal-lobby.svg" width="100%" alt="Multiplayer Lobby Connection Sequence"/>
+
+<br/>
 
 <br/>
 

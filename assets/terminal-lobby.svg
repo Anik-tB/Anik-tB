@@ -1,0 +1,88 @@
+<svg width="650" height="230" viewBox="0 0 650 230" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&amp;display=swap');
+        
+        .terminal-bg {
+            fill: #09090f;
+            stroke: #BD00FF;
+            stroke-width: 1.5;
+            rx: 12px;
+        }
+        .header-bar {
+            fill: #12121f;
+            rx: 12px 12px 0 0;
+        }
+        .window-dot {
+            r: 6px;
+        }
+        .text-mono {
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 14px;
+            fill: #C9D1D9;
+        }
+        .text-prompt {
+            fill: #00F0FF;
+            font-weight: bold;
+        }
+        .text-cmd {
+            fill: #FFFFFF;
+        }
+        .text-green {
+            fill: #00FF41;
+            text-shadow: 0 0 4px #00FF41;
+        }
+        .text-purple {
+            fill: #BD00FF;
+        }
+        .cursor {
+            fill: #00FF41;
+            animation: blink 1s step-end infinite;
+        }
+        @keyframes blink {
+            50% { fill: transparent; }
+        }
+    </style>
+
+    <!-- Terminal Window -->
+    <rect x="1" y="1" width="648" height="228" class="terminal-bg" />
+    <path d="M 1,12 H 649 V 35 H 1 Z" class="header-bar" />
+
+    <!-- Window Buttons -->
+    <circle cx="20" cy="18" class="window-dot" fill="#FF5F56" />
+    <circle cx="40" cy="18" class="window-dot" fill="#FFBD2E" />
+    <circle cx="60" cy="18" class="window-dot" fill="#27C93F" />
+    <text x="325" y="22" class="text-mono" font-size="12" fill="#888" text-anchor="middle">bash — Anik-tB@lobby</text>
+
+    <!-- Terminal Content -->
+    <g transform="translate(25, 45)">
+        <!-- Command Line -->
+        <text x="0" y="20" class="text-mono">
+            <tspan class="text-prompt">Anik-tB@galaxy:~$</tspan>
+            <tspan class="text-cmd"> ssh Anik-tB@lobby.github.com</tspan>
+        </text>
+
+        <!-- Progress Lines -->
+        <text x="0" y="50" class="text-mono">
+            <tspan fill="#888">[AUTH]</tspan> Verifying identity module...
+            <tspan class="text-green" x="420">[ OK ]</tspan>
+        </text>
+
+        <text x="0" y="80" class="text-mono">
+            <tspan fill="#888">[CORE]</tspan> Decrypting secure handshake...
+            <tspan class="text-green" x="420">[ OK ]</tspan>
+        </text>
+
+        <text x="0" y="110" class="text-mono">
+            <tspan fill="#888">[LINK]</tspan> Establishing connection vectors...
+            <tspan class="text-green" x="420">[ OK ]</tspan>
+        </text>
+
+        <!-- Ready Line -->
+        <text x="0" y="145" class="text-mono">
+            <tspan class="text-purple">[READY]</tspan> Welcome, Adventurer. Anik-tB is online. ⚡
+        </text>
+        
+        <!-- Blinking Cursor -->
+        <rect x="425" y="133" width="8" height="15" class="cursor" />
+    </g>
+</svg>
