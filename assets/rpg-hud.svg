@@ -118,36 +118,36 @@
 
     <!-- Left side: Core Status Bars -->
     <text x="30" y="92" class="text-neon" font-size="15">HP [COMMITS]</text>
-    <text x="340" y="92" class="text-mono" font-size="14" text-anchor="end">520 / 600</text>
+    <text x="340" y="92" class="text-mono" font-size="14" text-anchor="end">242 / 300</text>
     <rect x="30" y="100" width="360" height="15" class="bar-bg" />
-    <rect x="30" y="100" width="312.0" height="15" class="bar-fill-hp" />
+    <rect x="30" y="100" width="290.4" height="15" class="bar-fill-hp" />
 
     <text x="30" y="147" class="text-neon" font-size="15" fill="#BD00FF">MP [STARS]</text>
-    <text x="340" y="147" class="text-mono" font-size="14" text-anchor="end">18 / 50</text>
+    <text x="340" y="147" class="text-mono" font-size="14" text-anchor="end">3 / 50</text>
     <rect x="30" y="155" width="360" height="15" class="bar-bg" />
-    <rect x="30" y="155" width="129.6" height="15" class="bar-fill-mp" />
+    <rect x="30" y="155" width="21.6" height="15" class="bar-fill-mp" />
 
     <text x="30" y="202" class="text-neon" font-size="15" fill="#00F0FF">EXP [REPOSITORIES]</text>
-    <text x="340" y="202" class="text-mono" font-size="14" text-anchor="end">48 / 50</text>
+    <text x="340" y="202" class="text-mono" font-size="14" text-anchor="end">12 / 50</text>
     <rect x="30" y="210" width="360" height="15" class="bar-bg" />
-    <rect x="30" y="210" width="345.6" height="15" class="bar-fill-exp" />
+    <rect x="30" y="210" width="86.4" height="15" class="bar-fill-exp" />
 
     <!-- Center Separator details -->
-    <text x="445" y="92" class="text-header" font-size="14" fill="#00F0FF">LEVEL: 63</text>
+    <text x="445" y="92" class="text-header" font-size="14" fill="#00F0FF">LEVEL: 24</text>
     <text x="445" y="112" class="text-mono" font-size="13" fill="#8888aa">CLASS: FULL-STACK ENGINEER</text>
 
     <!-- Right side: RPG Attributes -->
     <text x="445" y="150" class="text-mono" font-size="15">STR (Strength)  :</text>
-    <text x="600" y="150" class="text-mono text-green" font-size="15" font-weight="bold">520</text>
+    <text x="600" y="150" class="text-mono text-green" font-size="15" font-weight="bold">242</text>
 
     <text x="445" y="175" class="text-mono" font-size="15">AGI (Agility)   :</text>
-    <text x="600" y="175" class="text-mono text-green" font-size="15" font-weight="bold">106</text>
+    <text x="600" y="175" class="text-mono text-green" font-size="15" font-weight="bold">10</text>
 
     <text x="445" y="200" class="text-mono" font-size="15">INT (Intellect) :</text>
-    <text x="600" y="200" class="text-mono text-green" font-size="15" font-weight="bold">255</text>
+    <text x="600" y="200" class="text-mono text-green" font-size="15" font-weight="bold">75</text>
 
     <text x="445" y="225" class="text-mono" font-size="15">VIT (Vitality)  :</text>
-    <text x="600" y="225" class="text-mono text-green" font-size="15" font-weight="bold">96</text>
+    <text x="600" y="225" class="text-mono text-green" font-size="15" font-weight="bold">12</text>
 
     <text x="445" y="250" class="text-mono" font-size="15">LUK (Luck)      :</text>
     <text x="600" y="250" class="text-mono text-green" font-size="15" font-weight="bold">35</text>
