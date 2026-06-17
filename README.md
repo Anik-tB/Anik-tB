@@ -119,7 +119,7 @@
 <tr>
 <td width="60%" align="center">
   <strong>🔥 COMBAT STREAK</strong><br/><br/>
-  <img src="https://streak-stats.demolab.com?user=Anik-tB&theme=tokyonight&hide_border=true&background=0D0D0D&ring=BD00FF&fire=FF4500&currStreakLabel=BD00FF&sideLabels=BD00FF&sideNums=FFFFFF&currStreakNum=FFFFFF&border_radius=12&dates=888888" width="100%"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Anik-tB&theme=tokyonight&hide_border=true&background=0D0D0D&ring=BD00FF&fire=FF4500&currStreakLabel=BD00FF&sideLabels=BD00FF&sideNums=FFFFFF&currStreakNum=FFFFFF&border_radius=12&dates=888888" width="100%"/>
 </td>
 <td width="40%" align="center">
   <strong>⏳ PRODUCTIVE TIME</strong><br/><br/>
@@ -217,7 +217,7 @@
 <tr>
 <td width="16%" align="center" valign="middle">
 
-<img src="https://img.icons8.com/external-flatart-icons-flat-flatarticons/128/external-galaxy-space-flatart-icons-flat-flatarticons.png" width="75px"/>
+<img src="https://img.icons8.com/color/128/galaxy.png" width="75px"/>
 
 <br/>
 
@@ -252,7 +252,7 @@
 <tr>
 <td width="16%" align="center" valign="middle">
 
-<img src="https://img.icons8.com/external-flatart-icons-flat-flatarticons/128/external-shield-security-flatart-icons-flat-flatarticons-2.png" width="75px"/>
+<img src="https://img.icons8.com/color/128/shield.png" width="75px"/>
 
 <br/>
 
@@ -287,7 +287,7 @@
 <tr>
 <td width="16%" align="center" valign="middle">
 
-<img src="https://img.icons8.com/external-flatart-icons-flat-flatarticons/128/external-factory-industrial-production-flatart-icons-flat-flatarticons.png" width="75px"/>
+<img src="https://img.icons8.com/color/128/factory.png" width="75px"/>
 
 <br/>
 
