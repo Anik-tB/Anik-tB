@@ -118,9 +118,9 @@
 
     <!-- Left side: Core Status Bars -->
     <text x="30" y="92" class="text-neon" font-size="15">HP [COMMITS]</text>
-    <text x="340" y="92" class="text-mono" font-size="14" text-anchor="end">243 / 300</text>
+    <text x="340" y="92" class="text-mono" font-size="14" text-anchor="end">258 / 300</text>
     <rect x="30" y="100" width="360" height="15" class="bar-bg" />
-    <rect x="30" y="100" width="291.6" height="15" class="bar-fill-hp" />
+    <rect x="30" y="100" width="309.6" height="15" class="bar-fill-hp" />
 
     <text x="30" y="147" class="text-neon" font-size="15" fill="#BD00FF">MP [STARS]</text>
     <text x="340" y="147" class="text-mono" font-size="14" text-anchor="end">3 / 50</text>
@@ -138,7 +138,7 @@
 
     <!-- Right side: RPG Attributes -->
     <text x="445" y="150" class="text-mono" font-size="15">STR (Strength)  :</text>
-    <text x="600" y="150" class="text-mono text-green" font-size="15" font-weight="bold">243</text>
+    <text x="600" y="150" class="text-mono text-green" font-size="15" font-weight="bold">258</text>
 
     <text x="445" y="175" class="text-mono" font-size="15">AGI (Agility)   :</text>
     <text x="600" y="175" class="text-mono text-green" font-size="15" font-weight="bold">10</text>
