@@ -1,38 +1,41 @@
 <!-- ══════════════════════════════════════════════════════════════════ -->
-<!--              ANIK-tB ⟡ GITHUB PROFILE README v3.0                -->
+<!--              ANIK-tB ⟡ GITHUB PROFILE README v4.0                -->
+<!--       Full-Stack & Mobile Architect · Systems & OOP Specialist    -->
 <!-- ══════════════════════════════════════════════════════════════════ -->
 
 <div align="center">
 
-<!-- ANIMATED BANNER -->
+<!-- HERO BANNER -->
 <a href="https://github.com/Anik-tB">
-  <img src="assets/banner.gif" width="100%" alt="Anik-tB Banner"/>
+  <img src="assets/banner.gif" width="100%" alt="Md Abu Sayum Anik Banner"/>
 </a>
 
 <br/><br/>
 
-<!-- BOOT SEQUENCE -->
-<img src="https://readme-typing-svg.herokuapp.com?font=Share+Tech+Mono&size=13&pause=1000&color=00FF41&center=true&vCenter=true&width=650&lines=%5BSYSTEM+BOOT%5D+Loading+identity+module...;%5BCORE+LOADED%5D+All+systems+nominal.;%5BONLINE%5D+Welcome%2C+Adventurer.+Anik-tB+is+ready.+%E2%9A%A1" />
+<!-- TECHNICAL IDENTITY HEADER -->
+<h1>Md Abu Sayum Anik</h1>
+<p>
+  <strong>Software Architect ⟡ Full-Stack &amp; Mobile Engineer ⟡ System Design Specialist</strong>
+</p>
 
-<br/><br/>
+<p>
+  🏆 <strong>1st Place Champion</strong> · <em>Beyond The Galaxy AOOP Showcase (50+ Dev Teams)</em> &nbsp;|&nbsp; 
+  🎓 <strong>UIU Academic Merit Scholar</strong> &nbsp;|&nbsp; 
+  📍 <strong>Dhaka, Bangladesh</strong>
+</p>
 
-<!-- ANIMATED ROLES -->
-<img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=700&size=22&duration=2000&pause=600&color=BD00FF&center=true&vCenter=true&width=900&lines=%E2%9A%94%EF%B8%8F+Beyond+The+Galaxy+Showcase+Champion+%5BLEGENDARY%5D;%F0%9F%A7%AA+System+Design+%26+OOP+Architect;%F0%9F%92%BB+Full+Stack+%26+Android+Engineer;%F0%9F%8E%AE+Crafting+Immersive+High-Fidelity+Software;%F0%9F%9B%B0%EF%B8%8F+Scalable+Distributed+System+Builder" />
-
-<br/><br/>
-
-<!-- BADGE ROW -->
+<!-- STATUS & METRIC PILLS -->
 <a href="https://github.com/Anik-tB">
-  <img src="https://komarev.com/ghpvc/?username=Anik-tB&label=PROFILE+VIEWS&color=BD00FF&style=for-the-badge" />
+  <img src="https://komarev.com/ghpvc/?username=Anik-tB&label=PROFILE+VIEWS&color=BD00FF&style=for-the-badge" alt="Profile Views" />
 </a>
 &nbsp;
 <a href="https://github.com/Anik-tB?tab=followers">
-  <img src="https://img.shields.io/github/followers/Anik-tB?label=FOLLOWERS&style=for-the-badge&color=6A0DAD&labelColor=0D0D0D" />
+  <img src="https://img.shields.io/github/followers/Anik-tB?label=FOLLOWERS&style=for-the-badge&color=6A0DAD&labelColor=0D0D0D" alt="Followers" />
 </a>
 &nbsp;
-<img src="https://img.shields.io/badge/STATUS-⚡_ONLINE-00FF41?style=for-the-badge&labelColor=0D0D0D" />
+<img src="https://img.shields.io/badge/STATUS-⚡_ONLINE-00FF41?style=for-the-badge&labelColor=0D0D0D" alt="Status Online" />
 &nbsp;
-<img src="https://img.shields.io/badge/OPEN_TO-COLLABORATE-BD00FF?style=for-the-badge&labelColor=0D0D0D" />
+<img src="https://img.shields.io/badge/AVAILABLE_FOR-HIGH--IMPACT_ROLES-BD00FF?style=for-the-badge&labelColor=0D0D0D" alt="Available for Roles" />
 
 </div>
 
@@ -41,53 +44,47 @@
 ---
 
 <!-- ══════════════════════════════════════════════════════════════════ -->
-<!--                    SECTION I · PLAYER PROFILE                    -->
+<!--                    SECTION I · TECHNICAL DOSSIER                  -->
 <!-- ══════════════════════════════════════════════════════════════════ -->
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=2" width="100%"/>
-
-<h2 align="center">🛰️ PLAYER PROFILE &amp; IDENTITY MODULE</h2>
+<h2 align="center">🛰️ TECHNICAL DOSSIER &amp; ARCHITECT SPEC</h2>
 
 <br/>
 
 <div align="center">
-<table border="0" cellspacing="0" cellpadding="0">
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
 <tr>
 <td width="55%" valign="top">
 
 ```yaml
-# ── IDENTITY CARD ────────────────────────────────────
-  Name      :  Md Abu Sayum Anik
-  Alias     :  Anik-tB
-  Class     :  Full-Stack & Mobile Architect
-  Level     :  23
-  Guild     :  United International University
-  Degree    :  BSc — Computer Science & Engineering
-  Region    :  Dhaka, Bangladesh 🇧🇩
-  Timezone  :  UTC+6 · BDT
+# ── SYSTEM IDENTITY ───────────────────────────────────
+  Architect  :  Md Abu Sayum Anik
+  Handle     :  @Anik-tB
+  Discipline :  Full-Stack, Mobile & Distributed Systems
+  Institution:  United International University (UIU)
+  Degree     :  B.Sc. in Computer Science & Engineering
+  Location   :  Dhaka, Bangladesh 🇧🇩 (UTC+6)
 
-# ── SKILL STATS ──────────────────────────────────────
-  System Architecture  ████████████  100%  ★ MAX
-  Mobile Engineering   ███████████░   90%
-  UI/UX Engineering    ███████████░   90%
-  Database & Scale     █████████░░░   80%
-  Competitive Logic    █████████░░░   80%
+# ── CORE ARCHITECTURAL PARADIGMS ──────────────────────
+  Design     :  GoF Patterns · MVC · Strategy · Observer
+  Engineering:  Asynchronous Concurrency & Event Loops
+  Clean Arch :  Modular Decoupling & High Cohesion
+  UI / UX    :  High-Fidelity Gamified & Reactive Interfaces
 
-# ── PASSIVE TRAITS ───────────────────────────────────
-  [ LEGENDARY ] Showcase Champion · Beyond The Galaxy
-  [ EPIC      ] OOP & Design Patterns Overlord
-  [ EPIC      ] Gamified UI Engineering Specialist
-  [ RARE      ] Asynchronous Systems Designer
+# ── VERIFIED HONORS & RANK ────────────────────────────
+  [ 🥇 CHAMPION ] Beyond The Galaxy AOOP Showcase (1st / 50+)
+  [ 🥈 RUNNER-UP] Brainwave Microcontroller Hackathon
+  [ 🎓 SCHOLAR  ] Consecutive Academic Merit Scholarship
 ```
 
 </td>
 <td width="45%" valign="middle" align="center">
 
-<img src="https://ghrs.vercel.app/api?username=Anik-tB&show_icons=true&count_private=true&theme=tokyonight&hide_border=true&bg_color=0D0D0D&title_color=BD00FF&icon_color=BD00FF&text_color=C9D1D9&ring_color=BD00FF&border_radius=12" width="100%"/>
+<img src="https://ghrs.vercel.app/api?username=Anik-tB&show_icons=true&count_private=true&theme=tokyonight&hide_border=true&bg_color=0D0D0D&title_color=BD00FF&icon_color=BD00FF&text_color=C9D1D9&ring_color=BD00FF&border_radius=12" width="100%" alt="GitHub Overall Stats"/>
 
 <br/>
 
-<img src="https://ghrs.vercel.app/api/top-langs/?username=Anik-tB&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D0D0D&title_color=BD00FF&text_color=C9D1D9&border_radius=12&langs_count=6" width="100%"/>
+<img src="https://ghrs.vercel.app/api/top-langs/?username=Anik-tB&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D0D0D&title_color=BD00FF&text_color=C9D1D9&border_radius=12&langs_count=6" width="100%" alt="Top Languages"/>
 
 </td>
 </tr>
@@ -99,48 +96,47 @@
 ---
 
 <!-- ══════════════════════════════════════════════════════════════════ -->
-<!--                  SECTION II · SYSTEM TELEMETRY HUD               -->
+<!--                SECTION II · LIVE TELEMETRY CONSOLE               -->
 <!-- ══════════════════════════════════════════════════════════════════ -->
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=2" width="100%"/>
-
-<h2 align="center">📡 SYSTEM TELEMETRY — LIVE HUD</h2>
-
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Share+Tech+Mono&size=13&pause=1000&color=00FF41&center=true&vCenter=true&width=600&lines=%5BTELEMETRY%5D+Fetching+live+combat+data...;%5BCORE%5D+Stats+module+loaded+successfully.;%5BHUD%5D+All+systems+online.+Displaying+metrics." />
-</p>
-
-<br/>
+<h2 align="center">📡 ENGINEERING TELEMETRY &amp; VELOCITY</h2>
 
 <div align="center">
 
-<!-- ROW 1: Streak & Productive Time (Side-by-Side) -->
-<table border="0" cellspacing="0" cellpadding="4" align="center">
+<!-- BESPOKE ARCHITECT HUD -->
+<img src="assets/rpg-hud.svg" width="100%" alt="Architect Telemetry Console HUD"/>
+
+<br/><br/>
+
+<!-- DYNAMIC CONTRIBUTION SNAKE -->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
 <tr>
-<td width="60%" align="center">
-  <strong>🔥 COMBAT STREAK</strong><br/><br/>
-  <img src="assets/streak-stats.svg" width="100%"/>
-</td>
-<td width="40%" align="center">
-  <strong>⏳ PRODUCTIVE TIME</strong><br/><br/>
-  <img src="profile-summary-card-output/tokyonight/4-productive-time.svg" width="100%"/>
+<td align="center">
+  <strong>🐍 CONTRIBUTION VELOCITY (LIVE ACTIVITY MAP)</strong><br/><br/>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Anik-tB/Anik-tB/output/github-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Anik-tB/Anik-tB/output/github-snake.svg" />
+    <img alt="GitHub Contribution Snake Animation" src="https://raw.githubusercontent.com/Anik-tB/Anik-tB/output/github-snake-dark.svg" width="100%" />
+  </picture>
 </td>
 </tr>
 </table>
 
 <br/>
 
-<!-- ROW 2: Profile Details (Full Width) -->
-**📊 MISSION SUMMARY & PROFILE DETAILS**
-
-<img src="profile-summary-card-output/tokyonight/0-profile-details.svg" width="100%"/>
-
-<br/><br/>
-
-<!-- ROW 3: Activity Graph (Full Width) -->
-**🌐 CONTRIBUTION ACTIVITY MAP**
-
-<img src="assets/activity-graph.svg" width="100%"/>
+<!-- ROW: COMBAT STREAK & PRODUCTIVE TIME -->
+<table border="0" cellspacing="0" cellpadding="4" width="100%">
+<tr>
+<td width="55%" align="center" valign="top">
+  <strong>🔥 DEVELOPMENT STREAK METRICS</strong><br/><br/>
+  <img src="assets/streak-stats.svg" width="100%" alt="GitHub Streak Stats"/>
+</td>
+<td width="45%" align="center" valign="top">
+  <strong>⏳ PRODUCTIVE VELOCITY CYCLE</strong><br/><br/>
+  <img src="profile-summary-card-output/tokyonight/4-productive-time.svg" width="100%" alt="Productive Time Card"/>
+</td>
+</tr>
+</table>
 
 </div>
 
@@ -149,50 +145,154 @@
 ---
 
 <!-- ══════════════════════════════════════════════════════════════════ -->
-<!--                  SECTION III · SKILL ARSENAL                     -->
+<!--            SECTION III · FLAGSHIP ENGINEERING SYSTEMS            -->
 <!-- ══════════════════════════════════════════════════════════════════ -->
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=2" width="100%"/>
+<h2 align="center">🚀 FLAGSHIP ARCHITECTURAL SYSTEMS</h2>
 
-<h2 align="center">🎒 SYSTEM INVENTORY &amp; ARSENAL</h2>
+<br/>
+
+<!-- ── SYSTEM I: GENONEXUS ──────────────────────────────────────── -->
+<table width="100%">
+<tr>
+<td width="18%" align="center" valign="middle">
+  <img src="assets/dna-helix.png" width="85px" alt="GenoNexus Icon"/><br/><br/>
+  <img src="https://img.shields.io/badge/PRODUCTION-ACTIVE-FF6B00?style=for-the-badge&labelColor=0D0D0D" alt="Active Status"/>
+  <br/>
+  <code>BIOINFORMATICS</code><br/>
+  <code>CLINICAL AI</code>
+</td>
+<td valign="top">
+
+### 🧬 GenoNexus — Enterprise Clinical Genomics &amp; Diagnostics Ecosystem
+> *Comprehensive precision genomics infrastructure bridging clinical researchers, molecular diagnostic laboratories, and patient care.*
+
+- 🌐 **Tri-Portal Architecture** — Role-governed portals with fine-grained access control: Clinical Research (`/dashboard`), Patient Health (`/user/dashboard`), and Public Gateway.
+- ⚙️ **AI Genomic Pipeline** — High-performance Needleman-Wunsch viral-agnostic sequence alignment paired with a Random Forest mutation severity scoring engine.
+- 💊 **Pharmacogenomics Engine** — Automated CPIC &amp; FDA guideline mapping to enzyme phenotypes (`CYP2D6`, `CYP2C19`) for risk-free precision drug prescribing.
+- 📊 **Epidemic Forecasting Regressor** — Outbreak prediction engine ingesting global real-time epidemiological feeds with automated risk index estimation.
+- 🎨 **WebGL 3D Chromosome Browser** — Client-side GPU-accelerated visualization mapping chromosome mutation loci and structural variations directly in the browser.
+
+`Next.js` · `TypeScript` · `Python (NumPy / SciPy)` · `WebGL` · `PostgreSQL` · `TailwindCSS`
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+<!-- ── SYSTEM II: BEYOND THE GALAXY ─────────────────────────────── -->
+<table width="100%">
+<tr>
+<td width="18%" align="center" valign="middle">
+  <img src="assets/galaxy.png" width="85px" alt="Beyond The Galaxy Icon"/><br/><br/>
+  <img src="https://img.shields.io/badge/🥇_CHAMPION-1ST_PLACE-FFD700?style=for-the-badge&labelColor=0D0D0D" alt="Champion Title"/>
+  <br/>
+  <code>GAME ENGINE</code><br/>
+  <code>OOP ARCHITECTURE</code>
+</td>
+<td valign="top">
+
+### 🌌 Beyond The Galaxy — Custom Asynchronous JavaFX RPG Engine
+> *Award-winning desktop role-playing game engine engineered with advanced object-oriented design patterns, state machines, and asynchronous concurrency.*
+
+- 🏆 **1st Place Champion** — Ranked **#1 out of 50+ competitive developer guilds** at the Beyond The Galaxy AOOP Showcase.
+- ⚙️ **Asynchronous Battle Engine** — Deterministic turn-based combat system driven by a non-blocking multithreaded game state machine.
+- 🏪 **Transactional Player Economy** — In-game marketplace with full transactional ACID-like inventory persistence and trade verification.
+- 🧠 **Design Pattern Masterclass** — Seamlessly decoupled engine architecture orchestrating **MVC + Strategy + Observer + Abstract Factory + Command** patterns.
+- 🎮 **Procedural World Generation** — Algorithmic dungeon generation, dynamic NPC dialogue trees, and modular talent progression trees.
+
+`Java` · `JavaFX` · `Multithreading & Concurrency` · `Design Patterns` · `File I/O Persistence`
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+<!-- ── SYSTEM III: SAFE SPACE ───────────────────────────────────── -->
+<table width="100%">
+<tr>
+<td width="18%" align="center" valign="middle">
+  <img src="assets/shield.png" width="85px" alt="Safe Space Icon"/><br/><br/>
+  <img src="https://img.shields.io/badge/SYSTEM-ENTERPRISE-BD00FF?style=for-the-badge&labelColor=0D0D0D" alt="Enterprise Badge"/>
+  <br/>
+  <code>PUBLIC SAFETY</code><br/>
+  <code>REAL-TIME GEO</code>
+</td>
+<td valign="top">
+
+### 🛡️ Safe Space — Real-Time Community Crisis Response Network
+> *High-reliability emergency SOS network and analytical incident dispatch system designed for rapid crisis coordination.*
+
+- 🚨 **Instant Geo-SOS Beacon** — Low-latency distress signaling streaming real-time geolocation coordinates directly to emergency personnel.
+- 🗺️ **Command &amp; Dispatch Heatmap** — Real-time geospatial incident clustering and analytical threat visualization for emergency operations.
+- 📡 **Multi-Vector Alert Pipeline** — Resilient dual-path notification system featuring automated SMS failover alongside push-notification vectors.
+- 🔐 **Zero-Trust Security &amp; Audit** — Multi-tier JWT authorization (Civilian / Responder / Admin) with encrypted incident logs and audit trails.
+
+`Android (Kotlin)` · `Node.js` · `Firebase & WebSockets` · `Google Maps SDK` · `JWT` · `REST API`
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+---
+
+<!-- ══════════════════════════════════════════════════════════════════ -->
+<!--               SECTION IV · TECHNICAL ARSENAL                     -->
+<!-- ══════════════════════════════════════════════════════════════════ -->
+
+<h2 align="center">🎒 TECHNICAL ARSENAL &amp; SYSTEM STACK</h2>
 
 <br/>
 
 <div align="center">
 
-### ⚔️ CORE LANGUAGE WEAPONS
-
-| &nbsp; | WEAPON | TYPE | MASTERY |
-|:---:|:---|:---|:---:|
-| 🟡 `LEGENDARY` | **Java** — *The Greatsword* | Compiled OOP · JVM Domination | `MAX ★★★★★` |
-| 🟣 `EPIC` | **Kotlin** — *The Aegis* | Modern Mobile · Null Safety | `Lvl 9 ★★★★☆` |
-| 🟣 `EPIC` | **TypeScript / JS** — *The Spellbook* | Full-Stack Scripting · Async Logic | `Lvl 9 ★★★★☆` |
-| 🟣 `EPIC` | **Python** — *The Serpent* | AI/ML · Automation · Data | `Lvl 9 ★★★★☆` |
-| 🔵 `RARE` | **PHP** — *The Catalyst* | Backend Elixir · Rapid API | `Lvl 8 ★★★★☆` |
-| 🔵 `RARE` | **C++** — *The Reflex* | Low-Level · Memory & Speed | `Lvl 8 ★★★☆☆` |
+<table border="0" cellspacing="0" cellpadding="8" width="100%">
+<tr>
+<th align="left" width="30%">DOMAIN</th>
+<th align="left" width="45%">TECHNOLOGIES &amp; FRAMEWORKS</th>
+<th align="center" width="25%">MASTERY LEVEL</th>
+</tr>
+<tr>
+<td><strong>Core Systems &amp; Languages</strong></td>
+<td><code>Java</code> · <code>Kotlin</code> · <code>TypeScript</code> · <code>Python</code> · <code>C++</code> · <code>PHP</code> · <code>SQL</code></td>
+<td><code>★★★★★ ARCHITECT</code></td>
+</tr>
+<tr>
+<td><strong>Mobile &amp; App Engineering</strong></td>
+<td><code>Android SDK</code> · <code>Jetpack</code> · <code>Kotlin Coroutines</code> · <code>Android Studio</code></td>
+<td><code>★★★★☆ ADVANCED</code></td>
+</tr>
+<tr>
+<td><strong>Frontend &amp; Visualization</strong></td>
+<td><code>Next.js</code> · <code>React</code> · <code>TailwindCSS</code> · <code>WebGL</code> · <code>JavaFX</code> · <code>HTML5/CSS3</code></td>
+<td><code>★★★★☆ ADVANCED</code></td>
+</tr>
+<tr>
+<td><strong>Backend &amp; Distributed Systems</strong></td>
+<td><code>Node.js</code> · <code>Express</code> · <code>REST APIs</code> · <code>WebSockets</code> · <code>Multithreading</code></td>
+<td><code>★★★★☆ ADVANCED</code></td>
+</tr>
+<tr>
+<td><strong>Data Stores &amp; Caching</strong></td>
+<td><code>PostgreSQL</code> · <code>MySQL</code> · <code>MongoDB</code> · <code>Redis</code> · <code>Firebase Firestore</code></td>
+<td><code>★★★★☆ ADVANCED</code></td>
+</tr>
+<tr>
+<td><strong>Infrastructure &amp; DevOps</strong></td>
+<td><code>Git / GitHub Actions</code> · <code>Docker</code> · <code>Linux</code> · <code>Postman</code> · <code>Figma</code> · <code>VS Code / IDEA</code></td>
+<td><code>★★★★☆ ADVANCED</code></td>
+</tr>
+</table>
 
 <br/>
 
-### 🔮 FULL STACK RELICS
-
+<!-- CLEAN ICON PILLS -->
 <a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=react,nextjs,nodejs,express,html,css,tailwind&perline=7" />
-</a>
-
-<br/><br/>
-
-### ⚡ MOBILE · DATABASE · DEVOPS
-
-<a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=androidstudio,kotlin,java,firebase,mysql,postgres,mongodb,redis&perline=8" />
-</a>
-
-<br/><br/>
-
-### 🛠️ TOOLS & FORGE
-
-<a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=git,github,docker,linux,vscode,idea,figma,postman&perline=8" />
+  <img src="https://skillicons.dev/icons?i=java,kotlin,ts,js,py,cpp,androidstudio,react,nextjs,nodejs,express,tailwind,postgres,mysql,mongodb,redis,firebase,docker,git,linux&perline=10" alt="Tech Stack Icons" />
 </a>
 
 </div>
@@ -202,176 +302,51 @@
 ---
 
 <!-- ══════════════════════════════════════════════════════════════════ -->
-<!--                   SECTION IV · QUEST LOG                         -->
+<!--                SECTION V · HONORS & ACCREDITATIONS               -->
 <!-- ══════════════════════════════════════════════════════════════════ -->
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=2" width="100%"/>
-
-<h2 align="center">🚀 QUEST LOG &amp; MISSION BOARD</h2>
-
-<br/>
-
-<!-- ── QUEST I ──────────────────────────────────────────────────── -->
-
-<table width="100%">
-<tr>
-<td width="16%" align="center" valign="middle">
-
-<img src="assets/dna-helix.png" width="75px"/>
-
-<br/>
-
-![](https://img.shields.io/badge/🟡-LEGENDARY-FFD700?style=flat-square&labelColor=1A1A2E)
-![](https://img.shields.io/badge/STATUS-ACTIVE_⚡-FF6B00?style=flat-square&labelColor=1A1A2E)
-
-`✦✦✦✦✦ EXPERT`
-`Active Mission`
-
-</td>
-<td valign="top">
-
-### 🧬 QUEST I — GENONEXUS
-
-> *"Build a comprehensive, enterprise-grade genomics and diagnostics ecosystem bridging clinical research, labs, and patients."*
-
-- 🌐 **Three-Portal Ecosystem** — Role-based interfaces for researchers/clinicians (`/dashboard`), patients (`/user/dashboard`), and visitors.
-- ⚙️ **AI Genomics Pipeline** — Virus-agnostic alignment (Needleman-Wunsch) and Random Forest mutation severity scoring.
-- 💊 **Pharmacogenomics Engine** — CPIC/FDA-guided drug-gene mapping to enzyme profiles (CYP2D6, CYP2C19) for precision prescribing.
-- 📊 **Disease Outbreak Predictor** — Real-time forecasting model utilizing WHO and disease.sh APIs with a Python ML regressor.
-- 🎨 **3D Genome Browser** — Renders high-fidelity WebGL chromosome mutation density mapping directly in the browser.
-
-</td>
-</tr>
-</table>
-
-<br/>
-
-<!-- ── QUEST II ─────────────────────────────────────────────────── -->
-
-<table width="100%">
-<tr>
-<td width="16%" align="center" valign="middle">
-
-<img src="assets/galaxy.png" width="75px"/>
-
-<br/>
-
-![](https://img.shields.io/badge/🟡-LEGENDARY-FFD700?style=flat-square&labelColor=1A1A2E)
-![](https://img.shields.io/badge/STATUS-COMPLETED_🏆-00FF41?style=flat-square&labelColor=1A1A2E)
-
-`✦✦✦✦✦ EXPERT`
-`+5,000 XP`
-
-</td>
-<td valign="top">
-
-### 🌌 QUEST II — BEYOND THE GALAXY
-
-> *"Design a fully interactive custom JavaFX Desktop RPG engine that redefines what a student showcase can be."*
-
-- 🥇 **LEGENDARY BOSS DROP** — 1st Place among **50+ developer guilds** at Beyond The Galaxy AOOP Showcase
-- ⚙️ **Asynchronous Battle Engine** — Complex multi-player turn-based algorithms with real-time state machines
-- 🏪 **Player Economy System** — Fully transactional in-game marketplace with inventory persistence & trade logic
-- 🧠 **Architecture Overlord** — Fused **MVC + Strategy + Observer + Factory** patterns into one cohesive engine
-- 🎮 **World Systems** — Dynamic dungeon generation, character leveling, quest branches & dialogue trees
-
-</td>
-</tr>
-</table>
-
-<br/>
-
-<!-- ── QUEST III ────────────────────────────────────────────────── -->
-
-<table width="100%">
-<tr>
-<td width="16%" align="center" valign="middle">
-
-<img src="assets/shield.png" width="75px"/>
-
-<br/>
-
-![](https://img.shields.io/badge/🟣-EPIC-9B59B6?style=flat-square&labelColor=1A1A2E)
-![](https://img.shields.io/badge/STATUS-ACTIVE_⚡-FF6B00?style=flat-square&labelColor=1A1A2E)
-
-`✦✦✦✦✧ ADVANCED`
-`Active Mission`
-
-</td>
-<td valign="top">
-
-### 🛡️ QUEST III — SAFE SPACE
-
-> *"Build a robust, scalable community safety SOS network for real-world crisis response."*
-
-- 🚨 **Instant SOS Beacon** — Geo-tagged incident distress signals with real-time location tracking
-- 🔑 **Multi-Tier Auth System** — Role-based authorization (Admin / Responder / Civilian) with JWT
-- 🗺️ **Live Command Map** — Real-time distress heatmaps, incident clustering & analytical dashboards
-- 📡 **Alert Routing Engine** — SMS + push-notification multi-vector alert delivery pipelines
-- 🔐 **Security Layer** — Encrypted incident reports, audit trails & session hardening
-
-</td>
-</tr>
-</table>
-
-<br/>
-
----
-
-<!-- ══════════════════════════════════════════════════════════════════ -->
-<!--                  SECTION V · TROPHY CABINET                      -->
-<!-- ══════════════════════════════════════════════════════════════════ -->
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=2" width="100%"/>
-
-<h2 align="center">🏆 GUILD TROPHY CABINET</h2>
+<h2 align="center">🏆 HONORS, AWARDS &amp; ACCREDITATIONS</h2>
 
 <br/>
 
 <div align="center">
-
-<!-- <img src="https://github-profile-trophy.vercel.app/?username=Anik-tB&theme=radical&no-frame=true&no-bg=true&column=4&margin-w=12&margin-h=12" width="90%"/> -->
-
-<br/><br/>
-
-<table>
+<table border="0" cellspacing="0" cellpadding="8" width="100%">
 <tr>
 <td align="center" width="33%">
 
-<img src="https://img.icons8.com/emoji/96/trophy-emoji.png" width="55px"/>
+<img src="https://img.icons8.com/emoji/96/trophy-emoji.png" width="55px" alt="Trophy"/><br/>
 
-**🥇 CHAMPION TITLE**
-*Beyond The Galaxy AOOP Showcase*
-`JavaFX · RPG Engine · Design Patterns`
+**🥇 1ST PLACE CHAMPION**  
+*Beyond The Galaxy AOOP Showcase*  
+`JavaFX · Custom Game Engine · OOP Patterns`
 
-![](https://img.shields.io/badge/RANK-LEGENDARY-FFD700?style=flat-square&labelColor=1A1A2E)
+![](https://img.shields.io/badge/RANK-CHAMPION-FFD700?style=for-the-badge&labelColor=0D0D0D)
 
 </td>
 <td align="center" width="33%">
 
-<img src="https://img.icons8.com/emoji/96/2nd-place-medal-emoji.png" width="55px"/>
+<img src="https://img.icons8.com/emoji/96/2nd-place-medal-emoji.png" width="55px" alt="2nd Place"/><br/>
 
-**🥈 1ST RUNNER UP**
-*Brainwave Microcontroller Hackathon*
-`Embedded Systems · Hardware`
+**🥈 1ST RUNNER UP**  
+*Brainwave Microcontroller Hackathon*  
+`Embedded Systems · Hardware Interfacing`
 
-![](https://img.shields.io/badge/RANK-EPIC-9B59B6?style=flat-square&labelColor=1A1A2E)
+![](https://img.shields.io/badge/RANK-RUNNER--UP-BD00FF?style=for-the-badge&labelColor=0D0D0D)
 
 </td>
 <td align="center" width="33%">
 
-<img src="https://img.icons8.com/emoji/96/graduation-cap-emoji.png" width="55px"/>
+<img src="https://img.icons8.com/emoji/96/graduation-cap-emoji.png" width="55px" alt="Scholarship"/><br/>
 
-**🎓 ELITE SCHOLAR**
-*UIU Academic Merit Scholarship*
-`Consecutive Academic Excellence`
+**🎓 ACADEMIC MERIT SCHOLAR**  
+*United International University*  
+`Consecutive Academic & Engineering Excellence`
 
-![](https://img.shields.io/badge/RANK-EPIC-9B59B6?style=flat-square&labelColor=1A1A2E)
+![](https://img.shields.io/badge/HONOR-MERIT_SCHOLAR-00F0FF?style=for-the-badge&labelColor=0D0D0D)
 
 </td>
 </tr>
 </table>
-
 </div>
 
 <br/>
@@ -379,60 +354,39 @@
 ---
 
 <!-- ══════════════════════════════════════════════════════════════════ -->
-<!--             SECTION VI · PLAYER CHARACTER STATUS HUD             -->
+<!--                   SECTION VI · CONNECT & COLLABORATE             -->
 <!-- ══════════════════════════════════════════════════════════════════ -->
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=2" width="100%"/>
-
-<h2 align="center">🔮 PLAYER CHARACTER STATUS HUD</h2>
-
-<br/>
+<h2 align="center">🌐 CONNECT &amp; COLLABORATE</h2>
 
 <div align="center">
 
-<img src="assets/rpg-hud.svg" width="100%" alt="Player Character Status HUD"/>
+<!-- TERMINAL LOBBY -->
+<img src="assets/terminal-lobby.svg" width="650px" alt="Connection Terminal Lobby"/>
 
-</div>
+<br/><br/>
 
-<br/>
-
----
-
-<!-- ══════════════════════════════════════════════════════════════════ -->
-<!--                 SECTION VII · CONNECT LOBBY                      -->
-<!-- ══════════════════════════════════════════════════════════════════ -->
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=2" width="100%"/>
-
-<h2 align="center">🌐 MULTIPLAYER LOBBY — CONNECT</h2>
-
-<div align="center">
-
-<img src="assets/terminal-lobby.svg" width="100%" alt="Multiplayer Lobby Connection Sequence"/>
-
-<br/>
-
-<br/>
-
+<!-- SOCIAL & NETWORKING BADGES -->
 <a href="https://github.com/Anik-tB" target="_blank">
-  <img src="https://img.shields.io/badge/GitHub-Anik--tB-BD00FF?style=for-the-badge&logo=github&logoColor=white&labelColor=0D0D0D"/>
+  <img src="https://img.shields.io/badge/GitHub-Anik--tB-BD00FF?style=for-the-badge&logo=github&logoColor=white&labelColor=0D0D0D" alt="GitHub"/>
 </a>
 &nbsp;
 <a href="https://linkedin.com/in/mdabusayumanik" target="_blank">
-  <img src="https://img.shields.io/badge/LinkedIn-Abu_Sayum_Anik-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0D0D0D"/>
+  <img src="https://img.shields.io/badge/LinkedIn-Abu_Sayum_Anik-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0D0D0D" alt="LinkedIn"/>
 </a>
 &nbsp;
 <a href="mailto:mdabusayumanik123@gmail.com">
-  <img src="https://img.shields.io/badge/Gmail-mdabusayumanik123-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0D0D0D"/>
+  <img src="https://img.shields.io/badge/Gmail-mdabusayumanik123-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0D0D0D" alt="Email"/>
 </a>
 &nbsp;
 <a href="https://codeforces.com/profile/aDistraction-null" target="_blank">
-  <img src="https://img.shields.io/badge/Codeforces-aDistraction--null-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white&labelColor=0D0D0D"/>
+  <img src="https://img.shields.io/badge/Codeforces-aDistraction--null-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white&labelColor=0D0D0D" alt="Codeforces"/>
 </a>
 
 <br/><br/>
 
-</div>
+<p align="center">
+  <em>"Executing clean architectures, mastering logic at scale, and engineering resilient software systems."</em>
+</p>
 
-<!-- FOOTER WAVE -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer&animation=fadeIn&desc=%22Executing%20clean%20architectures%2C%20mastering%20logic%20scales%2C%20and%20designing%20ultimate%20software%20worlds.%22&descAlignY=65&descSize=13&fontColor=BD00FF" width="100%"/>
+</div>

@@ -205,51 +205,51 @@ def render_svg(commits, repos, stars, prs, issues, followers):
     <line x1="6" y1="10" x2="794" y2="10" class="scan-line" />
 
     <!-- Header info -->
-    <text x="30" y="38" class="text-header" font-size="20">PLAYER IDENTITY HUD</text>
-    <text x="360" y="36" class="text-mono" font-size="14">v3.5 // CONSOLE_MODE</text>
+    <text x="30" y="38" class="text-header" font-size="18">ARCHITECT TELEMETRY CONSOLE</text>
+    <text x="390" y="36" class="text-mono" font-size="13">SYS_KERNEL v4.2 // NOMINAL</text>
 
     <!-- Status indicator -->
     <circle cx="680" cy="32" r="5" class="status-dot" />
-    <text x="695" y="37" class="text-mono text-green" font-size="14" font-weight="bold">SYSTEM ACTIVE</text>
+    <text x="695" y="37" class="text-mono text-green" font-size="13" font-weight="bold">ONLINE · LIVE</text>
 
     <!-- Left side: Core Status Bars -->
-    <text x="30" y="92" class="text-neon" font-size="15">HP [COMMITS]</text>
-    <text x="340" y="92" class="text-mono" font-size="14" text-anchor="end">{commits} / {max_hp}</text>
+    <text x="30" y="92" class="text-neon" font-size="14">CODE VELOCITY [COMMITS]</text>
+    <text x="340" y="92" class="text-mono" font-size="13" text-anchor="end">{commits} / {max_hp}</text>
     <rect x="30" y="100" width="360" height="15" class="bar-bg" />
     <rect x="30" y="100" width="{hp_percent * 3.6}" height="15" class="bar-fill-hp" />
 
-    <text x="30" y="147" class="text-neon" font-size="15" fill="#BD00FF">MP [STARS]</text>
-    <text x="340" y="147" class="text-mono" font-size="14" text-anchor="end">{stars} / {max_mp}</text>
+    <text x="30" y="147" class="text-neon" font-size="14" fill="#BD00FF">COMMUNITY RESONANCE [STARS]</text>
+    <text x="340" y="147" class="text-mono" font-size="13" text-anchor="end">{stars} / {max_mp}</text>
     <rect x="30" y="155" width="360" height="15" class="bar-bg" />
     <rect x="30" y="155" width="{mp_percent * 3.6}" height="15" class="bar-fill-mp" />
 
-    <text x="30" y="202" class="text-neon" font-size="15" fill="#00F0FF">EXP [REPOSITORIES]</text>
-    <text x="340" y="202" class="text-mono" font-size="14" text-anchor="end">{repos} / {max_exp}</text>
+    <text x="30" y="202" class="text-neon" font-size="14" fill="#00F0FF">EXPANSION [REPOSITORIES]</text>
+    <text x="340" y="202" class="text-mono" font-size="13" text-anchor="end">{repos} / {max_exp}</text>
     <rect x="30" y="210" width="360" height="15" class="bar-bg" />
     <rect x="30" y="210" width="{exp_percent * 3.6}" height="15" class="bar-fill-exp" />
 
     <!-- Center Separator details -->
-    <text x="445" y="92" class="text-header" font-size="14" fill="#00F0FF">LEVEL: {level}</text>
-    <text x="445" y="112" class="text-mono" font-size="13" fill="#8888aa">CLASS: FULL-STACK ENGINEER</text>
+    <text x="445" y="92" class="text-header" font-size="14" fill="#00F0FF">RANK: LVL {level} ARCHITECT</text>
+    <text x="445" y="112" class="text-mono" font-size="12" fill="#8888aa">SPEC: DISTRIBUTED &amp; MOBILE SYSTEMS</text>
 
-    <!-- Right side: RPG Attributes -->
-    <text x="445" y="150" class="text-mono" font-size="15">STR (Strength)  :</text>
-    <text x="600" y="150" class="text-mono text-green" font-size="15" font-weight="bold">{strength}</text>
+    <!-- Right side: Engineering Metrics -->
+    <text x="445" y="150" class="text-mono" font-size="14">Commits Logged   :</text>
+    <text x="610" y="150" class="text-mono text-green" font-size="14" font-weight="bold">{strength}</text>
 
-    <text x="445" y="175" class="text-mono" font-size="15">AGI (Agility)   :</text>
-    <text x="600" y="175" class="text-mono text-green" font-size="15" font-weight="bold">{agility}</text>
+    <text x="445" y="175" class="text-mono" font-size="14">Code Reviews / PR:</text>
+    <text x="610" y="175" class="text-mono text-green" font-size="14" font-weight="bold">{prs}</text>
 
-    <text x="445" y="200" class="text-mono" font-size="15">INT (Intellect) :</text>
-    <text x="600" y="200" class="text-mono text-green" font-size="15" font-weight="bold">{intelligence}</text>
+    <text x="445" y="200" class="text-mono" font-size="14">Active Codebases :</text>
+    <text x="610" y="200" class="text-mono text-green" font-size="14" font-weight="bold">{repos}</text>
 
-    <text x="445" y="225" class="text-mono" font-size="15">VIT (Vitality)  :</text>
-    <text x="600" y="225" class="text-mono text-green" font-size="15" font-weight="bold">{vitality}</text>
+    <text x="445" y="225" class="text-mono" font-size="14">Issue Resolutions:</text>
+    <text x="610" y="225" class="text-mono text-green" font-size="14" font-weight="bold">{issues}</text>
 
-    <text x="445" y="250" class="text-mono" font-size="15">LUK (Luck)      :</text>
-    <text x="600" y="250" class="text-mono text-green" font-size="15" font-weight="bold">{luck}</text>
+    <text x="445" y="250" class="text-mono" font-size="14">Developer Network:</text>
+    <text x="610" y="250" class="text-mono text-green" font-size="14" font-weight="bold">{followers}</text>
 
     <!-- Bottom: Inventory / Core Arsenal -->
-    <text x="30" y="290" class="text-header" font-size="14" fill="#00F0FF">EQUIPPED ARSENAL &amp; RELICS</text>
+    <text x="30" y="290" class="text-header" font-size="14" fill="#00F0FF">PRIMARY ENGINEERING ARSENAL</text>
 
     <!-- Inventory Slots -->
     <g transform="translate(30, 305)">
