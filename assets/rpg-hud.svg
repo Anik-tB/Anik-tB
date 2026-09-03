@@ -118,9 +118,9 @@
 
     <!-- Left side: Core Status Bars -->
     <text x="30" y="92" class="text-neon" font-size="14">CODE VELOCITY [COMMITS]</text>
-    <text x="340" y="92" class="text-mono" font-size="13" text-anchor="end">390 / 400</text>
+    <text x="340" y="92" class="text-mono" font-size="13" text-anchor="end">396 / 400</text>
     <rect x="30" y="100" width="360" height="15" class="bar-bg" />
-    <rect x="30" y="100" width="351.0" height="15" class="bar-fill-hp" />
+    <rect x="30" y="100" width="356.40000000000003" height="15" class="bar-fill-hp" />
 
     <text x="30" y="147" class="text-neon" font-size="14" fill="#BD00FF">COMMUNITY RESONANCE [STARS]</text>
     <text x="340" y="147" class="text-mono" font-size="13" text-anchor="end">3 / 50</text>
@@ -128,9 +128,9 @@
     <rect x="30" y="155" width="21.6" height="15" class="bar-fill-mp" />
 
     <text x="30" y="202" class="text-neon" font-size="14" fill="#00F0FF">EXPANSION [REPOSITORIES]</text>
-    <text x="340" y="202" class="text-mono" font-size="13" text-anchor="end">13 / 50</text>
+    <text x="340" y="202" class="text-mono" font-size="13" text-anchor="end">14 / 50</text>
     <rect x="30" y="210" width="360" height="15" class="bar-bg" />
-    <rect x="30" y="210" width="93.60000000000001" height="15" class="bar-fill-exp" />
+    <rect x="30" y="210" width="100.80000000000001" height="15" class="bar-fill-exp" />
 
     <!-- Center Separator details -->
     <text x="445" y="92" class="text-header" font-size="14" fill="#00F0FF">RANK: LVL 29 ARCHITECT</text>
@@ -138,13 +138,13 @@
 
     <!-- Right side: Engineering Metrics -->
     <text x="445" y="150" class="text-mono" font-size="14">Commits Logged   :</text>
-    <text x="610" y="150" class="text-mono text-green" font-size="14" font-weight="bold">390</text>
+    <text x="610" y="150" class="text-mono text-green" font-size="14" font-weight="bold">396</text>
 
     <text x="445" y="175" class="text-mono" font-size="14">Code Reviews / PR:</text>
     <text x="610" y="175" class="text-mono text-green" font-size="14" font-weight="bold">0</text>
 
     <text x="445" y="200" class="text-mono" font-size="14">Active Codebases :</text>
-    <text x="610" y="200" class="text-mono text-green" font-size="14" font-weight="bold">13</text>
+    <text x="610" y="200" class="text-mono text-green" font-size="14" font-weight="bold">14</text>
 
     <text x="445" y="225" class="text-mono" font-size="14">Issue Resolutions:</text>
     <text x="610" y="225" class="text-mono text-green" font-size="14" font-weight="bold">0</text>
