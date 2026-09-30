@@ -118,9 +118,9 @@
 
     <!-- Left side: Core Status Bars -->
     <text x="30" y="92" class="text-neon" font-size="14">CODE VELOCITY [COMMITS]</text>
-    <text x="340" y="92" class="text-mono" font-size="13" text-anchor="end">396 / 400</text>
+    <text x="340" y="92" class="text-mono" font-size="13" text-anchor="end">398 / 400</text>
     <rect x="30" y="100" width="360" height="15" class="bar-bg" />
-    <rect x="30" y="100" width="356.40000000000003" height="15" class="bar-fill-hp" />
+    <rect x="30" y="100" width="358.2" height="15" class="bar-fill-hp" />
 
     <text x="30" y="147" class="text-neon" font-size="14" fill="#BD00FF">COMMUNITY RESONANCE [STARS]</text>
     <text x="340" y="147" class="text-mono" font-size="13" text-anchor="end">3 / 50</text>
@@ -138,7 +138,7 @@
 
     <!-- Right side: Engineering Metrics -->
     <text x="445" y="150" class="text-mono" font-size="14">Commits Logged   :</text>
-    <text x="610" y="150" class="text-mono text-green" font-size="14" font-weight="bold">396</text>
+    <text x="610" y="150" class="text-mono text-green" font-size="14" font-weight="bold">398</text>
 
     <text x="445" y="175" class="text-mono" font-size="14">Code Reviews / PR:</text>
     <text x="610" y="175" class="text-mono text-green" font-size="14" font-weight="bold">0</text>
