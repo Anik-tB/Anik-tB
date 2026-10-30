@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-label="Md Abu Sayum Anik, software engineer">
+<style>
+  .kicker{font:500 15px ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace;fill:#a08ae6;letter-spacing:.04em}
+  .name{font:700 58px -apple-system,BlinkMacSystemFont,'Segoe UI',Inter,Helvetica,Arial,sans-serif;fill:#f1eefb;letter-spacing:-.02em}
+  .sub{font:400 22px -apple-system,BlinkMacSystemFont,'Segoe UI',Inter,Helvetica,Arial,sans-serif;fill:#b7b0d6}
+  .chip{font:500 14px -apple-system,BlinkMacSystemFont,'Segoe UI',Inter,Helvetica,Arial,sans-serif;fill:#b7b0d6}
+  .in{animation:in .9s cubic-bezier(.22,1,.36,1) both}
+  .orb{animation:drift 14s ease-in-out infinite alternate}
+  .orb2{animation:drift2 18s ease-in-out infinite alternate}
+  .spin{transform-origin:960px 170px;animation:spin 40s linear infinite}
+  @keyframes in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+  @keyframes drift{to{transform:translate(-30px,18px)}}
+  @keyframes drift2{to{transform:translate(26px,-14px)}}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  @media (prefers-reduced-motion:reduce){.in,.orb,.orb2,.spin{animation:none}}
+</style>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0d0b14"/><stop offset="1" stop-color="#161127"/></linearGradient>
+  <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#a08ae6"/><stop offset=".5" stop-color="#7d95f5"/><stop offset="1" stop-color="#c29af0"/></linearGradient>
+  <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#2a2440"/></pattern>
+  <radialGradient id="fadeDots" cx=".78" cy=".5" r=".6"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+  <mask id="dm"><rect width="1200" height="340" fill="url(#fadeDots)"/></mask>
+  <filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="48"/></filter>
+  <clipPath id="card"><rect width="1200" height="340" rx="20"/></clipPath>
+</defs>
+<g clip-path="url(#card)">
+  <rect width="1200" height="340" fill="url(#bg)"/>
+  <rect width="1200" height="340" fill="url(#dots)" mask="url(#dm)"/>
+  <g filter="url(#blur)" opacity="0.55">
+    <circle class="orb" cx="930" cy="120" r="120" fill="#a08ae6"/>
+    <circle class="orb2" cx="1050" cy="230" r="100" fill="#7d95f5"/>
+    <circle class="orb" cx="840" cy="250" r="80" fill="#c29af0"/>
+  </g>
+  <g fill="none" stroke="url(#ring)">
+    <circle cx="960" cy="170" r="112" stroke-width="1.5" opacity=".9"/>
+    <circle cx="960" cy="170" r="146" stroke-width="1" opacity=".45" stroke-dasharray="2 7"/>
+    <circle cx="960" cy="170" r="78" stroke-width="1" opacity=".35"/>
+  </g>
+  <g class="spin"><circle cx="1072" cy="170" r="6" fill="#c29af0"/><circle cx="960" cy="24" r="3.5" fill="#7d95f5"/></g>
+  <text x="960" y="186" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="44" font-weight="600" fill="url(#ring)">&lt;/&gt;</text>
+  <g class="in"><text x="64" y="96" class="kicker">~/anik-tb $ whoami</text></g>
+  <g class="in" style="animation-delay:.08s"><text x="62" y="162" class="name">Md Abu Sayum Anik</text></g>
+  <g class="in" style="animation-delay:.16s"><text x="64" y="206" class="sub">Software engineer · CSE at United International University</text></g>
+  <g class="in" style="animation-delay:.24s"><rect x="64" y="244" width="135" height="34" rx="17" fill="#1c1730" stroke="#2a2440"/><text x="132" y="266" text-anchor="middle" class="chip">Full-stack web</text><rect x="209.39999999999998" y="244" width="119" height="34" rx="17" fill="#1c1730" stroke="#2a2440"/><text x="269" y="266" text-anchor="middle" class="chip">Flutter apps</text><rect x="338.59999999999997" y="244" width="168" height="34" rx="17" fill="#1c1730" stroke="#2a2440"/><text x="422" y="266" text-anchor="middle" class="chip">AI developer tools</text><rect x="516.4" y="244" width="160" height="34" rx="17" fill="#1c1730" stroke="#2a2440"/><text x="596" y="266" text-anchor="middle" class="chip">Dhaka, Bangladesh</text></g>
+</g>
+<rect x=".75" y=".75" width="1198.5" height="338.5" rx="20" fill="none" stroke="#2a2440" stroke-width="1.5"/>
+</svg>
