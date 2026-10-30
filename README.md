@@ -7,7 +7,7 @@
 <br>
 
 <p align="center">
-  <a href="https://portfolio-seven-pi-ds92cfkdh6.vercel.app/"><img src="https://img.shields.io/badge/🌐_Portfolio-000000?style=for-the-badge&logoColor=white" alt="Portfolio"></a>&nbsp;
+  <a href="https://portfolio-seven-pi-ds92cfkdh6.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-7c3aed?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"></a>&nbsp;
   <a href="https://www.linkedin.com/in/md-abu-sayum-anik-2a431b295/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>&nbsp;
   <a href="mailto:mdabusayumanik123@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>&nbsp;
   <a href="https://codeforces.com/profile/aDistraction-null"><img src="https://img.shields.io/badge/Codeforces-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white" alt="Codeforces"></a>

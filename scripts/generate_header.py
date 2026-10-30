@@ -1,454 +1,361 @@
-"""Render assets/header-dark.svg and assets/header-light.svg — stunning glassmorphism profile banner."""
+"""Render assets/header-dark.svg and assets/header-light.svg — high-end developer profile banner."""
 
 from pathlib import Path
-import math
 
 OUT = Path(__file__).resolve().parent.parent / "assets"
 
-# ── Theme palettes ──────────────────────────────────────────────────────────
-
 THEMES = {
     "dark": {
-        "bg1": "#06080f", "bg2": "#0c1029",
-        "accent1": "#00d4ff", "accent2": "#7c3aed", "accent3": "#f43f5e", "accent4": "#06d6a0",
-        "text": "#f0f4ff", "muted": "#64748b",
-        "glass": "rgba(255,255,255,0.05)", "glass_strong": "rgba(255,255,255,0.08)",
-        "border": "rgba(255,255,255,0.08)", "border_strong": "rgba(255,255,255,0.12)",
-        "glow_opacity": 0.45, "grid_opacity": 0.04,
-        "chip_bg": "rgba(255,255,255,0.04)", "chip_border": "rgba(255,255,255,0.10)",
-        "shadow": "rgba(0,0,0,0.5)",
+        "bg1": "#060813",
+        "bg2": "#0c1228",
+        "accent1": "#00d4ff",   # cyan
+        "accent2": "#9d4edd",   # violet
+        "accent3": "#f72585",   # magenta/rose
+        "accent4": "#10b981",   # emerald
+        "text": "#f8fafc",
+        "text_sub": "#cbd5e1",
+        "muted": "#94a3b8",
+        "terminal_bg": "#0b0f1e",
+        "terminal_border": "rgba(255, 255, 255, 0.12)",
+        "terminal_header": "#11182c",
+        "card_border": "rgba(255, 255, 255, 0.10)",
+        "grid_color": "#ffffff",
+        "grid_opacity": 0.035,
+        "chip_bg": "rgba(255, 255, 255, 0.05)",
+        "chip_border": "rgba(255, 255, 255, 0.12)",
+        "chip_text": "#e2e8f0",
+        "status_bg": "rgba(16, 185, 129, 0.12)",
+        "status_border": "rgba(16, 185, 129, 0.30)",
+        "status_text": "#34d399",
+        "code_keyword": "#c084fc",
+        "code_var": "#38bdf8",
+        "code_prop": "#7dd3fc",
+        "code_str": "#34d399",
+        "code_amber": "#fbbf24",
+        "code_punct": "#94a3b8",
+        "glow1_op": 0.35,
+        "glow2_op": 0.30,
     },
     "light": {
-        "bg1": "#fafbff", "bg2": "#eef2ff",
-        "accent1": "#0891b2", "accent2": "#7c3aed", "accent3": "#e11d48", "accent4": "#059669",
-        "text": "#0f172a", "muted": "#64748b",
-        "glass": "rgba(255,255,255,0.65)", "glass_strong": "rgba(255,255,255,0.80)",
-        "border": "rgba(0,0,0,0.06)", "border_strong": "rgba(0,0,0,0.10)",
-        "glow_opacity": 0.25, "grid_opacity": 0.06,
-        "chip_bg": "rgba(255,255,255,0.70)", "chip_border": "rgba(0,0,0,0.08)",
-        "shadow": "rgba(0,0,0,0.08)",
+        "bg1": "#f8fafc",
+        "bg2": "#eef2ff",
+        "accent1": "#0284c7",   # deep sky
+        "accent2": "#7c3aed",   # violet
+        "accent3": "#db2777",   # pink
+        "accent4": "#059669",   # emerald
+        "text": "#0f172a",
+        "text_sub": "#334155",
+        "muted": "#64748b",
+        "terminal_bg": "#ffffff",
+        "terminal_border": "rgba(0, 0, 0, 0.08)",
+        "terminal_header": "#f1f5f9",
+        "card_border": "rgba(0, 0, 0, 0.08)",
+        "grid_color": "#000000",
+        "grid_opacity": 0.04,
+        "chip_bg": "#ffffff",
+        "chip_border": "rgba(0, 0, 0, 0.08)",
+        "chip_text": "#334155",
+        "status_bg": "rgba(5, 150, 105, 0.10)",
+        "status_border": "rgba(5, 150, 105, 0.25)",
+        "status_text": "#059669",
+        "code_keyword": "#7c3aed",
+        "code_var": "#0284c7",
+        "code_prop": "#0369a1",
+        "code_str": "#059669",
+        "code_amber": "#d97706",
+        "code_punct": "#64748b",
+        "glow1_op": 0.15,
+        "glow2_op": 0.12,
     },
 }
 
-SANS = "'Segoe UI',Inter,-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif"
-MONO = "'SF Mono',SFMono-Regular,ui-monospace,Menlo,Consolas,'Liberation Mono',monospace"
-
-CHIPS = [
-    ("\ue900", "Full-stack Web"),      # code icon placeholder → we'll use SVG paths
-    ("\ue901", "Flutter &amp; Mobile"),
-    ("\ue902", "AI Dev Tools"),
-    ("\ue903", "Dhaka, BD"),
-]
-
-
-def _helix_path(cx, cy, amp, periods, length, phase, num_pts=80):
-    """Generate a DNA-helix-inspired sine wave path string."""
-    pts = []
-    for i in range(num_pts + 1):
-        t = i / num_pts
-        y = cy - length / 2 + t * length
-        x = cx + amp * math.sin(2 * math.pi * periods * t + phase)
-        pts.append(f"{'M' if i == 0 else 'L'}{x:.1f},{y:.1f}")
-    return " ".join(pts)
-
-
-def _helix_rungs(cx, cy, amp, periods, length, num_rungs=8):
-    """Generate connecting rungs between the two helix strands."""
-    rungs = []
-    for i in range(num_rungs):
-        t = (i + 0.5) / num_rungs
-        y = cy - length / 2 + t * length
-        x1 = cx + amp * math.sin(2 * math.pi * periods * t)
-        x2 = cx + amp * math.sin(2 * math.pi * periods * t + math.pi)
-        rungs.append(f'<line x1="{x1:.1f}" y1="{y:.1f}" x2="{x2:.1f}" y2="{y:.1f}"/>')
-    return "\n    ".join(rungs)
-
-
-def _floating_symbols(t):
-    """Generate scattered code symbols with float animations."""
-    symbols_data = [
-        ("{", 780, 55, 16, 0.12, "floatA", 0),
-        ("}", 1120, 95, 14, 0.10, "floatB", 0.5),
-        ("&lt;/&gt;", 850, 310, 13, 0.09, "floatC", 1.2),
-        ("( )", 1060, 330, 12, 0.08, "floatA", 2.0),
-        ("=&gt;", 920, 45, 11, 0.10, "floatB", 0.8),
-        ("[ ]", 1150, 260, 12, 0.07, "floatC", 1.6),
-        ("fn", 770, 280, 11, 0.06, "floatA", 2.5),
-        ("//", 1100, 170, 13, 0.08, "floatB", 1.0),
-    ]
-    elems = []
-    for sym, x, y, size, opacity, anim, delay in symbols_data:
-        elems.append(
-            f'<text x="{x}" y="{y}" font-family="{MONO}" font-size="{size}" '
-            f'fill="{t["muted"]}" opacity="{opacity}" '
-            f'class="{anim}" style="animation-delay:{delay}s">{sym}</text>'
-        )
-    return "\n  ".join(elems)
-
-
-def _corner_decorations(t):
-    """Small geometric corner accents."""
-    c = t["accent1"]
-    c2 = t["accent2"]
-    return f"""
-  <!-- Top-left corner -->
-  <g opacity="0.15">
-    <line x1="20" y1="30" x2="50" y2="30" stroke="{c}" stroke-width="1.5"/>
-    <line x1="30" y1="20" x2="30" y2="50" stroke="{c}" stroke-width="1.5"/>
-  </g>
-  <!-- Top-right corner -->
-  <g opacity="0.12">
-    <polygon points="1170,20 1180,35 1160,35" fill="none" stroke="{c2}" stroke-width="1"/>
-    <polygon points="1170,28 1175,35 1165,35" fill="{c2}" opacity="0.3"/>
-  </g>
-  <!-- Bottom-right corner -->
-  <g opacity="0.10">
-    <rect x="1160" y="345" width="15" height="15" rx="2" fill="none" stroke="{c}" stroke-width="1"/>
-    <rect x="1163" y="348" width="9" height="9" rx="1" fill="{c}" opacity="0.15"/>
-  </g>
-  <!-- Bottom-left corner -->
-  <g opacity="0.12">
-    <circle cx="30" cy="355" r="6" fill="none" stroke="{c2}" stroke-width="1"/>
-    <circle cx="30" cy="355" r="2.5" fill="{c2}" opacity="0.25"/>
-  </g>"""
-
-
-def _chip_icons():
-    """Return SVG path data for chip icons."""
-    return {
-        0: '<path d="M0,2 L4,2 L4,10 L0,10 Z M6,0 L10,0 L10,10 L6,10 Z M12,4 L16,4 L16,10 L12,10 Z" fill="currentColor" opacity="0.7"/>',  # code blocks
-        1: '<path d="M8,0 L14,4 L14,12 L8,16 L2,12 L2,4 Z" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.7"/>',  # hexagon (mobile)
-        2: '<circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.7"/><circle cx="5" cy="6" r="1.5" fill="currentColor" opacity="0.7"/><circle cx="11" cy="6" r="1.5" fill="currentColor" opacity="0.7"/><path d="M5,10 Q8,13 11,10" fill="none" stroke="currentColor" stroke-width="1.2" opacity="0.7"/>',  # AI face
-        3: '<path d="M8,1 C8,1 2,6 2,10 C2,13.3 4.7,16 8,16 C11.3,16 14,13.3 14,10 C14,6 8,1 8,1 Z" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.7"/>',  # pin
-    }
+SANS = "Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+MONO = "'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, Menlo, monospace"
 
 
 def render(t):
-    W, H = 1200, 380
+    W, H = 1200, 360
 
-    # ── Helix paths ──
-    hx_cx, hx_cy, hx_amp, hx_periods, hx_len = 1020, 190, 55, 2.5, 280
-    helix1 = _helix_path(hx_cx, hx_cy, hx_amp, hx_periods, hx_len, 0)
-    helix2 = _helix_path(hx_cx, hx_cy, hx_amp, hx_periods, hx_len, math.pi)
-    helix_rungs = _helix_rungs(hx_cx, hx_cy, hx_amp, hx_periods, hx_len, 10)
-
-    # ── Chip pills ──
-    icons = _chip_icons()
-    chip_elems = []
-    cx = 80
-    for idx, (_, label) in enumerate(CHIPS):
-        text_w = len(label) * 8.5
-        pill_w = text_w + 42  # icon space + padding
-        # Gradient-outlined pill
-        chip_elems.append(
-            f'<g class="slideUp" style="animation-delay:{0.50 + idx * 0.08}s">'
-            f'<rect x="{cx}" y="278" width="{pill_w:.0f}" height="32" rx="16" '
-            f'fill="{t["chip_bg"]}" stroke="url(#chipGrad)" stroke-width="1"/>'
-            f'<g transform="translate({cx + 12},{278 + 8})" color="{t["accent1"]}">{icons[idx]}</g>'
-            f'<text x="{cx + 34}" y="299" class="chipText">{label}</text>'
-            f'</rect></g>'  # close tags — note: the extra </rect> won't matter, SVG ignores
-        )
-        cx += pill_w + 10
-
-    # Fix: remove stray </rect> — using proper group close
-    chip_elems_fixed = []
-    cx = 80
-    for idx, (_, label) in enumerate(CHIPS):
-        text_w = len(label) * 8.5
-        pill_w = text_w + 42
-        chip_elems_fixed.append(
-            f'<g class="slideUp" style="animation-delay:{0.50 + idx * 0.08:.2f}s">'
-            f'<rect x="{cx}" y="278" width="{pill_w:.0f}" height="32" rx="16" '
-            f'fill="{t["chip_bg"]}" stroke="url(#chipGrad)" stroke-width="1"/>'
-            f'<g transform="translate({cx + 12},{286})" color="{t["accent1"]}">{icons[idx]}</g>'
-            f'<text x="{cx + 34}" y="299" class="chipText">{label}</text>'
-            f'</g>'
-        )
-        cx += pill_w + 10
-
-    chips_svg = "\n    ".join(chip_elems_fixed)
-    float_syms = _floating_symbols(t)
-    corners = _corner_decorations(t)
-
-    # ── Geometric floating shapes ──
-    geo_shapes = f"""
-  <!-- Floating geometric shapes -->
-  <g class="floatA" style="animation-delay:0s">
-    <polygon points="180,60 200,40 220,60 200,80" fill="none" stroke="{t['accent2']}" stroke-width="0.8" opacity="0.08"/>
-  </g>
-  <g class="floatB" style="animation-delay:1s">
-    <polygon points="300,320 310,305 330,305 340,320 330,335 310,335" fill="{t['accent1']}" opacity="0.04"/>
-  </g>
-  <g class="floatC" style="animation-delay:0.5s">
-    <circle cx="700" cy="60" r="18" fill="none" stroke="{t['accent3']}" stroke-width="0.7" opacity="0.07"/>
-  </g>
-  <g class="floatA" style="animation-delay:2s">
-    <polygon points="650,340 660,325 680,325 690,340 680,355 660,355" fill="none" stroke="{t['accent2']}" stroke-width="0.6" opacity="0.06"/>
-  </g>
-  <g class="floatB" style="animation-delay:1.5s">
-    <rect x="400" y="30" width="16" height="16" rx="2" transform="rotate(45,408,38)" fill="none" stroke="{t['accent1']}" stroke-width="0.7" opacity="0.06"/>
-  </g>
-  <g class="floatC" style="animation-delay:0.8s">
-    <polygon points="550,350 560,335 570,350" fill="{t['accent3']}" opacity="0.05"/>
-  </g>"""
-
-    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Md Abu Sayum Anik — Software Engineer">
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Md Abu Sayum Anik — Software Engineer Profile">
 <defs>
-  <!-- Background gradient -->
+  <!-- Background Gradient -->
   <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
     <stop offset="0%" stop-color="{t['bg1']}"/>
     <stop offset="100%" stop-color="{t['bg2']}"/>
   </linearGradient>
 
-  <!-- Name text gradient -->
+  <!-- Name Text Gradient -->
   <linearGradient id="nameGrad" x1="0" y1="0" x2="1" y2="0">
     <stop offset="0%" stop-color="{t['accent1']}"/>
     <stop offset="50%" stop-color="{t['accent2']}"/>
     <stop offset="100%" stop-color="{t['accent3']}"/>
   </linearGradient>
 
-  <!-- Helix gradient -->
-  <linearGradient id="helixGrad" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0%" stop-color="{t['accent1']}"/>
-    <stop offset="50%" stop-color="{t['accent2']}"/>
-    <stop offset="100%" stop-color="{t['accent3']}"/>
+  <!-- Accent Border Gradient -->
+  <linearGradient id="borderGrad" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="{t['accent1']}" stop-opacity="0.6"/>
+    <stop offset="50%" stop-color="{t['accent2']}" stop-opacity="0.3"/>
+    <stop offset="100%" stop-color="{t['accent3']}" stop-opacity="0.5"/>
   </linearGradient>
 
-  <!-- Chip border gradient -->
-  <linearGradient id="chipGrad" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0%" stop-color="{t['accent1']}" stop-opacity="0.5"/>
-    <stop offset="100%" stop-color="{t['accent2']}" stop-opacity="0.3"/>
-  </linearGradient>
+  <!-- Radial Glow Behind Code Terminal -->
+  <radialGradient id="termGlow" cx="0.5" cy="0.5" r="0.5">
+    <stop offset="0%" stop-color="{t['accent2']}" stop-opacity="{t['glow1_op']}"/>
+    <stop offset="100%" stop-color="{t['accent1']}" stop-opacity="0"/>
+  </radialGradient>
 
-  <!-- Orb glow filter -->
-  <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
-    <feGaussianBlur stdDeviation="55" result="blur"/>
-    <feComposite in="SourceGraphic" in2="blur" operator="over"/>
-  </filter>
-  <filter id="glowStrong" x="-100%" y="-100%" width="300%" height="300%">
-    <feGaussianBlur stdDeviation="80"/>
-  </filter>
+  <!-- Radial Glow Top Left -->
+  <radialGradient id="heroGlow" cx="0.2" cy="0.2" r="0.6">
+    <stop offset="0%" stop-color="{t['accent1']}" stop-opacity="{t['glow2_op']}"/>
+    <stop offset="100%" stop-color="{t['bg1']}" stop-opacity="0"/>
+  </radialGradient>
 
-  <!-- Glass blur -->
-  <filter id="glassBlur" x="-10%" y="-10%" width="120%" height="120%">
-    <feGaussianBlur stdDeviation="2"/>
-  </filter>
-
-  <!-- Grid pattern -->
-  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="{t['text']}" stroke-width="0.5" opacity="{t['grid_opacity']}"/>
+  <!-- Grid Pattern -->
+  <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+    <path d="M 36 0 L 0 0 0 36" fill="none" stroke="{t['grid_color']}" stroke-width="0.75" opacity="{t['grid_opacity']}"/>
   </pattern>
 
-  <!-- Dot grid for mesh effect -->
-  <pattern id="dotGrid" width="24" height="24" patternUnits="userSpaceOnUse">
-    <circle cx="12" cy="12" r="0.8" fill="{t['text']}" opacity="{t['grid_opacity'] * 1.5:.3f}"/>
-  </pattern>
-
-  <!-- Radial fade mask for grid -->
-  <radialGradient id="gridFade" cx="0.3" cy="0.5" r="0.8">
-    <stop offset="0%" stop-color="white" stop-opacity="0.6"/>
-    <stop offset="100%" stop-color="white" stop-opacity="0"/>
+  <radialGradient id="gridFade" cx="0.5" cy="0.5" r="0.6">
+    <stop offset="0%" stop-color="#fff" stop-opacity="1"/>
+    <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
   </radialGradient>
   <mask id="gridMask">
     <rect width="{W}" height="{H}" fill="url(#gridFade)"/>
   </mask>
 
-  <!-- Clip path for rounded card -->
+  <!-- Glow Filters -->
+  <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="40" result="blur"/>
+  </filter>
+  <filter id="badgeGlow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="3" result="blur"/>
+    <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+  </filter>
+
+  <!-- Card Clip -->
   <clipPath id="cardClip">
     <rect width="{W}" height="{H}" rx="18"/>
   </clipPath>
-
-  <!-- Status glow -->
-  <filter id="statusGlow" x="-200%" y="-200%" width="500%" height="500%">
-    <feGaussianBlur stdDeviation="3"/>
-  </filter>
 </defs>
 
 <style>
-  /* ── Typography ── */
-  .kicker {{ font: 500 14px/1 {MONO}; fill: {t['accent1']}; letter-spacing: 0.06em; }}
-  .cursor {{ fill: {t['accent1']}; animation: blink 1s step-end infinite; }}
-  .name   {{ font: 800 52px/1 {SANS}; fill: url(#nameGrad); letter-spacing: -0.03em; }}
-  .sub    {{ font: 400 19px/1 {SANS}; fill: {t['muted']}; letter-spacing: 0.01em; }}
-  .status {{ font: 500 13px/1 {SANS}; fill: {t['accent4']}; letter-spacing: 0.02em; }}
-  .chipText {{ font: 500 13px/1 {SANS}; fill: {t['muted']}; }}
+  .kicker {{ font: 600 13px {MONO}; letter-spacing: 0.05em; }}
+  .name {{ font: 800 46px {SANS}; letter-spacing: -0.03em; }}
+  .role {{ font: 600 18px {SANS}; fill: {t['text_sub']}; letter-spacing: -0.01em; }}
+  .univ {{ font: 400 14px {SANS}; fill: {t['muted']}; }}
+  .statusText {{ font: 600 12px {SANS}; fill: {t['status_text']}; }}
+  .chipText {{ font: 500 12.5px {SANS}; fill: {t['chip_text']}; }}
 
-  /* ── Animations ── */
-  .slideUp {{
-    opacity: 0; transform: translateY(18px);
-    animation: slideUpIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-  }}
-  .floatA {{ animation: driftA 18s ease-in-out infinite alternate; }}
-  .floatB {{ animation: driftB 22s ease-in-out infinite alternate; }}
-  .floatC {{ animation: driftC 16s ease-in-out infinite alternate; }}
-  .helixRotate {{ animation: helixSway 12s ease-in-out infinite alternate; transform-origin: {hx_cx}px {hx_cy}px; }}
-  .orbPulse1 {{ animation: pulse1 6s ease-in-out infinite alternate; }}
-  .orbPulse2 {{ animation: pulse2 8s ease-in-out infinite alternate; }}
-  .orbPulse3 {{ animation: pulse3 7s ease-in-out infinite alternate; }}
-  .statusDot {{ animation: statusPulse 2s ease-in-out infinite; }}
-  .helixDash {{ animation: helixFlow 4s linear infinite; }}
-  .ringRotate {{ animation: ringRot 50s linear infinite; transform-origin: {hx_cx}px {hx_cy}px; }}
+  /* Terminal Code Styling */
+  .termTitle {{ font: 500 12px {MONO}; fill: {t['muted']}; }}
+  .codeLine {{ font: 500 12.5px/1.7 {MONO}; }}
+  .lineNum {{ font: 400 12px/1.7 {MONO}; fill: {t['muted']}; opacity: 0.45; user-select: none; }}
 
-  @keyframes slideUpIn {{
-    0%   {{ opacity: 0; transform: translateY(18px); }}
-    100% {{ opacity: 1; transform: translateY(0); }}
+  /* Cursor Blink Animation */
+  .cursor {{
+    fill: {t['accent1']};
+    animation: blink 1s step-end infinite;
   }}
   @keyframes blink {{
     0%, 100% {{ opacity: 1; }}
     50% {{ opacity: 0; }}
   }}
-  @keyframes driftA {{
-    0%   {{ transform: translate(0, 0); }}
-    100% {{ transform: translate(-20px, 15px); }}
+
+  /* Status Dot Pulse */
+  .pulseDot {{
+    animation: pulse 2.2s ease-in-out infinite;
   }}
-  @keyframes driftB {{
-    0%   {{ transform: translate(0, 0); }}
-    100% {{ transform: translate(18px, -12px); }}
-  }}
-  @keyframes driftC {{
-    0%   {{ transform: translate(0, 0); }}
-    100% {{ transform: translate(-14px, -18px); }}
-  }}
-  @keyframes pulse1 {{
-    0%   {{ opacity: {t['glow_opacity']}; transform: scale(1); }}
-    100% {{ opacity: {t['glow_opacity'] * 0.6:.2f}; transform: scale(1.15); }}
-  }}
-  @keyframes pulse2 {{
-    0%   {{ opacity: {t['glow_opacity'] * 0.8:.2f}; transform: scale(1); }}
-    100% {{ opacity: {t['glow_opacity'] * 0.5:.2f}; transform: scale(1.2); }}
-  }}
-  @keyframes pulse3 {{
-    0%   {{ opacity: {t['glow_opacity'] * 0.7:.2f}; transform: scale(1); }}
-    100% {{ opacity: {t['glow_opacity'] * 0.45:.2f}; transform: scale(1.1); }}
-  }}
-  @keyframes helixSway {{
-    0%   {{ transform: rotate(-2deg); }}
-    100% {{ transform: rotate(2deg); }}
-  }}
-  @keyframes helixFlow {{
-    0%   {{ stroke-dashoffset: 0; }}
-    100% {{ stroke-dashoffset: -40; }}
-  }}
-  @keyframes statusPulse {{
-    0%, 100% {{ opacity: 1; r: 5; }}
-    50% {{ opacity: 0.5; r: 7; }}
-  }}
-  @keyframes ringRot {{
-    0%   {{ transform: rotate(0deg); }}
-    100% {{ transform: rotate(360deg); }}
+  @keyframes pulse {{
+    0%, 100% {{ transform: scale(1); opacity: 1; }}
+    50% {{ transform: scale(1.35); opacity: 0.6; }}
   }}
 
-  /* ── Respect reduced motion ── */
+  /* Floating Animation for Code Window */
+  .floatWindow {{
+    animation: subtleFloat 8s ease-in-out infinite alternate;
+  }}
+  @keyframes subtleFloat {{
+    0% {{ transform: translateY(0); }}
+    100% {{ transform: translateY(-5px); }}
+  }}
+
   @media (prefers-reduced-motion: reduce) {{
-    .slideUp {{ animation: none; opacity: 1; transform: none; }}
-    .floatA, .floatB, .floatC,
-    .helixRotate, .orbPulse1, .orbPulse2, .orbPulse3,
-    .statusDot, .cursor, .helixDash, .ringRotate {{
-      animation: none;
-    }}
+    .cursor, .pulseDot, .floatWindow {{ animation: none; }}
   }}
 </style>
 
 <g clip-path="url(#cardClip)">
-  <!-- ▸ Base background -->
+  <!-- ▸ Canvas Base -->
   <rect width="{W}" height="{H}" fill="url(#bgGrad)"/>
-
-  <!-- ▸ Subtle grid mesh -->
   <rect width="{W}" height="{H}" fill="url(#grid)" mask="url(#gridMask)"/>
-  <rect width="{W}" height="{H}" fill="url(#dotGrid)" mask="url(#gridMask)" opacity="0.5"/>
 
-  <!-- ▸ Floating geometric shapes -->
-  {geo_shapes}
+  <!-- ▸ Background Glow Orbs -->
+  <circle cx="220" cy="140" r="160" fill="url(#heroGlow)" filter="url(#softGlow)"/>
+  <circle cx="920" cy="180" r="180" fill="url(#termGlow)" filter="url(#softGlow)"/>
 
-  <!-- ▸ Glowing orbs -->
-  <g filter="url(#glowStrong)">
-    <circle class="orbPulse1" cx="860" cy="100" r="110" fill="{t['accent1']}" opacity="{t['glow_opacity']}"/>
-    <circle class="orbPulse2" cx="1050" cy="240" r="100" fill="{t['accent2']}" opacity="{t['glow_opacity'] * 0.8:.2f}"/>
-    <circle class="orbPulse3" cx="750" cy="300" r="80" fill="{t['accent3']}" opacity="{t['glow_opacity'] * 0.6:.2f}"/>
-    <circle class="orbPulse1 floatB" cx="350" cy="50" r="60" fill="{t['accent2']}" opacity="{t['glow_opacity'] * 0.25:.2f}"/>
-    <circle class="orbPulse2 floatA" cx="200" cy="320" r="50" fill="{t['accent1']}" opacity="{t['glow_opacity'] * 0.2:.2f}"/>
+  <!-- ======================================================== -->
+  <!-- LEFT COLUMN: Identity & Highlights                       -->
+  <!-- ======================================================== -->
+
+  <!-- 1. Terminal Kicker -->
+  <g transform="translate(60, 68)">
+    <rect x="-8" y="-16" width="186" height="26" rx="6" fill="{t['chip_bg']}" stroke="{t['chip_border']}" stroke-width="0.8"/>
+    <text x="4" y="2" class="kicker">
+      <tspan fill="{t['muted']}">~/anik $</tspan>
+      <tspan fill="{t['accent1']}"> whoami</tspan>
+      <tspan class="cursor">_</tspan>
+    </text>
   </g>
 
-  <!-- ▸ DNA Helix (right side) -->
-  <g class="helixRotate" opacity="0.7">
-    <!-- Strand 1 -->
-    <path d="{helix1}" fill="none" stroke="{t['accent1']}" stroke-width="2" opacity="0.6"
-          stroke-dasharray="8 4" class="helixDash"/>
-    <!-- Strand 2 -->
-    <path d="{helix2}" fill="none" stroke="{t['accent2']}" stroke-width="2" opacity="0.5"
-          stroke-dasharray="8 4" class="helixDash" style="animation-delay:-2s"/>
-    <!-- Rungs -->
-    <g stroke="{t['accent3']}" stroke-width="0.8" opacity="0.25">
-      {helix_rungs}
+  <!-- 2. Full Name -->
+  <text x="60" y="128" class="name" fill="url(#nameGrad)">Md Abu Sayum Anik</text>
+
+  <!-- 3. Headline Role -->
+  <text x="60" y="162" class="role">Software Engineer · Full-Stack &amp; AI Tools</text>
+
+  <!-- 4. University Info -->
+  <g transform="translate(60, 188)">
+    <text x="0" y="0" class="univ">CSE @ United International University · Dhaka, Bangladesh</text>
+  </g>
+
+  <!-- 5. Status Badge -->
+  <g transform="translate(60, 216)">
+    <rect x="0" y="0" width="206" height="28" rx="14" fill="{t['status_bg']}" stroke="{t['status_border']}" stroke-width="1"/>
+    <!-- Glowing Status Indicator Dot -->
+    <g transform="translate(14, 14)">
+      <circle cx="0" cy="0" r="4.5" fill="{t['accent4']}" filter="url(#badgeGlow)" class="pulseDot"/>
+      <circle cx="0" cy="0" r="4" fill="{t['accent4']}"/>
     </g>
-    <!-- Node dots along helix -->
-    <g fill="{t['accent1']}" opacity="0.5">
-      <circle cx="{hx_cx + hx_amp}" cy="{hx_cy - hx_len * 0.35:.0f}" r="3"/>
-      <circle cx="{hx_cx - hx_amp}" cy="{hx_cy + hx_len * 0.15:.0f}" r="2.5"/>
-      <circle cx="{hx_cx + hx_amp * 0.7:.0f}" cy="{hx_cy + hx_len * 0.4:.0f}" r="2"/>
+    <text x="27" y="18" class="statusText">Available for opportunities</text>
+  </g>
+
+  <!-- 6. Tag Chips Row -->
+  <g transform="translate(60, 272)">
+    <!-- Chip 1: Full-stack Web -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="138" height="32" rx="16" fill="{t['chip_bg']}" stroke="{t['chip_border']}" stroke-width="1"/>
+      <!-- Code Icon -->
+      <g transform="translate(14, 9)" stroke="{t['accent1']}" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="10 4 14 8 10 12"/>
+        <polyline points="4 12 0 8 4 4"/>
+      </g>
+      <text x="36" y="20.5" class="chipText">Full-Stack Web</text>
     </g>
-    <g fill="{t['accent2']}" opacity="0.4">
-      <circle cx="{hx_cx - hx_amp}" cy="{hx_cy - hx_len * 0.35:.0f}" r="2.5"/>
-      <circle cx="{hx_cx + hx_amp}" cy="{hx_cy + hx_len * 0.15:.0f}" r="3"/>
+
+    <!-- Chip 2: Flutter Apps -->
+    <g transform="translate(148, 0)">
+      <rect x="0" y="0" width="128" height="32" rx="16" fill="{t['chip_bg']}" stroke="{t['chip_border']}" stroke-width="1"/>
+      <!-- Mobile Icon -->
+      <g transform="translate(14, 8)" stroke="{t['accent2']}" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="1" y="0" width="10" height="15" rx="2"/>
+        <line x1="6" y1="12" x2="6.01" y2="12"/>
+      </g>
+      <text x="34" y="20.5" class="chipText">Flutter Apps</text>
+    </g>
+
+    <!-- Chip 3: AI Dev Tools -->
+    <g transform="translate(286, 0)">
+      <rect x="0" y="0" width="124" height="32" rx="16" fill="{t['chip_bg']}" stroke="{t['chip_border']}" stroke-width="1"/>
+      <!-- Sparkle / AI Icon -->
+      <g transform="translate(13, 8)" fill="{t['accent3']}">
+        <path d="M7.5 0 L9 5 L14 6.5 L9 8 L7.5 13 L6 8 L1 6.5 L6 5 Z"/>
+      </g>
+      <text x="33" y="20.5" class="chipText">AI Dev Tools</text>
+    </g>
+
+    <!-- Chip 4: Dhaka, BD -->
+    <g transform="translate(420, 0)">
+      <rect x="0" y="0" width="112" height="32" rx="16" fill="{t['chip_bg']}" stroke="{t['chip_border']}" stroke-width="1"/>
+      <!-- Map Pin Icon (REAL LOCATION PIN) -->
+      <g transform="translate(14, 8)" stroke="{t['accent1']}" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M11 5.5 C11 9.5 5.5 14 5.5 14 C5.5 14 0 9.5 0 5.5 C0 2.5 2.5 0 5.5 0 C8.5 0 11 2.5 11 5.5 Z"/>
+        <circle cx="5.5" cy="5.5" r="2" fill="{t['accent1']}"/>
+      </g>
+      <text x="33" y="20.5" class="chipText">Dhaka, BD</text>
     </g>
   </g>
 
-  <!-- ▸ Rotating geometric ring -->
-  <g class="ringRotate" opacity="0.2">
-    <circle cx="{hx_cx}" cy="{hx_cy}" r="160" fill="none" stroke="url(#helixGrad)" stroke-width="0.8" stroke-dasharray="3 9"/>
+  <!-- ======================================================== -->
+  <!-- RIGHT COLUMN: Modern IDE / Code Window Card             -->
+  <!-- ======================================================== -->
+
+  <g class="floatWindow" transform="translate(630, 42)">
+    <!-- Terminal Box Container -->
+    <rect x="0" y="0" width="510" height="276" rx="14" fill="{t['terminal_bg']}" stroke="{t['terminal_border']}" stroke-width="1"/>
+    
+    <!-- Top Header Bar -->
+    <path d="M 0 14 Q 0 0 14 0 L 496 0 Q 510 0 510 14 L 510 38 L 0 38 Z" fill="{t['terminal_header']}"/>
+    <line x1="0" y1="38" x2="510" y2="38" stroke="{t['terminal_border']}" stroke-width="0.8"/>
+
+    <!-- macOS Window Buttons -->
+    <circle cx="20" cy="19" r="5" fill="#ff5f56"/>
+    <circle cx="36" cy="19" r="5" fill="#ffbd2e"/>
+    <circle cx="52" cy="19" r="5" fill="#27c93f"/>
+
+    <!-- Tab Title with file indicator -->
+    <text x="74" y="23" class="termTitle">anik.config.ts</text>
+    <rect x="420" y="11" width="72" height="18" rx="4" fill="{t['chip_bg']}" stroke="{t['terminal_border']}" stroke-width="0.7"/>
+    <text x="456" y="23" text-anchor="middle" font-family="{MONO}" font-size="10" fill="{t['accent1']}">TS 5.7</text>
+
+    <!-- Code Content -->
+    <g transform="translate(20, 64)" class="codeLine">
+      <!-- Line 1 -->
+      <text x="0" y="0">
+        <tspan class="lineNum">1 </tspan>
+        <tspan fill="{t['code_keyword']}">export const</tspan> <tspan fill="{t['code_var']}">developer</tspan> <tspan fill="{t['code_punct']}">=</tspan> <tspan fill="{t['code_punct']}">&amp;#123;</tspan>
+      </text>
+
+      <!-- Line 2 -->
+      <text x="0" y="24">
+        <tspan class="lineNum">2 </tspan>
+        <tspan fill="{t['code_punct']}">  </tspan><tspan fill="{t['code_prop']}">name</tspan><tspan fill="{t['code_punct']}">: </tspan><tspan fill="{t['code_str']}">&quot;Md Abu Sayum Anik&quot;</tspan><tspan fill="{t['code_punct']}">,</tspan>
+      </text>
+
+      <!-- Line 3 -->
+      <text x="0" y="48">
+        <tspan class="lineNum">3 </tspan>
+        <tspan fill="{t['code_punct']}">  </tspan><tspan fill="{t['code_prop']}">focus</tspan><tspan fill="{t['code_punct']}">: </tspan><tspan fill="{t['code_str']}">&quot;Full-Stack &amp; AI Systems&quot;</tspan><tspan fill="{t['code_punct']}">,</tspan>
+      </text>
+
+      <!-- Line 4 -->
+      <text x="0" y="72">
+        <tspan class="lineNum">4 </tspan>
+        <tspan fill="{t['code_punct']}">  </tspan><tspan fill="{t['code_prop']}">craft</tspan><tspan fill="{t['code_punct']}">: </tspan><tspan fill="{t['code_punct']}">[</tspan><tspan fill="{t['code_amber']}">&quot;Next.js&quot;</tspan><tspan fill="{t['code_punct']}">, </tspan><tspan fill="{t['code_amber']}">&quot;FastAPI&quot;</tspan><tspan fill="{t['code_punct']}">, </tspan><tspan fill="{t['code_amber']}">&quot;Flutter&quot;</tspan><tspan fill="{t['code_punct']}">],</tspan>
+      </text>
+
+      <!-- Line 5 -->
+      <text x="0" y="96">
+        <tspan class="lineNum">5 </tspan>
+        <tspan fill="{t['code_punct']}">  </tspan><tspan fill="{t['code_prop']}">building</tspan><tspan fill="{t['code_punct']}">: </tspan><tspan fill="{t['accent3']}">&quot;GenoNexus 🧬&quot;</tspan><tspan fill="{t['code_punct']}">,</tspan>
+      </text>
+
+      <!-- Line 6 -->
+      <text x="0" y="120">
+        <tspan class="lineNum">6 </tspan>
+        <tspan fill="{t['code_punct']}">  </tspan><tspan fill="{t['code_prop']}">highlight</tspan><tspan fill="{t['code_punct']}">: </tspan><tspan fill="{t['code_amber']}">&quot;1st Place AOOP Showcase 🏆&quot;</tspan><tspan fill="{t['code_punct']}">,</tspan>
+      </text>
+
+      <!-- Line 7 -->
+      <text x="0" y="144">
+        <tspan class="lineNum">7 </tspan>
+        <tspan fill="{t['code_punct']}">  </tspan><tspan fill="{t['code_prop']}">status</tspan><tspan fill="{t['code_punct']}">: </tspan><tspan fill="{t['code_str']}">&quot;open_for_hire&quot;</tspan>
+      </text>
+
+      <!-- Line 8 -->
+      <text x="0" y="168">
+        <tspan class="lineNum">8 </tspan>
+        <tspan fill="{t['code_punct']}">&amp;#125;;</tspan>
+        <tspan class="cursor" fill="{t['accent1']}">▋</tspan>
+      </text>
+    </g>
+
+    <!-- Bottom Accent Line -->
+    <line x1="20" y1="262" x2="160" y2="262" stroke="url(#borderGrad)" stroke-width="2" stroke-linecap="round"/>
   </g>
-  <circle cx="{hx_cx}" cy="{hx_cy}" r="180" fill="none" stroke="{t['accent1']}" stroke-width="0.4" opacity="0.06" stroke-dasharray="1 15"/>
-
-  <!-- ▸ Floating code symbols -->
-  {float_syms}
-
-  <!-- ▸ Glassmorphism panel -->
-  <g class="slideUp" style="animation-delay:0.05s">
-    <rect x="45" y="40" width="620" height="300" rx="16"
-          fill="{t['glass']}" stroke="{t['border']}" stroke-width="1"/>
-    <!-- Inner highlight line (top edge of glass) -->
-    <line x1="61" y1="40.5" x2="649" y2="40.5" stroke="{t['border_strong']}" stroke-width="0.5" opacity="0.5"/>
-  </g>
-
-  <!-- ▸ Kicker line with blinking cursor -->
-  <g class="slideUp" style="animation-delay:0.15s">
-    <text x="80" y="95" class="kicker">&gt; initializing anik.dev ...</text>
-    <rect x="302" y="82" width="9" height="16" rx="1" class="cursor" opacity="0.9"/>
-  </g>
-
-  <!-- ▸ Name -->
-  <g class="slideUp" style="animation-delay:0.25s">
-    <text x="78" y="160" class="name">Md Abu Sayum Anik</text>
-  </g>
-
-  <!-- ▸ Subtitle with role -->
-  <g class="slideUp" style="animation-delay:0.35s">
-    <text x="80" y="198" class="sub">Software Engineer · CSE at United International University</text>
-  </g>
-
-  <!-- ▸ Status indicator -->
-  <g class="slideUp" style="animation-delay:0.42s">
-    <circle cx="88" cy="235" r="5" fill="{t['accent4']}" class="statusDot" filter="url(#statusGlow)"/>
-    <circle cx="88" cy="235" r="5" fill="{t['accent4']}" opacity="0.6"/>
-    <text x="102" y="239" class="status">Available for opportunities</text>
-  </g>
-
-  <!-- ▸ Tag chips -->
-  <g>
-    {chips_svg}
-  </g>
-
-  <!-- ▸ Corner decorations -->
-  {corners}
-
-  <!-- ▸ Ambient horizontal line accent -->
-  <line x1="80" y1="215" x2="340" y2="215" stroke="url(#chipGrad)" stroke-width="0.5" opacity="0.4" class="slideUp" style="animation-delay:0.4s"/>
-  <line x1="80" y1="265" x2="580" y2="265" stroke="url(#chipGrad)" stroke-width="0.5" opacity="0.25" class="slideUp" style="animation-delay:0.48s"/>
 </g>
 
-<!-- ▸ Card outer border -->
-<rect x="0.5" y="0.5" width="{W - 1}" height="{H - 1}" rx="18" fill="none" stroke="{t['border']}" stroke-width="1"/>
-
+<!-- Outer Card Border -->
+<rect x="0.5" y="0.5" width="{W - 1}" height="{H - 1}" rx="18" fill="none" stroke="{t['card_border']}" stroke-width="1"/>
 </svg>
 """
 
@@ -459,4 +366,4 @@ if __name__ == "__main__":
         path = OUT / f"header-{name}.svg"
         path.write_text(render(theme), encoding="utf-8")
         print(f"  ✓ {path}")
-    print("Done — headers generated.")
+    print("Done — new headers generated successfully.")

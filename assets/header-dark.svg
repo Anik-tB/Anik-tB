@@ -1,316 +1,281 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="380" viewBox="0 0 1200 380" role="img" aria-label="Md Abu Sayum Anik — Software Engineer">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-label="Md Abu Sayum Anik — Software Engineer Profile">
 <defs>
-  <!-- Background gradient -->
+  <!-- Background Gradient -->
   <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0%" stop-color="#06080f"/>
-    <stop offset="100%" stop-color="#0c1029"/>
+    <stop offset="0%" stop-color="#060813"/>
+    <stop offset="100%" stop-color="#0c1228"/>
   </linearGradient>
 
-  <!-- Name text gradient -->
+  <!-- Name Text Gradient -->
   <linearGradient id="nameGrad" x1="0" y1="0" x2="1" y2="0">
     <stop offset="0%" stop-color="#00d4ff"/>
-    <stop offset="50%" stop-color="#7c3aed"/>
-    <stop offset="100%" stop-color="#f43f5e"/>
+    <stop offset="50%" stop-color="#9d4edd"/>
+    <stop offset="100%" stop-color="#f72585"/>
   </linearGradient>
 
-  <!-- Helix gradient -->
-  <linearGradient id="helixGrad" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0%" stop-color="#00d4ff"/>
-    <stop offset="50%" stop-color="#7c3aed"/>
-    <stop offset="100%" stop-color="#f43f5e"/>
+  <!-- Accent Border Gradient -->
+  <linearGradient id="borderGrad" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#00d4ff" stop-opacity="0.6"/>
+    <stop offset="50%" stop-color="#9d4edd" stop-opacity="0.3"/>
+    <stop offset="100%" stop-color="#f72585" stop-opacity="0.5"/>
   </linearGradient>
 
-  <!-- Chip border gradient -->
-  <linearGradient id="chipGrad" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0%" stop-color="#00d4ff" stop-opacity="0.5"/>
-    <stop offset="100%" stop-color="#7c3aed" stop-opacity="0.3"/>
-  </linearGradient>
+  <!-- Radial Glow Behind Code Terminal -->
+  <radialGradient id="termGlow" cx="0.5" cy="0.5" r="0.5">
+    <stop offset="0%" stop-color="#9d4edd" stop-opacity="0.35"/>
+    <stop offset="100%" stop-color="#00d4ff" stop-opacity="0"/>
+  </radialGradient>
 
-  <!-- Orb glow filter -->
-  <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
-    <feGaussianBlur stdDeviation="55" result="blur"/>
-    <feComposite in="SourceGraphic" in2="blur" operator="over"/>
-  </filter>
-  <filter id="glowStrong" x="-100%" y="-100%" width="300%" height="300%">
-    <feGaussianBlur stdDeviation="80"/>
-  </filter>
+  <!-- Radial Glow Top Left -->
+  <radialGradient id="heroGlow" cx="0.2" cy="0.2" r="0.6">
+    <stop offset="0%" stop-color="#00d4ff" stop-opacity="0.3"/>
+    <stop offset="100%" stop-color="#060813" stop-opacity="0"/>
+  </radialGradient>
 
-  <!-- Glass blur -->
-  <filter id="glassBlur" x="-10%" y="-10%" width="120%" height="120%">
-    <feGaussianBlur stdDeviation="2"/>
-  </filter>
-
-  <!-- Grid pattern -->
-  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#f0f4ff" stroke-width="0.5" opacity="0.04"/>
+  <!-- Grid Pattern -->
+  <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+    <path d="M 36 0 L 0 0 0 36" fill="none" stroke="#ffffff" stroke-width="0.75" opacity="0.035"/>
   </pattern>
 
-  <!-- Dot grid for mesh effect -->
-  <pattern id="dotGrid" width="24" height="24" patternUnits="userSpaceOnUse">
-    <circle cx="12" cy="12" r="0.8" fill="#f0f4ff" opacity="0.060"/>
-  </pattern>
-
-  <!-- Radial fade mask for grid -->
-  <radialGradient id="gridFade" cx="0.3" cy="0.5" r="0.8">
-    <stop offset="0%" stop-color="white" stop-opacity="0.6"/>
-    <stop offset="100%" stop-color="white" stop-opacity="0"/>
+  <radialGradient id="gridFade" cx="0.5" cy="0.5" r="0.6">
+    <stop offset="0%" stop-color="#fff" stop-opacity="1"/>
+    <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
   </radialGradient>
   <mask id="gridMask">
-    <rect width="1200" height="380" fill="url(#gridFade)"/>
+    <rect width="1200" height="360" fill="url(#gridFade)"/>
   </mask>
 
-  <!-- Clip path for rounded card -->
-  <clipPath id="cardClip">
-    <rect width="1200" height="380" rx="18"/>
-  </clipPath>
-
-  <!-- Status glow -->
-  <filter id="statusGlow" x="-200%" y="-200%" width="500%" height="500%">
-    <feGaussianBlur stdDeviation="3"/>
+  <!-- Glow Filters -->
+  <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="40" result="blur"/>
   </filter>
+  <filter id="badgeGlow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="3" result="blur"/>
+    <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+  </filter>
+
+  <!-- Card Clip -->
+  <clipPath id="cardClip">
+    <rect width="1200" height="360" rx="18"/>
+  </clipPath>
 </defs>
 
 <style>
-  /* ── Typography ── */
-  .kicker { font: 500 14px/1 'SF Mono',SFMono-Regular,ui-monospace,Menlo,Consolas,'Liberation Mono',monospace; fill: #00d4ff; letter-spacing: 0.06em; }
-  .cursor { fill: #00d4ff; animation: blink 1s step-end infinite; }
-  .name   { font: 800 52px/1 'Segoe UI',Inter,-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif; fill: url(#nameGrad); letter-spacing: -0.03em; }
-  .sub    { font: 400 19px/1 'Segoe UI',Inter,-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif; fill: #64748b; letter-spacing: 0.01em; }
-  .status { font: 500 13px/1 'Segoe UI',Inter,-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif; fill: #06d6a0; letter-spacing: 0.02em; }
-  .chipText { font: 500 13px/1 'Segoe UI',Inter,-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif; fill: #64748b; }
+  .kicker { font: 600 13px 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, Menlo, monospace; letter-spacing: 0.05em; }
+  .name { font: 800 46px Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; letter-spacing: -0.03em; }
+  .role { font: 600 18px Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; fill: #cbd5e1; letter-spacing: -0.01em; }
+  .univ { font: 400 14px Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; fill: #94a3b8; }
+  .statusText { font: 600 12px Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; fill: #34d399; }
+  .chipText { font: 500 12.5px Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; fill: #e2e8f0; }
 
-  /* ── Animations ── */
-  .slideUp {
-    opacity: 0; transform: translateY(18px);
-    animation: slideUpIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-  }
-  .floatA { animation: driftA 18s ease-in-out infinite alternate; }
-  .floatB { animation: driftB 22s ease-in-out infinite alternate; }
-  .floatC { animation: driftC 16s ease-in-out infinite alternate; }
-  .helixRotate { animation: helixSway 12s ease-in-out infinite alternate; transform-origin: 1020px 190px; }
-  .orbPulse1 { animation: pulse1 6s ease-in-out infinite alternate; }
-  .orbPulse2 { animation: pulse2 8s ease-in-out infinite alternate; }
-  .orbPulse3 { animation: pulse3 7s ease-in-out infinite alternate; }
-  .statusDot { animation: statusPulse 2s ease-in-out infinite; }
-  .helixDash { animation: helixFlow 4s linear infinite; }
-  .ringRotate { animation: ringRot 50s linear infinite; transform-origin: 1020px 190px; }
+  /* Terminal Code Styling */
+  .termTitle { font: 500 12px 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, Menlo, monospace; fill: #94a3b8; }
+  .codeLine { font: 500 12.5px/1.7 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, Menlo, monospace; }
+  .lineNum { font: 400 12px/1.7 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, Menlo, monospace; fill: #94a3b8; opacity: 0.45; user-select: none; }
 
-  @keyframes slideUpIn {
-    0%   { opacity: 0; transform: translateY(18px); }
-    100% { opacity: 1; transform: translateY(0); }
+  /* Cursor Blink Animation */
+  .cursor {
+    fill: #00d4ff;
+    animation: blink 1s step-end infinite;
   }
   @keyframes blink {
     0%, 100% { opacity: 1; }
     50% { opacity: 0; }
   }
-  @keyframes driftA {
-    0%   { transform: translate(0, 0); }
-    100% { transform: translate(-20px, 15px); }
+
+  /* Status Dot Pulse */
+  .pulseDot {
+    animation: pulse 2.2s ease-in-out infinite;
   }
-  @keyframes driftB {
-    0%   { transform: translate(0, 0); }
-    100% { transform: translate(18px, -12px); }
-  }
-  @keyframes driftC {
-    0%   { transform: translate(0, 0); }
-    100% { transform: translate(-14px, -18px); }
-  }
-  @keyframes pulse1 {
-    0%   { opacity: 0.45; transform: scale(1); }
-    100% { opacity: 0.27; transform: scale(1.15); }
-  }
-  @keyframes pulse2 {
-    0%   { opacity: 0.36; transform: scale(1); }
-    100% { opacity: 0.23; transform: scale(1.2); }
-  }
-  @keyframes pulse3 {
-    0%   { opacity: 0.32; transform: scale(1); }
-    100% { opacity: 0.20; transform: scale(1.1); }
-  }
-  @keyframes helixSway {
-    0%   { transform: rotate(-2deg); }
-    100% { transform: rotate(2deg); }
-  }
-  @keyframes helixFlow {
-    0%   { stroke-dashoffset: 0; }
-    100% { stroke-dashoffset: -40; }
-  }
-  @keyframes statusPulse {
-    0%, 100% { opacity: 1; r: 5; }
-    50% { opacity: 0.5; r: 7; }
-  }
-  @keyframes ringRot {
-    0%   { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.35); opacity: 0.6; }
   }
 
-  /* ── Respect reduced motion ── */
+  /* Floating Animation for Code Window */
+  .floatWindow {
+    animation: subtleFloat 8s ease-in-out infinite alternate;
+  }
+  @keyframes subtleFloat {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-5px); }
+  }
+
   @media (prefers-reduced-motion: reduce) {
-    .slideUp { animation: none; opacity: 1; transform: none; }
-    .floatA, .floatB, .floatC,
-    .helixRotate, .orbPulse1, .orbPulse2, .orbPulse3,
-    .statusDot, .cursor, .helixDash, .ringRotate {
-      animation: none;
-    }
+    .cursor, .pulseDot, .floatWindow { animation: none; }
   }
 </style>
 
 <g clip-path="url(#cardClip)">
-  <!-- ▸ Base background -->
-  <rect width="1200" height="380" fill="url(#bgGrad)"/>
+  <!-- ▸ Canvas Base -->
+  <rect width="1200" height="360" fill="url(#bgGrad)"/>
+  <rect width="1200" height="360" fill="url(#grid)" mask="url(#gridMask)"/>
 
-  <!-- ▸ Subtle grid mesh -->
-  <rect width="1200" height="380" fill="url(#grid)" mask="url(#gridMask)"/>
-  <rect width="1200" height="380" fill="url(#dotGrid)" mask="url(#gridMask)" opacity="0.5"/>
+  <!-- ▸ Background Glow Orbs -->
+  <circle cx="220" cy="140" r="160" fill="url(#heroGlow)" filter="url(#softGlow)"/>
+  <circle cx="920" cy="180" r="180" fill="url(#termGlow)" filter="url(#softGlow)"/>
 
-  <!-- ▸ Floating geometric shapes -->
-  
-  <!-- Floating geometric shapes -->
-  <g class="floatA" style="animation-delay:0s">
-    <polygon points="180,60 200,40 220,60 200,80" fill="none" stroke="#7c3aed" stroke-width="0.8" opacity="0.08"/>
-  </g>
-  <g class="floatB" style="animation-delay:1s">
-    <polygon points="300,320 310,305 330,305 340,320 330,335 310,335" fill="#00d4ff" opacity="0.04"/>
-  </g>
-  <g class="floatC" style="animation-delay:0.5s">
-    <circle cx="700" cy="60" r="18" fill="none" stroke="#f43f5e" stroke-width="0.7" opacity="0.07"/>
-  </g>
-  <g class="floatA" style="animation-delay:2s">
-    <polygon points="650,340 660,325 680,325 690,340 680,355 660,355" fill="none" stroke="#7c3aed" stroke-width="0.6" opacity="0.06"/>
-  </g>
-  <g class="floatB" style="animation-delay:1.5s">
-    <rect x="400" y="30" width="16" height="16" rx="2" transform="rotate(45,408,38)" fill="none" stroke="#00d4ff" stroke-width="0.7" opacity="0.06"/>
-  </g>
-  <g class="floatC" style="animation-delay:0.8s">
-    <polygon points="550,350 560,335 570,350" fill="#f43f5e" opacity="0.05"/>
+  <!-- ======================================================== -->
+  <!-- LEFT COLUMN: Identity & Highlights                       -->
+  <!-- ======================================================== -->
+
+  <!-- 1. Terminal Kicker -->
+  <g transform="translate(60, 68)">
+    <rect x="-8" y="-16" width="186" height="26" rx="6" fill="rgba(255, 255, 255, 0.05)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="0.8"/>
+    <text x="4" y="2" class="kicker">
+      <tspan fill="#94a3b8">~/anik $</tspan>
+      <tspan fill="#00d4ff"> whoami</tspan>
+      <tspan class="cursor">_</tspan>
+    </text>
   </g>
 
-  <!-- ▸ Glowing orbs -->
-  <g filter="url(#glowStrong)">
-    <circle class="orbPulse1" cx="860" cy="100" r="110" fill="#00d4ff" opacity="0.45"/>
-    <circle class="orbPulse2" cx="1050" cy="240" r="100" fill="#7c3aed" opacity="0.36"/>
-    <circle class="orbPulse3" cx="750" cy="300" r="80" fill="#f43f5e" opacity="0.27"/>
-    <circle class="orbPulse1 floatB" cx="350" cy="50" r="60" fill="#7c3aed" opacity="0.11"/>
-    <circle class="orbPulse2 floatA" cx="200" cy="320" r="50" fill="#00d4ff" opacity="0.09"/>
+  <!-- 2. Full Name -->
+  <text x="60" y="128" class="name" fill="url(#nameGrad)">Md Abu Sayum Anik</text>
+
+  <!-- 3. Headline Role -->
+  <text x="60" y="162" class="role">Software Engineer · Full-Stack &amp; AI Tools</text>
+
+  <!-- 4. University Info -->
+  <g transform="translate(60, 188)">
+    <text x="0" y="0" class="univ">CSE @ United International University · Dhaka, Bangladesh</text>
   </g>
 
-  <!-- ▸ DNA Helix (right side) -->
-  <g class="helixRotate" opacity="0.7">
-    <!-- Strand 1 -->
-    <path d="M1020.0,50.0 L1030.7,53.5 L1041.0,57.0 L1050.6,60.5 L1058.9,64.0 L1065.7,67.5 L1070.8,71.0 L1073.9,74.5 L1075.0,78.0 L1073.9,81.5 L1070.8,85.0 L1065.7,88.5 L1058.9,92.0 L1050.6,95.5 L1041.0,99.0 L1030.7,102.5 L1020.0,106.0 L1009.3,109.5 L999.0,113.0 L989.4,116.5 L981.1,120.0 L974.3,123.5 L969.2,127.0 L966.1,130.5 L965.0,134.0 L966.1,137.5 L969.2,141.0 L974.3,144.5 L981.1,148.0 L989.4,151.5 L999.0,155.0 L1009.3,158.5 L1020.0,162.0 L1030.7,165.5 L1041.0,169.0 L1050.6,172.5 L1058.9,176.0 L1065.7,179.5 L1070.8,183.0 L1073.9,186.5 L1075.0,190.0 L1073.9,193.5 L1070.8,197.0 L1065.7,200.5 L1058.9,204.0 L1050.6,207.5 L1041.0,211.0 L1030.7,214.5 L1020.0,218.0 L1009.3,221.5 L999.0,225.0 L989.4,228.5 L981.1,232.0 L974.3,235.5 L969.2,239.0 L966.1,242.5 L965.0,246.0 L966.1,249.5 L969.2,253.0 L974.3,256.5 L981.1,260.0 L989.4,263.5 L999.0,267.0 L1009.3,270.5 L1020.0,274.0 L1030.7,277.5 L1041.0,281.0 L1050.6,284.5 L1058.9,288.0 L1065.7,291.5 L1070.8,295.0 L1073.9,298.5 L1075.0,302.0 L1073.9,305.5 L1070.8,309.0 L1065.7,312.5 L1058.9,316.0 L1050.6,319.5 L1041.0,323.0 L1030.7,326.5 L1020.0,330.0" fill="none" stroke="#00d4ff" stroke-width="2" opacity="0.6"
-          stroke-dasharray="8 4" class="helixDash"/>
-    <!-- Strand 2 -->
-    <path d="M1020.0,50.0 L1009.3,53.5 L999.0,57.0 L989.4,60.5 L981.1,64.0 L974.3,67.5 L969.2,71.0 L966.1,74.5 L965.0,78.0 L966.1,81.5 L969.2,85.0 L974.3,88.5 L981.1,92.0 L989.4,95.5 L999.0,99.0 L1009.3,102.5 L1020.0,106.0 L1030.7,109.5 L1041.0,113.0 L1050.6,116.5 L1058.9,120.0 L1065.7,123.5 L1070.8,127.0 L1073.9,130.5 L1075.0,134.0 L1073.9,137.5 L1070.8,141.0 L1065.7,144.5 L1058.9,148.0 L1050.6,151.5 L1041.0,155.0 L1030.7,158.5 L1020.0,162.0 L1009.3,165.5 L999.0,169.0 L989.4,172.5 L981.1,176.0 L974.3,179.5 L969.2,183.0 L966.1,186.5 L965.0,190.0 L966.1,193.5 L969.2,197.0 L974.3,200.5 L981.1,204.0 L989.4,207.5 L999.0,211.0 L1009.3,214.5 L1020.0,218.0 L1030.7,221.5 L1041.0,225.0 L1050.6,228.5 L1058.9,232.0 L1065.7,235.5 L1070.8,239.0 L1073.9,242.5 L1075.0,246.0 L1073.9,249.5 L1070.8,253.0 L1065.7,256.5 L1058.9,260.0 L1050.6,263.5 L1041.0,267.0 L1030.7,270.5 L1020.0,274.0 L1009.3,277.5 L999.0,281.0 L989.4,284.5 L981.1,288.0 L974.3,291.5 L969.2,295.0 L966.1,298.5 L965.0,302.0 L966.1,305.5 L969.2,309.0 L974.3,312.5 L981.1,316.0 L989.4,319.5 L999.0,323.0 L1009.3,326.5 L1020.0,330.0" fill="none" stroke="#7c3aed" stroke-width="2" opacity="0.5"
-          stroke-dasharray="8 4" class="helixDash" style="animation-delay:-2s"/>
-    <!-- Rungs -->
-    <g stroke="#f43f5e" stroke-width="0.8" opacity="0.25">
-      <line x1="1058.9" y1="64.0" x2="981.1" y2="64.0"/>
-    <line x1="1058.9" y1="92.0" x2="981.1" y2="92.0"/>
-    <line x1="981.1" y1="120.0" x2="1058.9" y2="120.0"/>
-    <line x1="981.1" y1="148.0" x2="1058.9" y2="148.0"/>
-    <line x1="1058.9" y1="176.0" x2="981.1" y2="176.0"/>
-    <line x1="1058.9" y1="204.0" x2="981.1" y2="204.0"/>
-    <line x1="981.1" y1="232.0" x2="1058.9" y2="232.0"/>
-    <line x1="981.1" y1="260.0" x2="1058.9" y2="260.0"/>
-    <line x1="1058.9" y1="288.0" x2="981.1" y2="288.0"/>
-    <line x1="1058.9" y1="316.0" x2="981.1" y2="316.0"/>
+  <!-- 5. Status Badge -->
+  <g transform="translate(60, 216)">
+    <rect x="0" y="0" width="206" height="28" rx="14" fill="rgba(16, 185, 129, 0.12)" stroke="rgba(16, 185, 129, 0.30)" stroke-width="1"/>
+    <!-- Glowing Status Indicator Dot -->
+    <g transform="translate(14, 14)">
+      <circle cx="0" cy="0" r="4.5" fill="#10b981" filter="url(#badgeGlow)" class="pulseDot"/>
+      <circle cx="0" cy="0" r="4" fill="#10b981"/>
     </g>
-    <!-- Node dots along helix -->
-    <g fill="#00d4ff" opacity="0.5">
-      <circle cx="1075" cy="92" r="3"/>
-      <circle cx="965" cy="232" r="2.5"/>
-      <circle cx="1058" cy="302" r="2"/>
+    <text x="27" y="18" class="statusText">Available for opportunities</text>
+  </g>
+
+  <!-- 6. Tag Chips Row -->
+  <g transform="translate(60, 272)">
+    <!-- Chip 1: Full-stack Web -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="138" height="32" rx="16" fill="rgba(255, 255, 255, 0.05)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1"/>
+      <!-- Code Icon -->
+      <g transform="translate(14, 9)" stroke="#00d4ff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="10 4 14 8 10 12"/>
+        <polyline points="4 12 0 8 4 4"/>
+      </g>
+      <text x="36" y="20.5" class="chipText">Full-Stack Web</text>
     </g>
-    <g fill="#7c3aed" opacity="0.4">
-      <circle cx="965" cy="92" r="2.5"/>
-      <circle cx="1075" cy="232" r="3"/>
+
+    <!-- Chip 2: Flutter Apps -->
+    <g transform="translate(148, 0)">
+      <rect x="0" y="0" width="128" height="32" rx="16" fill="rgba(255, 255, 255, 0.05)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1"/>
+      <!-- Mobile Icon -->
+      <g transform="translate(14, 8)" stroke="#9d4edd" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="1" y="0" width="10" height="15" rx="2"/>
+        <line x1="6" y1="12" x2="6.01" y2="12"/>
+      </g>
+      <text x="34" y="20.5" class="chipText">Flutter Apps</text>
+    </g>
+
+    <!-- Chip 3: AI Dev Tools -->
+    <g transform="translate(286, 0)">
+      <rect x="0" y="0" width="124" height="32" rx="16" fill="rgba(255, 255, 255, 0.05)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1"/>
+      <!-- Sparkle / AI Icon -->
+      <g transform="translate(13, 8)" fill="#f72585">
+        <path d="M7.5 0 L9 5 L14 6.5 L9 8 L7.5 13 L6 8 L1 6.5 L6 5 Z"/>
+      </g>
+      <text x="33" y="20.5" class="chipText">AI Dev Tools</text>
+    </g>
+
+    <!-- Chip 4: Dhaka, BD -->
+    <g transform="translate(420, 0)">
+      <rect x="0" y="0" width="112" height="32" rx="16" fill="rgba(255, 255, 255, 0.05)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1"/>
+      <!-- Map Pin Icon (REAL LOCATION PIN) -->
+      <g transform="translate(14, 8)" stroke="#00d4ff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M11 5.5 C11 9.5 5.5 14 5.5 14 C5.5 14 0 9.5 0 5.5 C0 2.5 2.5 0 5.5 0 C8.5 0 11 2.5 11 5.5 Z"/>
+        <circle cx="5.5" cy="5.5" r="2" fill="#00d4ff"/>
+      </g>
+      <text x="33" y="20.5" class="chipText">Dhaka, BD</text>
     </g>
   </g>
 
-  <!-- ▸ Rotating geometric ring -->
-  <g class="ringRotate" opacity="0.2">
-    <circle cx="1020" cy="190" r="160" fill="none" stroke="url(#helixGrad)" stroke-width="0.8" stroke-dasharray="3 9"/>
-  </g>
-  <circle cx="1020" cy="190" r="180" fill="none" stroke="#00d4ff" stroke-width="0.4" opacity="0.06" stroke-dasharray="1 15"/>
+  <!-- ======================================================== -->
+  <!-- RIGHT COLUMN: Modern IDE / Code Window Card             -->
+  <!-- ======================================================== -->
 
-  <!-- ▸ Floating code symbols -->
-  <text x="780" y="55" font-family="'SF Mono',SFMono-Regular,ui-monospace,Menlo,Consolas,'Liberation Mono',monospace" font-size="16" fill="#64748b" opacity="0.12" class="floatA" style="animation-delay:0s">{</text>
-  <text x="1120" y="95" font-family="'SF Mono',SFMono-Regular,ui-monospace,Menlo,Consolas,'Liberation Mono',monospace" font-size="14" fill="#64748b" opacity="0.1" class="floatB" style="animation-delay:0.5s">}</text>
-  <text x="850" y="310" font-family="'SF Mono',SFMono-Regular,ui-monospace,Menlo,Consolas,'Liberation Mono',monospace" font-size="13" fill="#64748b" opacity="0.09" class="floatC" style="animation-delay:1.2s">&lt;/&gt;</text>
-  <text x="1060" y="330" font-family="'SF Mono',SFMono-Regular,ui-monospace,Menlo,Consolas,'Liberation Mono',monospace" font-size="12" fill="#64748b" opacity="0.08" class="floatA" style="animation-delay:2.0s">( )</text>
-  <text x="920" y="45" font-family="'SF Mono',SFMono-Regular,ui-monospace,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#64748b" opacity="0.1" class="floatB" style="animation-delay:0.8s">=&gt;</text>
-  <text x="1150" y="260" font-family="'SF Mono',SFMono-Regular,ui-monospace,Menlo,Consolas,'Liberation Mono',monospace" font-size="12" fill="#64748b" opacity="0.07" class="floatC" style="animation-delay:1.6s">[ ]</text>
-  <text x="770" y="280" font-family="'SF Mono',SFMono-Regular,ui-monospace,Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#64748b" opacity="0.06" class="floatA" style="animation-delay:2.5s">fn</text>
-  <text x="1100" y="170" font-family="'SF Mono',SFMono-Regular,ui-monospace,Menlo,Consolas,'Liberation Mono',monospace" font-size="13" fill="#64748b" opacity="0.08" class="floatB" style="animation-delay:1.0s">//</text>
+  <g class="floatWindow" transform="translate(630, 42)">
+    <!-- Terminal Box Container -->
+    <rect x="0" y="0" width="510" height="276" rx="14" fill="#0b0f1e" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1"/>
+    
+    <!-- Top Header Bar -->
+    <path d="M 0 14 Q 0 0 14 0 L 496 0 Q 510 0 510 14 L 510 38 L 0 38 Z" fill="#11182c"/>
+    <line x1="0" y1="38" x2="510" y2="38" stroke="rgba(255, 255, 255, 0.12)" stroke-width="0.8"/>
 
-  <!-- ▸ Glassmorphism panel -->
-  <g class="slideUp" style="animation-delay:0.05s">
-    <rect x="45" y="40" width="620" height="300" rx="16"
-          fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
-    <!-- Inner highlight line (top edge of glass) -->
-    <line x1="61" y1="40.5" x2="649" y2="40.5" stroke="rgba(255,255,255,0.12)" stroke-width="0.5" opacity="0.5"/>
-  </g>
+    <!-- macOS Window Buttons -->
+    <circle cx="20" cy="19" r="5" fill="#ff5f56"/>
+    <circle cx="36" cy="19" r="5" fill="#ffbd2e"/>
+    <circle cx="52" cy="19" r="5" fill="#27c93f"/>
 
-  <!-- ▸ Kicker line with blinking cursor -->
-  <g class="slideUp" style="animation-delay:0.15s">
-    <text x="80" y="95" class="kicker">&gt; initializing anik.dev ...</text>
-    <rect x="302" y="82" width="9" height="16" rx="1" class="cursor" opacity="0.9"/>
-  </g>
+    <!-- Tab Title with file indicator -->
+    <text x="74" y="23" class="termTitle">anik.config.ts</text>
+    <rect x="420" y="11" width="72" height="18" rx="4" fill="rgba(255, 255, 255, 0.05)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="0.7"/>
+    <text x="456" y="23" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, Menlo, monospace" font-size="10" fill="#00d4ff">TS 5.7</text>
 
-  <!-- ▸ Name -->
-  <g class="slideUp" style="animation-delay:0.25s">
-    <text x="78" y="160" class="name">Md Abu Sayum Anik</text>
-  </g>
+    <!-- Code Content -->
+    <g transform="translate(20, 64)" class="codeLine">
+      <!-- Line 1 -->
+      <text x="0" y="0">
+        <tspan class="lineNum">1 </tspan>
+        <tspan fill="#c084fc">export const</tspan> <tspan fill="#38bdf8">developer</tspan> <tspan fill="#94a3b8">=</tspan> <tspan fill="#94a3b8">&amp;#123;</tspan>
+      </text>
 
-  <!-- ▸ Subtitle with role -->
-  <g class="slideUp" style="animation-delay:0.35s">
-    <text x="80" y="198" class="sub">Software Engineer · CSE at United International University</text>
-  </g>
+      <!-- Line 2 -->
+      <text x="0" y="24">
+        <tspan class="lineNum">2 </tspan>
+        <tspan fill="#94a3b8">  </tspan><tspan fill="#7dd3fc">name</tspan><tspan fill="#94a3b8">: </tspan><tspan fill="#34d399">&quot;Md Abu Sayum Anik&quot;</tspan><tspan fill="#94a3b8">,</tspan>
+      </text>
 
-  <!-- ▸ Status indicator -->
-  <g class="slideUp" style="animation-delay:0.42s">
-    <circle cx="88" cy="235" r="5" fill="#06d6a0" class="statusDot" filter="url(#statusGlow)"/>
-    <circle cx="88" cy="235" r="5" fill="#06d6a0" opacity="0.6"/>
-    <text x="102" y="239" class="status">Available for opportunities</text>
-  </g>
+      <!-- Line 3 -->
+      <text x="0" y="48">
+        <tspan class="lineNum">3 </tspan>
+        <tspan fill="#94a3b8">  </tspan><tspan fill="#7dd3fc">focus</tspan><tspan fill="#94a3b8">: </tspan><tspan fill="#34d399">&quot;Full-Stack &amp; AI Systems&quot;</tspan><tspan fill="#94a3b8">,</tspan>
+      </text>
 
-  <!-- ▸ Tag chips -->
-  <g>
-    <g class="slideUp" style="animation-delay:0.50s"><rect x="80" y="278" width="161" height="32" rx="16" fill="rgba(255,255,255,0.04)" stroke="url(#chipGrad)" stroke-width="1"/><g transform="translate(92,286)" color="#00d4ff"><path d="M0,2 L4,2 L4,10 L0,10 Z M6,0 L10,0 L10,10 L6,10 Z M12,4 L16,4 L16,10 L12,10 Z" fill="currentColor" opacity="0.7"/></g><text x="114" y="299" class="chipText">Full-stack Web</text></g>
-    <g class="slideUp" style="animation-delay:0.58s"><rect x="251.0" y="278" width="212" height="32" rx="16" fill="rgba(255,255,255,0.04)" stroke="url(#chipGrad)" stroke-width="1"/><g transform="translate(263.0,286)" color="#00d4ff"><path d="M8,0 L14,4 L14,12 L8,16 L2,12 L2,4 Z" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.7"/></g><text x="285.0" y="299" class="chipText">Flutter &amp; Mobile</text></g>
-    <g class="slideUp" style="animation-delay:0.66s"><rect x="473.0" y="278" width="144" height="32" rx="16" fill="rgba(255,255,255,0.04)" stroke="url(#chipGrad)" stroke-width="1"/><g transform="translate(485.0,286)" color="#00d4ff"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.7"/><circle cx="5" cy="6" r="1.5" fill="currentColor" opacity="0.7"/><circle cx="11" cy="6" r="1.5" fill="currentColor" opacity="0.7"/><path d="M5,10 Q8,13 11,10" fill="none" stroke="currentColor" stroke-width="1.2" opacity="0.7"/></g><text x="507.0" y="299" class="chipText">AI Dev Tools</text></g>
-    <g class="slideUp" style="animation-delay:0.74s"><rect x="627.0" y="278" width="118" height="32" rx="16" fill="rgba(255,255,255,0.04)" stroke="url(#chipGrad)" stroke-width="1"/><g transform="translate(639.0,286)" color="#00d4ff"><path d="M8,1 C8,1 2,6 2,10 C2,13.3 4.7,16 8,16 C11.3,16 14,13.3 14,10 C14,6 8,1 8,1 Z" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.7"/></g><text x="661.0" y="299" class="chipText">Dhaka, BD</text></g>
-  </g>
+      <!-- Line 4 -->
+      <text x="0" y="72">
+        <tspan class="lineNum">4 </tspan>
+        <tspan fill="#94a3b8">  </tspan><tspan fill="#7dd3fc">craft</tspan><tspan fill="#94a3b8">: </tspan><tspan fill="#94a3b8">[</tspan><tspan fill="#fbbf24">&quot;Next.js&quot;</tspan><tspan fill="#94a3b8">, </tspan><tspan fill="#fbbf24">&quot;FastAPI&quot;</tspan><tspan fill="#94a3b8">, </tspan><tspan fill="#fbbf24">&quot;Flutter&quot;</tspan><tspan fill="#94a3b8">],</tspan>
+      </text>
 
-  <!-- ▸ Corner decorations -->
-  
-  <!-- Top-left corner -->
-  <g opacity="0.15">
-    <line x1="20" y1="30" x2="50" y2="30" stroke="#00d4ff" stroke-width="1.5"/>
-    <line x1="30" y1="20" x2="30" y2="50" stroke="#00d4ff" stroke-width="1.5"/>
-  </g>
-  <!-- Top-right corner -->
-  <g opacity="0.12">
-    <polygon points="1170,20 1180,35 1160,35" fill="none" stroke="#7c3aed" stroke-width="1"/>
-    <polygon points="1170,28 1175,35 1165,35" fill="#7c3aed" opacity="0.3"/>
-  </g>
-  <!-- Bottom-right corner -->
-  <g opacity="0.10">
-    <rect x="1160" y="345" width="15" height="15" rx="2" fill="none" stroke="#00d4ff" stroke-width="1"/>
-    <rect x="1163" y="348" width="9" height="9" rx="1" fill="#00d4ff" opacity="0.15"/>
-  </g>
-  <!-- Bottom-left corner -->
-  <g opacity="0.12">
-    <circle cx="30" cy="355" r="6" fill="none" stroke="#7c3aed" stroke-width="1"/>
-    <circle cx="30" cy="355" r="2.5" fill="#7c3aed" opacity="0.25"/>
-  </g>
+      <!-- Line 5 -->
+      <text x="0" y="96">
+        <tspan class="lineNum">5 </tspan>
+        <tspan fill="#94a3b8">  </tspan><tspan fill="#7dd3fc">building</tspan><tspan fill="#94a3b8">: </tspan><tspan fill="#f72585">&quot;GenoNexus 🧬&quot;</tspan><tspan fill="#94a3b8">,</tspan>
+      </text>
 
-  <!-- ▸ Ambient horizontal line accent -->
-  <line x1="80" y1="215" x2="340" y2="215" stroke="url(#chipGrad)" stroke-width="0.5" opacity="0.4" class="slideUp" style="animation-delay:0.4s"/>
-  <line x1="80" y1="265" x2="580" y2="265" stroke="url(#chipGrad)" stroke-width="0.5" opacity="0.25" class="slideUp" style="animation-delay:0.48s"/>
+      <!-- Line 6 -->
+      <text x="0" y="120">
+        <tspan class="lineNum">6 </tspan>
+        <tspan fill="#94a3b8">  </tspan><tspan fill="#7dd3fc">highlight</tspan><tspan fill="#94a3b8">: </tspan><tspan fill="#fbbf24">&quot;1st Place AOOP Showcase 🏆&quot;</tspan><tspan fill="#94a3b8">,</tspan>
+      </text>
+
+      <!-- Line 7 -->
+      <text x="0" y="144">
+        <tspan class="lineNum">7 </tspan>
+        <tspan fill="#94a3b8">  </tspan><tspan fill="#7dd3fc">status</tspan><tspan fill="#94a3b8">: </tspan><tspan fill="#34d399">&quot;open_for_hire&quot;</tspan>
+      </text>
+
+      <!-- Line 8 -->
+      <text x="0" y="168">
+        <tspan class="lineNum">8 </tspan>
+        <tspan fill="#94a3b8">&amp;#125;;</tspan>
+        <tspan class="cursor" fill="#00d4ff">▋</tspan>
+      </text>
+    </g>
+
+    <!-- Bottom Accent Line -->
+    <line x1="20" y1="262" x2="160" y2="262" stroke="url(#borderGrad)" stroke-width="2" stroke-linecap="round"/>
+  </g>
 </g>
 
-<!-- ▸ Card outer border -->
-<rect x="0.5" y="0.5" width="1199" height="379" rx="18" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
-
+<!-- Outer Card Border -->
+<rect x="0.5" y="0.5" width="1199" height="359" rx="18" fill="none" stroke="rgba(255, 255, 255, 0.10)" stroke-width="1"/>
 </svg>
