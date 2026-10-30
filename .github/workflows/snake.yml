@@ -28,8 +28,8 @@ jobs:
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-snake.svg?color_snake=#7b61d6&color_dots=#ebedf0,#ddd5f7,#bcaaf0,#9a83e3,#7b61d6
-            dist/github-snake-dark.svg?palette=github-dark&color_snake=#c29af0&color_dots=#161b22,#2b2350,#4b3d8a,#7b61d6,#a08ae6
+            dist/github-snake.svg?color_snake=#7c3aed&color_dots=#ebedf0,#e0d4fd,#c4a8f8,#a67cf0,#7c3aed
+            dist/github-snake-dark.svg?palette=github-dark&color_snake=#00d4ff&color_dots=#06080f,#1a1040,#3d2080,#7c3aed,#00d4ff
 
       - name: 🚀 Push to output branch
         run: |
