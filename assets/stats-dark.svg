@@ -19,12 +19,12 @@
 <rect x=".5" y=".5" width="999" height="339" rx="16" fill="#0d0b14" stroke="#2a2440"/>
 <g class="fade" style="animation-delay:0ms">
 <rect x="24.0" y="24" width="180.8" height="76" rx="12" fill="#15121f" stroke="#2a2440"/>
-<text x="40.0" y="64" class="num">437</text>
+<text x="40.0" y="64" class="num">438</text>
 <text x="40.0" y="86" class="label">Contributions</text>
 </g>
 <g class="fade" style="animation-delay:60ms">
 <rect x="216.8" y="24" width="180.8" height="76" rx="12" fill="#15121f" stroke="#2a2440"/>
-<text x="232.8" y="64" class="num">422</text>
+<text x="232.8" y="64" class="num">423</text>
 <text x="232.8" y="86" class="label">Commits</text>
 </g>
 <g class="fade" style="animation-delay:120ms">
@@ -101,7 +101,7 @@
 <rect class="bar" style="animation-delay:588ms" x="565.1" y="280.0" width="7.7" height="2.0" rx="1.5" fill="#231e33"><title>2026-10-04: 0</title></rect>
 <rect class="bar" style="animation-delay:600ms" x="575.8" y="280.0" width="7.7" height="2.0" rx="1.5" fill="#231e33"><title>2026-10-11: 0</title></rect>
 <rect class="bar" style="animation-delay:612ms" x="586.6" y="263.0" width="7.7" height="19.0" rx="1.5" fill="url(#g)"><title>2026-10-18: 18</title></rect>
-<rect class="bar" style="animation-delay:624ms" x="597.3" y="274.6" width="7.7" height="7.4" rx="1.5" fill="url(#g)"><title>2026-10-25: 7</title></rect>
+<rect class="bar" style="animation-delay:624ms" x="597.3" y="273.5" width="7.7" height="8.5" rx="1.5" fill="url(#g)"><title>2026-10-25: 8</title></rect>
 <text x="50.7" y="300" class="small">Nov</text>
 <text x="147.2" y="300" class="small">Jan</text>
 <text x="232.9" y="300" class="small">Mar</text>
