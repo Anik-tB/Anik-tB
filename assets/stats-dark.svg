@@ -48,14 +48,14 @@
   <rect x="30.0" y="26" width="216.8" height="88" rx="12" fill="#0d1120" stroke="rgba(255,255,255,0.07)"/>
   <rect x="30.0" y="38" width="3" height="48" rx="1.5" fill="url(#accentLine)" opacity="0.8"/>
   <g transform="translate(44.0, 38) scale(0.85)"><path d="M12,2 C8,2 4,5 4,9 C4,14 12,22 12,22 C12,22 20,14 20,9 C20,5 16,2 12,2 Z" fill="none" stroke="url(#iconGrad)" stroke-width="1.8" stroke-linecap="round"/><path d="M12,6 L13.5,9 L17,9.5 L14.5,12 L15,15.5 L12,14 L9,15.5 L9.5,12 L7,9.5 L10.5,9 Z" fill="url(#iconGrad)" opacity="0.5"/></g>
-  <text x="70.0" y="62" class="num">439</text>
+  <text x="70.0" y="62" class="num">443</text>
   <text x="44.0" y="100" class="label">Contributions</text>
 </g>
 <g class="slideUp" style="animation-delay:60ms">
   <rect x="260.8" y="26" width="216.8" height="88" rx="12" fill="#0d1120" stroke="rgba(255,255,255,0.07)"/>
   <rect x="260.8" y="38" width="3" height="48" rx="1.5" fill="url(#accentLine)" opacity="0.8"/>
   <g transform="translate(274.8, 38) scale(0.85)"><circle cx="12" cy="12" r="4" fill="none" stroke="url(#iconGrad)" stroke-width="1.8"/><line x1="12" y1="2" x2="12" y2="8" stroke="url(#iconGrad)" stroke-width="1.8" stroke-linecap="round"/><line x1="12" y1="16" x2="12" y2="22" stroke="url(#iconGrad)" stroke-width="1.8" stroke-linecap="round"/></g>
-  <text x="300.8" y="62" class="num">424</text>
+  <text x="300.8" y="62" class="num">428</text>
   <text x="274.8" y="100" class="label">Commits</text>
 </g>
 <g class="slideUp" style="animation-delay:120ms">
@@ -141,7 +141,7 @@
   <rect class="bar" style="animation-delay:686ms" x="678.7" y="329.5" width="10.3" height="2.5" rx="2" fill="rgba(255,255,255,0.04)"><title>2026-10-04: 0</title></rect>
   <rect class="bar" style="animation-delay:700ms" x="691.5" y="329.5" width="10.3" height="2.5" rx="2" fill="rgba(255,255,255,0.04)"><title>2026-10-11: 0</title></rect>
   <rect class="bar" style="animation-delay:714ms" x="704.3" y="306.4" width="10.3" height="25.6" rx="2" fill="url(#barGrad)"><title>2026-10-18: 18</title></rect>
-  <rect class="bar" style="animation-delay:728ms" x="717.2" y="319.2" width="10.3" height="12.8" rx="2" fill="url(#barGrad)"><title>2026-10-25: 9</title></rect>
+  <rect class="bar" style="animation-delay:728ms" x="717.2" y="313.5" width="10.3" height="18.5" rx="2" fill="url(#barGrad)"><title>2026-10-25: 13</title></rect>
   <text x="62.8" y="350" class="small">Nov</text>
   <text x="178.3" y="350" class="small">Jan</text>
   <text x="280.9" y="350" class="small">Mar</text>
