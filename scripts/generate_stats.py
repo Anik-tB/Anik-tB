@@ -321,11 +321,161 @@ def render(s, t):
     return "\n".join(out)
 
 
+def render_velocity(s, t):
+    W, H = 1200, 220
+    weeks = s["weeks"]
+    week_starts = s["week_starts"]
+    peak = max(weeks) or 1
+
+    gx, gw = 50, 1100
+    base_y, gh = 168, 95
+    n = len(weeks)
+
+    pts = []
+    for i, v in enumerate(weeks):
+        x = gx + (i / max(1, n - 1)) * gw
+        y = base_y - (v / peak) * gh
+        pts.append((x, y, v, week_starts[i]))
+
+    d_line = [f"M {pts[0][0]:.1f},{pts[0][1]:.1f}"]
+    for i in range(len(pts) - 1):
+        p1 = pts[i]
+        p2 = pts[i + 1]
+        dx = (p2[0] - p1[0]) * 0.45
+        d_line.append(f"C {p1[0] + dx:.1f},{p1[1]:.1f} {p2[0] - dx:.1f},{p2[1]:.1f} {p2[0]:.1f},{p2[1]:.1f}")
+
+    line_path = " ".join(d_line)
+    area_path = f"{line_path} L {pts[-1][0]:.1f},{base_y:.1f} L {pts[0][0]:.1f},{base_y:.1f} Z"
+
+    # Sort peaks
+    sorted_peaks = sorted(enumerate(weeks), key=lambda x: -x[1])
+    top_peak_idx = sorted_peaks[0][0]
+    p_top = pts[top_peak_idx]
+
+    sec_peak_idx = sorted_peaks[1][0] if len(sorted_peaks) > 1 and sorted_peaks[1][1] > 20 else None
+    p_sec = pts[sec_peak_idx] if sec_peak_idx is not None else None
+
+    # Month markers
+    months = []
+    seen = set()
+    for i, start in enumerate(week_starts):
+        d = dt.date.fromisoformat(start)
+        k = (d.year, d.month)
+        if d.day <= 7 and k not in seen:
+            seen.add(k)
+            months.append((pts[i][0], d.strftime("%b")))
+
+    out = []
+    add = out.append
+
+    add(f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Development velocity and sprint timeline across last 12 months">')
+    add(f"""<style>
+  .title {{ font: 700 11.5px/1 {SANS}; fill: {t['accent']}; letter-spacing: 0.08em; text-transform: uppercase; }}
+  .sub {{ font: 400 11.5px/1 {SANS}; fill: {t['muted']}; }}
+  .statVal {{ font: 600 12px/1 {SANS}; fill: {t['text']}; }}
+  .statLabel {{ font: 400 11px/1 {SANS}; fill: {t['muted']}; }}
+  .gridText {{ font: 400 10px/1 {MONO}; fill: {t['muted']}; opacity: 0.6; }}
+  .month {{ font: 500 11px/1 {SANS}; fill: {t['muted']}; }}
+  .badgeText {{ font: 600 10.5px/1 {SANS}; fill: #ffffff; }}
+  .wave {{ animation: draw 1.2s cubic-bezier(0.16, 1, 0.3, 1) both; }}
+  @keyframes draw {{ from {{ opacity: 0; transform: translateY(8px); }} to {{ opacity: 1; transform: translateY(0); }} }}
+</style>""")
+    add(f"""<defs>
+  <linearGradient id="vBg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="{t['bg1']}"/>
+    <stop offset="100%" stop-color="{t['bg2']}"/>
+  </linearGradient>
+  <linearGradient id="waveStroke" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="{t['accent']}"/>
+    <stop offset="60%" stop-color="{t['accent2']}"/>
+    <stop offset="100%" stop-color="{t['accent3']}"/>
+  </linearGradient>
+  <linearGradient id="waveFill" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="{t['accent']}" stop-opacity="0.32"/>
+    <stop offset="60%" stop-color="{t['accent2']}" stop-opacity="0.12"/>
+    <stop offset="100%" stop-color="{t['accent2']}" stop-opacity="0"/>
+  </linearGradient>
+  <filter id="vGlow" x="-20%" y="-20%" width="140%" height="140%">
+    <feGaussianBlur stdDeviation="4" result="blur"/>
+    <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+  </filter>
+  <clipPath id="vCard"><rect width="{W}" height="{H}" rx="16"/></clipPath>
+</defs>""")
+
+    add(f'<g clip-path="url(#vCard)">')
+    add(f'<rect width="{W}" height="{H}" fill="url(#vBg)"/>')
+
+    # Header Row
+    add(f'<g transform="translate(40, 24)">')
+    add(f'  <circle cx="6" cy="6" r="4.5" fill="{t["accent"]}" filter="url(#vGlow)"/>')
+    add(f'  <circle cx="6" cy="6" r="3.5" fill="{t["accent"]}"/>')
+    add(f'  <text x="18" y="10" class="title">Development Velocity &amp; Sprint Momentum</text>')
+    add(f'  <text x="18" y="25" class="sub">Continuous weekly commit momentum · last 12 months</text>')
+    add(f'</g>')
+
+    add(f'<g transform="translate(1160, 24)" text-anchor="end">')
+    add(f'  <text x="0" y="10" class="statVal">Peak: {peak} commits/wk   ·   Total: {s["commits"]:,} Commits</text>')
+    add(f'  <text x="0" y="25" class="statLabel">Active development across all 4 quarters</text>')
+    add(f'</g>')
+
+    # Grid Lines
+    for frac in (0.25, 0.5, 0.75, 1.0):
+        y = base_y - gh * frac
+        add(f'<line x1="{gx}" y1="{y:.1f}" x2="{gx + gw}" y2="{y:.1f}" stroke="{t["grid_line"]}" stroke-dasharray="2 6"/>')
+        add(f'<text x="{gx + gw + 8}" y="{y + 3:.1f}" class="gridText">{round(peak * frac)}</text>')
+
+    # Base line
+    add(f'<line x1="{gx}" y1="{base_y}" x2="{gx + gw}" y2="{base_y}" stroke="{t["panel_border"]}" stroke-width="1.2"/>')
+
+    # Wave Area & Stroke
+    add(f'<g class="wave">')
+    add(f'  <path d="{area_path}" fill="url(#waveFill)"/>')
+    add(f'  <path d="{line_path}" fill="none" stroke="url(#waveStroke)" stroke-width="2.6" filter="url(#vGlow)"/>')
+    add(f'  <path d="{line_path}" fill="none" stroke="url(#waveStroke)" stroke-width="2.2"/>')
+    add(f'</g>')
+
+    # Peak Sprint Marker
+    tx, ty, tval = p_top[0], p_top[1], p_top[2]
+    add(f'<g transform="translate({tx:.1f}, {ty:.1f})">')
+    add(f'  <circle cx="0" cy="0" r="7" fill="{t["accent"]}" opacity="0.4" filter="url(#vGlow)"/>')
+    add(f'  <circle cx="0" cy="0" r="4.5" fill="{t["accent"]}"/>')
+    add(f'  <circle cx="0" cy="0" r="2" fill="#ffffff"/>')
+    badge_w = 126
+    add(f'  <g transform="translate({-badge_w / 2:.1f}, -26)">')
+    add(f'    <rect x="0" y="0" width="{badge_w}" height="20" rx="10" fill="{t["accent2"]}" filter="url(#vGlow)" opacity="0.9"/>')
+    add(f'    <text x="{badge_w / 2:.1f}" y="13.5" text-anchor="middle" class="badgeText">🔥 Peak: {tval} commits</text>')
+    add(f'  </g>')
+    add(f'</g>')
+
+    # Secondary Peak Marker
+    if p_sec:
+        sx, sy, sval = p_sec[0], p_sec[1], p_sec[2]
+        add(f'<g transform="translate({sx:.1f}, {sy:.1f})">')
+        add(f'  <circle cx="0" cy="0" r="4" fill="{t["accent2"]}"/>')
+        add(f'  <circle cx="0" cy="0" r="1.8" fill="#ffffff"/>')
+        badge_w2 = 98
+        add(f'  <g transform="translate({-badge_w2 / 2:.1f}, -24)">')
+        add(f'    <rect x="0" y="0" width="{badge_w2}" height="18" rx="9" fill="{t["panel"]}" stroke="{t["panel_border"]}" stroke-width="1"/>')
+        add(f'    <text x="{badge_w2 / 2:.1f}" y="12" text-anchor="middle" font-size="10" font-family="{SANS}" font-weight="600" fill="{t["accent"]}">⚡ {sval} commits</text>')
+        add(f'  </g>')
+        add(f'</g>')
+
+    # Month Labels
+    for mx, mname in months:
+        add(f'<text x="{mx:.1f}" y="{base_y + 18}" text-anchor="middle" class="month">{mname}</text>')
+
+    add(f'</g>')  # clip-path
+    add(f'<rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="16" fill="none" stroke="{t["panel_border"]}"/>')
+    add(f'</svg>')
+    return "\n".join(out)
+
+
 def main():
     stats = summarize(fetch())
     OUT.mkdir(exist_ok=True)
     for name, theme in THEMES.items():
         (OUT / f"stats-{name}.svg").write_text(render(stats, theme), encoding="utf-8")
+        (OUT / f"velocity-{name}.svg").write_text(render_velocity(stats, theme), encoding="utf-8")
     print(json.dumps({k: v for k, v in stats.items() if k not in ("weeks", "week_starts")}, indent=2))
 
 

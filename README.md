@@ -296,12 +296,12 @@ I architect **full-stack web apps**, **Flutter mobile apps**, and **AI-powered d
 </picture>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Anik-tB/Anik-tB/output/github-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Anik-tB/Anik-tB/output/github-snake.svg">
-  <img src="https://raw.githubusercontent.com/Anik-tB/Anik-tB/output/github-snake-dark.svg" width="100%" alt="Contribution graph snake animation">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/velocity-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/velocity-light.svg">
+  <img src="assets/velocity-dark.svg" width="100%" alt="Development velocity and sprint timeline across the last 12 months">
 </picture>
 
-<sub align="center">📈 Stats are regenerated daily from the GitHub API by a workflow in this repo.</sub>
+<sub align="center">📈 Metrics &amp; sprint velocity regenerated daily from the GitHub API.</sub>
 
 <br>
 
