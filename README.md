@@ -41,7 +41,7 @@ I architect **full-stack web apps**, **Flutter mobile apps**, and **AI-powered d
 
 <h3>🧬 <a href="https://github.com/Anik-tB/GENO_NEXUS">GenoNexus</a></h3>
 
-<p>Genomics platform with role-based portals for researchers, clinicians and patients. Python engines handle sequence analysis & outbreak forecasting, powered by a Gemini research copilot.</p>
+<p>Genomics platform with role-based portals for researchers, clinicians and patients. Python engines handle sequence analysis &amp; outbreak forecasting, powered by a Gemini research copilot. <strong>🥈 1st runner-up</strong> at the UIU Software Engineering course project showcase.</p>
 
 <p>
   <img src="https://img.shields.io/badge/Next.js_15-000?style=flat-square&logo=next.js" alt="Next.js">
@@ -311,6 +311,10 @@ I architect **full-stack web apps**, **Flutter mobile apps**, and **AI-powered d
 <tr>
 <td>🥇</td>
 <td><strong>1st place</strong> — Beyond The Galaxy AOOP Project Showcase, 50+ teams</td>
+</tr>
+<tr>
+<td>🥈</td>
+<td><strong>1st runner-up</strong> — Software Engineering Course Showcase (GenoNexus), UIU</td>
 </tr>
 <tr>
 <td>🥈</td>
