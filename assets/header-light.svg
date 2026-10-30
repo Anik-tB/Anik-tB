@@ -3,7 +3,7 @@
   <!-- Background Gradient -->
   <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
     <stop offset="0%" stop-color="#f8fafc"/>
-    <stop offset="100%" stop-color="#eef2ff"/>
+    <stop offset="100%" stop-color="#edf2f7"/>
   </linearGradient>
 
   <!-- Name Text Gradient -->
@@ -13,31 +13,25 @@
     <stop offset="100%" stop-color="#db2777"/>
   </linearGradient>
 
-  <!-- Accent Border Gradient -->
-  <linearGradient id="borderGrad" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0%" stop-color="#0284c7" stop-opacity="0.6"/>
-    <stop offset="50%" stop-color="#7c3aed" stop-opacity="0.3"/>
-    <stop offset="100%" stop-color="#db2777" stop-opacity="0.5"/>
+  <!-- Ring Accent Gradient -->
+  <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#0284c7"/>
+    <stop offset="50%" stop-color="#7c3aed"/>
+    <stop offset="100%" stop-color="#db2777"/>
   </linearGradient>
 
-  <!-- Radial Glow Behind Code Terminal -->
-  <radialGradient id="termGlow" cx="0.5" cy="0.5" r="0.5">
-    <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.15"/>
-    <stop offset="100%" stop-color="#0284c7" stop-opacity="0"/>
-  </radialGradient>
-
-  <!-- Radial Glow Top Left -->
-  <radialGradient id="heroGlow" cx="0.2" cy="0.2" r="0.6">
-    <stop offset="0%" stop-color="#0284c7" stop-opacity="0.12"/>
-    <stop offset="100%" stop-color="#f8fafc" stop-opacity="0"/>
-  </radialGradient>
+  <!-- Node Border Gradient -->
+  <linearGradient id="nodeGrad" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#0284c7" stop-opacity="0.6"/>
+    <stop offset="100%" stop-color="#7c3aed" stop-opacity="0.4"/>
+  </linearGradient>
 
   <!-- Grid Pattern -->
   <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
-    <path d="M 36 0 L 0 0 0 36" fill="none" stroke="#000000" stroke-width="0.75" opacity="0.04"/>
+    <path d="M 36 0 L 0 0 0 36" fill="none" stroke="#000000" stroke-width="0.75" opacity="0.035"/>
   </pattern>
 
-  <radialGradient id="gridFade" cx="0.5" cy="0.5" r="0.6">
+  <radialGradient id="gridFade" cx="0.45" cy="0.5" r="0.65">
     <stop offset="0%" stop-color="#fff" stop-opacity="1"/>
     <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
   </radialGradient>
@@ -45,11 +39,11 @@
     <rect width="1200" height="360" fill="url(#gridFade)"/>
   </mask>
 
-  <!-- Glow Filters -->
-  <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
-    <feGaussianBlur stdDeviation="40" result="blur"/>
+  <!-- Glow Filter -->
+  <filter id="blurGlow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="45"/>
   </filter>
-  <filter id="badgeGlow" x="-50%" y="-50%" width="200%" height="200%">
+  <filter id="dotGlow" x="-50%" y="-50%" width="200%" height="200%">
     <feGaussianBlur stdDeviation="3" result="blur"/>
     <feComposite in="SourceGraphic" in2="blur" operator="over"/>
   </filter>
@@ -62,47 +56,51 @@
 
 <style>
   .kicker { font: 600 13px 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, Menlo, monospace; letter-spacing: 0.05em; }
-  .name { font: 800 46px Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; letter-spacing: -0.03em; }
-  .role { font: 600 18px Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; fill: #334155; letter-spacing: -0.01em; }
-  .univ { font: 400 14px Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; fill: #64748b; }
+  .name { font: 800 50px Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; letter-spacing: -0.03em; }
+  .role { font: 600 19px Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; fill: #1e293b; letter-spacing: -0.01em; }
+  .univ { font: 400 14.5px Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; fill: #475569; }
   .statusText { font: 600 12px Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; fill: #059669; }
-  .chipText { font: 500 12.5px Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; fill: #334155; }
+  .chipText { font: 500 13px Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; fill: #334155; }
+  .nodeText { font: 600 12px 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, Menlo, monospace; fill: #1e293b; }
+  .codeSymbol { font: 700 34px 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, Menlo, monospace; }
 
-  /* Terminal Code Styling */
-  .termTitle { font: 500 12px 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, Menlo, monospace; fill: #64748b; }
-  .codeLine { font: 500 12.5px/1.7 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, Menlo, monospace; }
-  .lineNum { font: 400 12px/1.7 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, Menlo, monospace; fill: #64748b; opacity: 0.45; user-select: none; }
-
-  /* Cursor Blink Animation */
-  .cursor {
-    fill: #0284c7;
-    animation: blink 1s step-end infinite;
+  /* Smooth Spin for Orbit */
+  .orbitSpin {
+    transform-origin: 945px 180px;
+    animation: spinOrbit 45s linear infinite;
   }
-  @keyframes blink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
+  @keyframes spinOrbit {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
   }
 
-  /* Status Dot Pulse */
+  /* Pulsing Ambient Orbs */
+  .orbFloat1 {
+    animation: float1 12s ease-in-out infinite alternate;
+  }
+  .orbFloat2 {
+    animation: float2 15s ease-in-out infinite alternate;
+  }
+  @keyframes float1 {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(-20px, 15px); }
+  }
+  @keyframes float2 {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(15px, -18px); }
+  }
+
+  /* Green Status Pulse */
   .pulseDot {
     animation: pulse 2.2s ease-in-out infinite;
   }
   @keyframes pulse {
-    0%, 100% { transform: scale(1); opacity: 1; }
-    50% { transform: scale(1.35); opacity: 0.6; }
-  }
-
-  /* Floating Animation for Code Window */
-  .floatWindow {
-    animation: subtleFloat 8s ease-in-out infinite alternate;
-  }
-  @keyframes subtleFloat {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-5px); }
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.55; transform: scale(1.35); }
   }
 
   @media (prefers-reduced-motion: reduce) {
-    .cursor, .pulseDot, .floatWindow { animation: none; }
+    .orbitSpin, .orbFloat1, .orbFloat2, .pulseDot { animation: none; }
   }
 </style>
 
@@ -111,169 +109,143 @@
   <rect width="1200" height="360" fill="url(#bgGrad)"/>
   <rect width="1200" height="360" fill="url(#grid)" mask="url(#gridMask)"/>
 
-  <!-- ▸ Background Glow Orbs -->
-  <circle cx="220" cy="140" r="160" fill="url(#heroGlow)" filter="url(#softGlow)"/>
-  <circle cx="920" cy="180" r="180" fill="url(#termGlow)" filter="url(#softGlow)"/>
+  <!-- ▸ Ambient Lighting Behind Right Core -->
+  <g filter="url(#blurGlow)" opacity="0.18">
+    <circle class="orbFloat1" cx="915" cy="140" r="110" fill="#0284c7"/>
+    <circle class="orbFloat2" cx="985" cy="220" r="100" fill="#7c3aed"/>
+    <circle class="orbFloat1" cx="885" cy="230" r="75" fill="#db2777"/>
+    <circle cx="200" cy="140" r="100" fill="#0284c7" opacity="0.35"/>
+  </g>
 
   <!-- ======================================================== -->
-  <!-- LEFT COLUMN: Identity & Highlights                       -->
+  <!-- LEFT COLUMN: Profile Info (100% Real Data)               -->
   <!-- ======================================================== -->
 
   <!-- 1. Terminal Kicker -->
-  <g transform="translate(60, 68)">
-    <rect x="-8" y="-16" width="186" height="26" rx="6" fill="#ffffff" stroke="rgba(0, 0, 0, 0.08)" stroke-width="0.8"/>
+  <g transform="translate(64, 70)">
+    <rect x="-8" y="-17" width="186" height="28" rx="6" fill="#ffffff" stroke="rgba(0, 0, 0, 0.08)" stroke-width="1"/>
     <text x="4" y="2" class="kicker">
-      <tspan fill="#64748b">~/anik $</tspan>
-      <tspan fill="#0284c7"> whoami</tspan>
-      <tspan class="cursor">_</tspan>
+      <tspan fill="#64748b">~/anik-tb</tspan>
+      <tspan fill="#0284c7"> $ whoami</tspan>
     </text>
   </g>
 
   <!-- 2. Full Name -->
-  <text x="60" y="128" class="name" fill="url(#nameGrad)">Md Abu Sayum Anik</text>
+  <text x="62" y="132" class="name" fill="url(#nameGrad)">Md Abu Sayum Anik</text>
 
   <!-- 3. Headline Role -->
-  <text x="60" y="162" class="role">Software Engineer · Full-Stack &amp; AI Tools</text>
+  <text x="64" y="170" class="role">Software Engineer · Full-Stack &amp; AI Tools</text>
 
   <!-- 4. University Info -->
-  <g transform="translate(60, 188)">
-    <text x="0" y="0" class="univ">CSE @ United International University · Dhaka, Bangladesh</text>
-  </g>
+  <text x="64" y="198" class="univ">CSE @ United International University · Dhaka, Bangladesh</text>
 
   <!-- 5. Status Badge -->
-  <g transform="translate(60, 216)">
-    <rect x="0" y="0" width="206" height="28" rx="14" fill="rgba(5, 150, 105, 0.10)" stroke="rgba(5, 150, 105, 0.25)" stroke-width="1"/>
-    <!-- Glowing Status Indicator Dot -->
+  <g transform="translate(64, 222)">
+    <rect x="0" y="0" width="206" height="28" rx="14" fill="rgba(5, 150, 105, 0.08)" stroke="rgba(5, 150, 105, 0.22)" stroke-width="1"/>
     <g transform="translate(14, 14)">
-      <circle cx="0" cy="0" r="4.5" fill="#059669" filter="url(#badgeGlow)" class="pulseDot"/>
+      <circle cx="0" cy="0" r="4.5" fill="#059669" filter="url(#dotGlow)" class="pulseDot"/>
       <circle cx="0" cy="0" r="4" fill="#059669"/>
     </g>
     <text x="27" y="18" class="statusText">Available for opportunities</text>
   </g>
 
   <!-- 6. Tag Chips Row -->
-  <g transform="translate(60, 272)">
+  <g transform="translate(64, 274)">
     <!-- Chip 1: Full-stack Web -->
     <g transform="translate(0, 0)">
-      <rect x="0" y="0" width="138" height="32" rx="16" fill="#ffffff" stroke="rgba(0, 0, 0, 0.08)" stroke-width="1"/>
+      <rect x="0" y="0" width="144" height="34" rx="17" fill="#ffffff" stroke="rgba(0, 0, 0, 0.08)" stroke-width="1"/>
       <!-- Code Icon -->
-      <g transform="translate(14, 9)" stroke="#0284c7" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <g transform="translate(14, 10)" stroke="#0284c7" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
         <polyline points="10 4 14 8 10 12"/>
         <polyline points="4 12 0 8 4 4"/>
       </g>
-      <text x="36" y="20.5" class="chipText">Full-Stack Web</text>
+      <text x="37" y="21.5" class="chipText">Full-Stack Web</text>
     </g>
 
     <!-- Chip 2: Flutter Apps -->
-    <g transform="translate(148, 0)">
-      <rect x="0" y="0" width="128" height="32" rx="16" fill="#ffffff" stroke="rgba(0, 0, 0, 0.08)" stroke-width="1"/>
+    <g transform="translate(154, 0)">
+      <rect x="0" y="0" width="130" height="34" rx="17" fill="#ffffff" stroke="rgba(0, 0, 0, 0.08)" stroke-width="1"/>
       <!-- Mobile Icon -->
-      <g transform="translate(14, 8)" stroke="#7c3aed" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <g transform="translate(14, 9)" stroke="#7c3aed" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
         <rect x="1" y="0" width="10" height="15" rx="2"/>
         <line x1="6" y1="12" x2="6.01" y2="12"/>
       </g>
-      <text x="34" y="20.5" class="chipText">Flutter Apps</text>
+      <text x="35" y="21.5" class="chipText">Flutter Apps</text>
     </g>
 
     <!-- Chip 3: AI Dev Tools -->
-    <g transform="translate(286, 0)">
-      <rect x="0" y="0" width="124" height="32" rx="16" fill="#ffffff" stroke="rgba(0, 0, 0, 0.08)" stroke-width="1"/>
+    <g transform="translate(294, 0)">
+      <rect x="0" y="0" width="128" height="34" rx="17" fill="#ffffff" stroke="rgba(0, 0, 0, 0.08)" stroke-width="1"/>
       <!-- Sparkle / AI Icon -->
-      <g transform="translate(13, 8)" fill="#db2777">
+      <g transform="translate(13, 9)" fill="#db2777">
         <path d="M7.5 0 L9 5 L14 6.5 L9 8 L7.5 13 L6 8 L1 6.5 L6 5 Z"/>
       </g>
-      <text x="33" y="20.5" class="chipText">AI Dev Tools</text>
+      <text x="34" y="21.5" class="chipText">AI Dev Tools</text>
     </g>
 
     <!-- Chip 4: Dhaka, BD -->
-    <g transform="translate(420, 0)">
-      <rect x="0" y="0" width="112" height="32" rx="16" fill="#ffffff" stroke="rgba(0, 0, 0, 0.08)" stroke-width="1"/>
-      <!-- Map Pin Icon (REAL LOCATION PIN) -->
-      <g transform="translate(14, 8)" stroke="#0284c7" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <g transform="translate(432, 0)">
+      <rect x="0" y="0" width="116" height="34" rx="17" fill="#ffffff" stroke="rgba(0, 0, 0, 0.08)" stroke-width="1"/>
+      <!-- Location Map Pin Icon -->
+      <g transform="translate(14, 9)" stroke="#0284c7" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
         <path d="M11 5.5 C11 9.5 5.5 14 5.5 14 C5.5 14 0 9.5 0 5.5 C0 2.5 2.5 0 5.5 0 C8.5 0 11 2.5 11 5.5 Z"/>
         <circle cx="5.5" cy="5.5" r="2" fill="#0284c7"/>
       </g>
-      <text x="33" y="20.5" class="chipText">Dhaka, BD</text>
+      <text x="34" y="21.5" class="chipText">Dhaka, BD</text>
     </g>
   </g>
 
   <!-- ======================================================== -->
-  <!-- RIGHT COLUMN: Modern IDE / Code Window Card             -->
+  <!-- RIGHT COLUMN: Modern Tech Core with Real Stack           -->
   <!-- ======================================================== -->
 
-  <g class="floatWindow" transform="translate(630, 42)">
-    <!-- Terminal Box Container -->
-    <rect x="0" y="0" width="510" height="276" rx="14" fill="#ffffff" stroke="rgba(0, 0, 0, 0.08)" stroke-width="1"/>
-    
-    <!-- Top Header Bar -->
-    <path d="M 0 14 Q 0 0 14 0 L 496 0 Q 510 0 510 14 L 510 38 L 0 38 Z" fill="#f1f5f9"/>
-    <line x1="0" y1="38" x2="510" y2="38" stroke="rgba(0, 0, 0, 0.08)" stroke-width="0.8"/>
-
-    <!-- macOS Window Buttons -->
-    <circle cx="20" cy="19" r="5" fill="#ff5f56"/>
-    <circle cx="36" cy="19" r="5" fill="#ffbd2e"/>
-    <circle cx="52" cy="19" r="5" fill="#27c93f"/>
-
-    <!-- Tab Title with file indicator -->
-    <text x="74" y="23" class="termTitle">anik.config.ts</text>
-    <rect x="420" y="11" width="72" height="18" rx="4" fill="#ffffff" stroke="rgba(0, 0, 0, 0.08)" stroke-width="0.7"/>
-    <text x="456" y="23" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, Menlo, monospace" font-size="10" fill="#0284c7">TS 5.7</text>
-
-    <!-- Code Content -->
-    <g transform="translate(20, 64)" class="codeLine">
-      <!-- Line 1 -->
-      <text x="0" y="0">
-        <tspan class="lineNum">1 </tspan>
-        <tspan fill="#7c3aed">export const</tspan> <tspan fill="#0284c7">developer</tspan> <tspan fill="#64748b">=</tspan> <tspan fill="#64748b">&amp;#123;</tspan>
-      </text>
-
-      <!-- Line 2 -->
-      <text x="0" y="24">
-        <tspan class="lineNum">2 </tspan>
-        <tspan fill="#64748b">  </tspan><tspan fill="#0369a1">name</tspan><tspan fill="#64748b">: </tspan><tspan fill="#059669">&quot;Md Abu Sayum Anik&quot;</tspan><tspan fill="#64748b">,</tspan>
-      </text>
-
-      <!-- Line 3 -->
-      <text x="0" y="48">
-        <tspan class="lineNum">3 </tspan>
-        <tspan fill="#64748b">  </tspan><tspan fill="#0369a1">focus</tspan><tspan fill="#64748b">: </tspan><tspan fill="#059669">&quot;Full-Stack &amp; AI Systems&quot;</tspan><tspan fill="#64748b">,</tspan>
-      </text>
-
-      <!-- Line 4 -->
-      <text x="0" y="72">
-        <tspan class="lineNum">4 </tspan>
-        <tspan fill="#64748b">  </tspan><tspan fill="#0369a1">craft</tspan><tspan fill="#64748b">: </tspan><tspan fill="#64748b">[</tspan><tspan fill="#d97706">&quot;Next.js&quot;</tspan><tspan fill="#64748b">, </tspan><tspan fill="#d97706">&quot;FastAPI&quot;</tspan><tspan fill="#64748b">, </tspan><tspan fill="#d97706">&quot;Flutter&quot;</tspan><tspan fill="#64748b">],</tspan>
-      </text>
-
-      <!-- Line 5 -->
-      <text x="0" y="96">
-        <tspan class="lineNum">5 </tspan>
-        <tspan fill="#64748b">  </tspan><tspan fill="#0369a1">building</tspan><tspan fill="#64748b">: </tspan><tspan fill="#db2777">&quot;GenoNexus 🧬&quot;</tspan><tspan fill="#64748b">,</tspan>
-      </text>
-
-      <!-- Line 6 -->
-      <text x="0" y="120">
-        <tspan class="lineNum">6 </tspan>
-        <tspan fill="#64748b">  </tspan><tspan fill="#0369a1">highlight</tspan><tspan fill="#64748b">: </tspan><tspan fill="#d97706">&quot;1st Place AOOP Showcase 🏆&quot;</tspan><tspan fill="#64748b">,</tspan>
-      </text>
-
-      <!-- Line 7 -->
-      <text x="0" y="144">
-        <tspan class="lineNum">7 </tspan>
-        <tspan fill="#64748b">  </tspan><tspan fill="#0369a1">status</tspan><tspan fill="#64748b">: </tspan><tspan fill="#059669">&quot;open_for_hire&quot;</tspan>
-      </text>
-
-      <!-- Line 8 -->
-      <text x="0" y="168">
-        <tspan class="lineNum">8 </tspan>
-        <tspan fill="#64748b">&amp;#125;;</tspan>
-        <tspan class="cursor" fill="#0284c7">▋</tspan>
-      </text>
-    </g>
-
-    <!-- Bottom Accent Line -->
-    <line x1="20" y1="262" x2="160" y2="262" stroke="url(#borderGrad)" stroke-width="2" stroke-linecap="round"/>
+  <!-- Concentric Orbital Cyber Rings -->
+  <g fill="none">
+    <!-- Outer dashed orbit -->
+    <circle cx="945" cy="180" r="142" stroke="url(#ringGrad)" stroke-width="1.2" stroke-dasharray="3 8" opacity="0.4"/>
+    <!-- Middle ring -->
+    <circle cx="945" cy="180" r="110" stroke="url(#ringGrad)" stroke-width="1.6" opacity="0.75"/>
+    <!-- Inner dashed ring -->
+    <circle cx="945" cy="180" r="78" stroke="url(#ringGrad)" stroke-width="1.2" stroke-dasharray="2 6" opacity="0.4"/>
   </g>
+
+  <!-- Orbiting Satellites (Rotates around cx, cy) -->
+  <g class="orbitSpin">
+    <circle cx="1087" cy="180" r="5.5" fill="#0284c7"/>
+    <circle cx="945" cy="70" r="4.5" fill="#7c3aed"/>
+    <circle cx="867" cy="180" r="4" fill="#db2777"/>
+    <circle cx="945" cy="322" r="3.5" fill="#0284c7"/>
+  </g>
+
+  <!-- Real Tech Badges Positioned Around Core -->
+  <!-- 1. Next.js 15 (Top) -->
+  <g transform="translate(897, 34)">
+    <rect x="0" y="0" width="96" height="28" rx="14" fill="rgba(255, 255, 255, 0.95)" stroke="url(#nodeGrad)" stroke-width="1"/>
+    <text x="48" y="18" text-anchor="middle" class="nodeText">Next.js 15</text>
+  </g>
+
+  <!-- 2. Python (Right) -->
+  <g transform="translate(1049, 166)">
+    <rect x="0" y="0" width="84" height="28" rx="14" fill="rgba(255, 255, 255, 0.95)" stroke="url(#nodeGrad)" stroke-width="1"/>
+    <text x="42" y="18" text-anchor="middle" class="nodeText">Python</text>
+  </g>
+
+  <!-- 3. Flutter (Bottom) -->
+  <g transform="translate(901, 298)">
+    <rect x="0" y="0" width="88" height="28" rx="14" fill="rgba(255, 255, 255, 0.95)" stroke="url(#nodeGrad)" stroke-width="1"/>
+    <text x="44" y="18" text-anchor="middle" class="nodeText">Flutter</text>
+  </g>
+
+  <!-- 4. FastAPI (Left) -->
+  <g transform="translate(757, 166)">
+    <rect x="0" y="0" width="84" height="28" rx="14" fill="rgba(255, 255, 255, 0.95)" stroke="url(#nodeGrad)" stroke-width="1"/>
+    <text x="42" y="18" text-anchor="middle" class="nodeText">FastAPI</text>
+  </g>
+
+  <!-- Central Hub Circle with </> Symbol -->
+  <circle cx="945" cy="180" r="52" fill="#ffffff" stroke="url(#ringGrad)" stroke-width="2"/>
+  <circle cx="945" cy="180" r="45" fill="none" stroke="#0284c7" stroke-width="0.8" opacity="0.3"/>
+  <text x="945" y="191" text-anchor="middle" class="codeSymbol" fill="url(#nameGrad)">&lt;/&gt;</text>
 </g>
 
 <!-- Outer Card Border -->
